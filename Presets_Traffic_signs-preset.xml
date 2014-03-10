@@ -1,0 +1,1936 @@
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="yopaseopor" 
+shortdescription="traffic_signs_" 
+es.shortdescription="señales_tráfico_" 
+ca.shortdescription="senyals_trànsit_"
+description="Tag easily ways and nodes for highways and traffic signals."
+  version="1.29_2014-02-10">
+          <!-- Based on Quick-highways from lzhl -->
+        
+
+<group name="Traffic_signals" es.name="Traffic_signals" icon="ES_road_beacon_big.png">
+    <group name="A.WAYS" es.name="A.VIAS" icon="ES_Ruta_europea.png">
+        
+		<group name="Highways" es.name="1.Carreteras" ca.name="1.Carreteres" icon="secondary.png">
+                     
+            <item name="motorway" es.name="Autopista/Autovía" ca.name="Autopista/Autovia" icon="ES_motorway.png" type="way">
+            <combo key="highway" text="Carril principal o enlace?" values="motorway,motorway_link" />
+            <text key="ref" text="Referencia de la autopista" />
+            <check key="oneway" text="Oneway" default="on" />
+            <combo key="lanes:forward" text="Nº Carriles" values="1,2,3,4,5,6" />
+            <text key="width" text="Anchura.Por defecto 4 por carril" />
+            <combo key="turn:lanes:forward" text="Direcciones de los carriles en el sentido de la vía." values="left|left,through|through,through;left|through,through|through;right,right|right,none" />
+			<combo key="change:lanes:forward" text="Línea discontinua en el sentido de la vía." values="yes,no,none,not_right|no,no|not_left" default="" delete_if_empty="true"/>
+			<label text="Cada carril va separado de |.Ejemplo: not_right|no"/>
+			<check key="overtaking" text="Permitido adelantar" default="on" />
+            <text key="maxspeed" text="Velocidad máxima permitida" />
+            <check key="bridge" text="Puente" default="off" />
+            <check key="tunnel" text="Túnel" default="off" />
+			<label text="El menú te pondrá la dirección de los dos primeros carriles.Si esa estructura varía comprueba si debes modificar los carriles.Cada carril va separado de |.Ejemplo: through|through"/>
+            </item>
+			
+            <item name="trunk" es.name="Carretera Nacional o Carretera autonómica de primer nivel en buen estado" icon="ES_trunk.png" type="way">
+            <combo key="highway" text="Carriles principales o enlace?" values="trunk,trunk_link" />
+            <text key="ref" text="Referencia de la carretera" />
+            <check key="oneway" text="Oneway" default="off" />
+            <combo key="lanes:forward" text="Nº Carriles sentido vía" values="1,2,3" />
+            <combo key="lanes:backward" text="Nº Carriles sentido contrario vía" values="1,2,3" />
+			<combo key="change:lanes:forward" text="Línea discontinua en el sentido de la vía." values="yes,no,none,not_right|no,no|not_left" default="" delete_if_empty="true" />
+			<label text="Cada carril va separado de |.Ejemplo: not_right|no"/>
+			<combo key="change:lanes:backward" text="Línea discontinua en el sentido contrario de la vía." values="yes,no,none,not_right|no,no|not_left" default="" delete_if_empty="true" />
+			<label text="Cada carril va separado de |.Ejemplo: not_right|no"/>
+            <combo key="turn:lanes:forward" text="Dirección del carril en el sentido de la vía" values="left,slight_left,sharp_left,through;left,through,through;right,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,none" />
+			<combo key="turn:lanes:backward" text="Dirección del carril en el sentido contrario de la vía" values="left,slight_left,sharp_left,through;left,through,through;right,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,none" />
+            <text key="width" text="Anchura.Por defecto 4 por carril" />
+            <check key="overtaking" text="Permitido adelantar" default="off" />
+            <text key="maxspeed" text="Velocidad máxima permitida" />
+            <check key="bridge" text="Puente" default="off" />
+            <check key="tunnel" text="Túnel" default="off" />
+			<label text="El menú especifica la dirección del primer carril, si la estructura varía añade | y el resto de direcciones.Ejemplo: through|right"/>
+            </item>
+            
+            <item name="primary" es.name="Carretera Nacional o Carretera autonómica de primer nivel en mal estado" icon="ES_primary.png" type="way">
+            <combo key="highway" text="Carriles principales o enlace?" values="primary,primary_link" />
+			<text key="ref" text="Referencia de la carretera" />
+            <check key="oneway" text="Oneway" default="off" />
+            <combo key="lanes:forward" text="Nº Carriles sentido vía" values="1,2,3" />
+            <combo key="lanes:backward" text="Nº Carriles sentido contrario vía" values="1,2,3" />
+			<combo key="change:lanes:forward" text="Línea discontinua en el sentido de la vía." values="yes,no,none,not_right|no,no|not_left" default="" delete_if_empty="true" />
+			<label text="Cada carril va separado de |.Ejemplo: not_right|no"/>
+			<combo key="change:lanes:backward" text="Línea discontinua en el sentido contrario de la vía." values="yes,no,none,not_right|no,no|not_left" default="" delete_if_empty="true" />
+			<label text="Cada carril va separado de |.Ejemplo: not_right|no"/>
+            <combo key="turn:lanes:forward" text="Dirección del carril en el sentido de la vía" values="left,slight_left,sharp_left,through;left,through,through;right,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,none" />
+			<combo key="turn:lanes:backward" text="Dirección del carril en el sentido contrario de la vía" values="left,slight_left,sharp_left,through;left,through,through;right,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,none" />
+            <text key="width" text="Anchura.Por defecto 4 por carril" />
+            <check key="overtaking" text="Permitido adelantar" default="off" />
+            <text key="maxspeed" text="Velocidad máxima permitida" />
+            <check key="bridge" text="Puente" default="off" />
+            <check key="tunnel" text="Túnel" default="off" />
+			<label text="El menú especifica la dirección del primer carril, si la estructura varía añade | y el resto de direcciones.Ejemplo: through|right"/>
+            </item>
+            
+            <item name="secondary" es.name="Carretera Secundaria o autonómica de segundo nivel" icon="ES_secondary.png" type="way">
+            <combo key="highway" text="Carriles principales o enlace?" values="secondary,secondary_link" />
+            <text key="ref" text="Referencia de la carretera" />
+            <check key="oneway" text="Oneway" default="off" />
+            <combo key="lanes:forward" text="Nº Carriles sentido vía" values="1,2,3" />
+            <combo key="lanes:backward" text="Nº Carriles sentido contrario vía" values="1,2,3" />
+			<combo key="change:lanes:forward" text="Línea discontinua en el sentido de la vía." values="yes,no,none,not_right|no,no|not_left" default="" delete_if_empty="true" />
+			<label text="Cada carril va separado de |.Ejemplo: not_right|no"/>
+			<combo key="change:lanes:backward" text="Línea discontinua en el sentido contrario de la vía." values="yes,no,none,not_right|no,no|not_left" default="" delete_if_empty="true" />
+			<label text="Cada carril va separado de |.Ejemplo: not_right|no"/>
+            <combo key="turn:lanes:forward" text="Dirección del carril en el sentido de la vía" values="left,slight_left,sharp_left,through;left,through,through;right,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,none" />
+			<combo key="turn:lanes:backward" text="Dirección del carril en el sentido contrario de la vía" values="left,slight_left,sharp_left,through;left,through,through;right,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,none" />
+            <text key="width" text="Anchura.Por defecto 4 por carril" />
+            <check key="overtaking" text="Permitido adelantar" default="off" />
+            <text key="maxspeed" text="Velocidad máxima permitida" />
+            <check key="bridge" text="Puente" default="off" />
+            <check key="tunnel" text="Túnel" default="off" />
+			<label text="El menú especifica la dirección del primer carril, si la estructura varía añade | y el resto de direcciones.Ejemplo: through|right"/>
+            </item>
+            
+            <item name="tertiary" es.name="Carretera local" icon="ES_tertiary.png" type="way">
+            <combo key="highway" text="Carriles principales o enlace?" values="tertiary,tertiary_link" />
+            <text key="ref" text="Referencia de la carretera" />
+			<check key="oneway" text="Oneway" default="off" />
+            <text key="lanes" text="Carriles delimitados totales en la carretera.Si no hay pintura es 1" />
+            <combo key="lanes:forward" text="Nº Carriles sentido vía" values="1,2,3" />
+            <combo key="lanes:backward" text="Nº Carriles sentido contrario vía" values="1,2,3" />
+			<combo key="change:lanes:forward" text="Línea discontinua en el sentido de la vía." values="yes,no,none,not_right|no,no|not_left" default="" delete_if_empty="true" />
+			<label text="Cada carril va separado de |.Ejemplo: not_right|no"/>
+			<combo key="change:lanes:backward" text="Línea discontinua en el sentido contrario de la vía." values="yes,no,none,not_right|no,no|not_left" default="" delete_if_empty="true" />
+			<label text="Cada carril va separado de |.Ejemplo: not_right|no"/>
+            <combo key="turn:lanes:forward" text="Dirección del carril en el sentido de la vía" values="left,slight_left,sharp_left,through;left,through,through;right,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,none" />
+			<combo key="turn:lanes:backward" text="Dirección del carril en el sentido contrario de la vía" values="left,slight_left,sharp_left,through;left,through,through;right,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,none" />
+            <text key="width" text="Anchura.Por defecto 4 por carril.Hay locales más pequeñas" />
+            <check key="overtaking" text="Permitido adelantar" default="off" />
+            <text key="maxspeed" text="Velocidad máxima permitida" />
+            <check key="bridge" text="Puente" default="off" />
+            <check key="tunnel" text="Túnel" default="off" />
+			<label text="El menú especifica la dirección del primer carril, si la estructura varía añade | y el resto de direcciones.Ejemplo: through|right"/>
+            </item>
+            
+			<item name="unclassified" es.name="Sin referencia" icon="unclassified.png" type="way">
+            <key key="highway" value="unclassified" />
+			<key key="lanes" value="1" />
+            <check key="oneway" text="Oneway" default="off" />
+            <text key="width" text="Anchura.Por defecto 4 por carril.Hay locales más pequeñas" />
+			<optional>
+			<combo key="smootness" text="Estado" values="excellent,good,intermediate,bad" default="good" delete_if_empty="true" />
+            <text key="maxspeed" text="Velocidad máxima permitida" />
+            <check key="bridge" text="Puente" default="off" />
+            <check key="tunnel" text="Túnel" default="off" />
+			<combo key="lanes:forward" text="Nº Carriles sentido vía" values="1,2,3" />
+            <combo key="lanes:backward" text="Nº Carriles sentido contrario vía" values="1,2,3" />
+			<combo key="change:lanes:forward" text="Línea discontinua en el sentido de la vía." values="yes,no,none,not_right|no,no|not_left" default="" delete_if_empty="true" />
+			<label text="Cada carril va separado de |.Ejemplo: not_right|no"/>
+			<combo key="change:lanes:backward" text="Línea discontinua en el sentido contrario de la vía." values="yes,no,none,not_right|no,no|not_left" default="" delete_if_empty="true" />
+			<label text="Cada carril va separado de |.Ejemplo: not_right|no"/>
+            <combo key="turn:lanes:forward" text="Dirección del carril en el sentido de la vía" values="left,slight_left,sharp_left,through;left,through,through;right,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,none" />
+			<combo key="turn:lanes:backward" text="Dirección del carril en el sentido contrario de la vía" values="left,slight_left,sharp_left,through;left,through,through;right,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,none" />
+			</optional>
+            </item>
+            
+			<item name="road" es.name="Por arreglar/NS NC" icon="road.png" type="way">
+			<key key="highway" value="road" />
+			<text key="fixme" text="Motivo por el cual hay que corregir la vía" />
+			</item>
+			  
+			<item name="residential" es.name="Calle" icon="residential.png" type="way">
+			<combo key="highway" text="Tipo de calle" values="residential,living_street,pedestrian" />
+			<text key="name" text="Nombre" />
+			<optional>
+			<text key="lanes" text="Carriles delimitados totales en la carretera.Sólo si es sentido único" />
+			<combo key="lanes:forward" text="Nº Carriles sentido vía" values="1,2,3" />
+            <combo key="lanes:backward" text="Nº Carriles sentido contrario vía" values="1,2,3" />
+			<combo key="change:lanes:forward" text="Línea discontinua en el sentido de la vía." values="yes,no,none,not_right|no,no|not_left" />
+			<label text="Cada carril va separado de |.Ejemplo: not_right|no"/>
+			<combo key="change:lanes:backward" text="Línea discontinua en el sentido contrario de la vía." values="yes,no,none,not_right|no,no|not_left" />
+			<label text="Cada carril va separado de |.Ejemplo: not_right|no"/>
+            <combo key="turn:lanes:forward" text="Dirección del carril en el sentido de la vía" values="left,slight_left,sharp_left,through;left,through,through;right,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,none" />
+			<combo key="turn:lanes:backward" text="Dirección del carril en el sentido contrario de la vía" values="left,slight_left,sharp_left,through;left,through,through;right,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,none" />
+			<text key="maxspeed" text="Máx. velocidad (km/h)" />
+			<combo key="sidewalk" text="Aceras" values="both,left,right,no,yes" />
+			<check key="oneway" text="Sentido único" default="off" />
+			<check key="bridge" text="Puente" default="off" />
+			<check key="tunnel" text="Túnel" default="off" />
+			<text key="width" text="Anchura.Por defecto 4 por carril" />
+			<combo key="surface" text="Superficie" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" />
+			</optional>
+			<label text="El menú especifica la dirección del primer carril, si la estructura varía añade | y el resto de direcciones.Ejemplo: through|right"/>
+			</item>
+			
+			<item name="SIDEWALKS" es.name="Aceras" icon="residential.png" type="way">
+			<key key="highway" value="footway" />
+			<key key="lanes" value="1" />
+			<combo key="footway" text="Tipo de acera" values="sidewalk,crossing" />
+			<optional>
+			<combo key="kerb" text="Tipo de bordillo" values="lowered,raised,flush,rolled,yes,no" />
+			<combo key="incline" text="Inclinación" values="no,up,down" />
+            <combo key="smoothness" text="Estado de la acera" values="excellent,good,intermediate,bad,very_bad" />
+			<combo key="surface" text="Superficie" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" />
+			<check key="tactile_paving" text="Pavimento táctil" default="off" />
+			<text key="width" text="Anchura de la acera en metros" />
+			</optional>
+			</item>
+		
+			<item name="Square/Park" es.name="Plaza/Parque Urbano" icon="service.png" type="way">
+			<key key="area" value="yes" />
+			<key key="layer" value="1" />
+			<text key="name" text="Nombre" />
+			<check key="highway" text="Zona peatonal" value_on="pedestrian" default="off" delete_if_empty="true" />
+			<check key="leisure" text="Parque/Jardín?" value_on="garden" default="off" delete_if_empty="true" />
+			</item>
+			
+			<item name="Traffic_island" es.name="Isleta" icon="service.png" type="way">
+			<key key="area" value="yes" />
+			<key key="landuse" value="traffic_island" />
+			<check key="kerb" text="Bordillo" default="off" />
+			<combo key="leisure" text="Jardín o Monumento? " values="garden,monument" default="" delete_if_empty="true" />
+			</item>
+			
+			<item name="service" es.name="service" icon="service.png" type="way">
+			<key key="highway" value="service" />
+			<key key="lanes" value="1" />
+            <check key="oneway" text="Oneway" default="on" />
+            <text key="width" text="Anchura.Por defecto 4 por carril.Hay locales más pequeñas" />
+			</item>
+			
+			<item name="Construction" icon="presets/construction.png" type="way,closedway">
+			<label text="Edit Highway Under Construction" />
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:highway=construction"
+			de.href="http://wiki.openstreetmap.org/wiki/DE:Key:construction"
+			fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:construction"
+			it.href="http://wiki.openstreetmap.org/wiki/IT:Key:construction"
+			pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:construction"
+			ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:construction" />
+			<space />
+			<key key="highway" value="construction" />
+			<optional>
+			<text key="name" text="Name" />
+			<combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
+			<combo key="lanes" text="Lanes" values="1,2,3,4,5" length="3" />
+			<text key="maxspeed" text="Max. speed (km/h)" />
+			<combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" />
+			<check key="oneway" text="Oneway" default="off" />
+			<check key="bridge" text="Bridge" default="off" />
+			<check key="tunnel" text="Tunnel" default="off" />
+			<check key="cutting" text="Cutting" default="off" />
+			<check key="embankment" text="Embankment" default="off" />
+			<combo key="incline" text="Incline" values="10%,-10%,10Â°,-10Â°,up,down" />
+			<check key="lit" text="Lit" default="off" /> 
+			<combo key="junction" text="Junction" values="roundabout,jughandle,yes" />
+			<text key="width" text="Width (meters)" />
+			</optional>
+			</item>
+		</group>
+		
+	<item name="Tracks" es.name="3.Caminos/Senderos/Otros" icon="presets/track1.png" type="way,closedway">  
+    <space />
+    <key key="highway" value="track" />
+	<key key="lanes" value="1" />
+    <combo key="highway" text="Camino? Sendero?" values="track,path,footway,steps,cycleway" length="3" />
+    <text key="name" text="Name" />
+    <optional>
+    <label text="Edit comuns" />
+    <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
+	<text key="width" text="Width (meters)" />
+    <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" />
+    <check key="oneway" text="Oneway" default="off" />
+    <check key="bridge" text="Bridge" default="off" />
+    <check key="tunnel" text="Tunnel" default="off" />
+    <check key="cutting" text="Cutting" default="off" />
+    <check key="embankment" text="Embankment" default="off" />
+    <combo key="incline" text="Incline" values="10%,-10%,10Â°,-10Â°,up,down" />
+    <check key="lit" text="Lit" default="off" /> 
+    <combo key="mtb:scale" text="MTB Scale" values="0,1,2,3,4,5" /> 
+    </optional>
+    <optional>
+    <label text="Edit Track" />
+    <combo key="tracktype" text="Tracktype" values="grade1,grade2,grade3" />
+    <combo key="access" text="General access" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" />
+    <combo key="motor_vehicle" text="Motor vehicles" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" />
+    <combo key="motorcycle" text="Motorcycle" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" />
+    <combo key="motorcar" text="Motorcar" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" />
+    </optional>
+    <optional>
+    <label text="Edit Path" />
+    <combo key="sac_scale" text="SAC Scale">
+	<list_entry value="hiking" display_value="T1 - hiking trail" short_description="Trail well cleared. Area flat or slightly sloped, no fall hazard" />
+	<list_entry value="mountain_hiking" display_value="T2 - mountain hiking trail" short_description="Trail with continuous line and balanced ascent. Terrain partially steep, fall hazard possible" />
+	<list_entry value="demanding_mountain_hiking" display_value="T3 - difficult, exposed hiking trail" short_description="exposed sites may be secured with ropes or chains, possible need to use hands for balance. Partly exposed sites with fall hazard, scree, pathless jagged rocks" />
+	<list_entry value="alpine_hiking" display_value="T4 - difficult, exposed, steep alpine trail" short_description="sometimes need for hand use to get ahead. Terrain quite exposed, precarious grassy acclivities, jagged rocks, facile snow-free glaciers" />
+	<list_entry value="demanding_alpine_hiking" display_value="T5 - difficult alpine trail with climbing" short_description="single plainly climbing up to second grade. Exposed, demanding terrain, jagged rocks, few dangerous glacier and snow" />
+	<list_entry value="difficult_alpine_hiking" display_value="T6 - hazardous alpine trail with climbing" short_description="climbing up to second grade. Often very exposed, precarious jagged rocks, glacier with danger to slip and fall" />
+    </combo>
+    <combo key="trail_visibility" text="Visibility" values="excellent,good,intermediate,bad,horrible,no" />
+    <combo key="foot" text="Foot" values="yes,official,designated,permissive,destination,delivery,private,no" />
+    <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,no" />
+    <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,no" />
+    <combo key="wheelchair" text="Wheelchairs" values="unknown,yes,official,no" />
+    <combo key="ski" text="Ski" values="yes,official,designated,permissive,private,no" />
+    <combo key="snowmobile" text="Snowmobile" values="yes,official,designated,permissive,destination,delivery,private,no" />
+                <!-- <combo key="motorcar" text="Motorcar" values="yes,designated,no" default="no" /> -->
+    </optional>
+    </item>
+    
+		<group name="surface=*" icon="asphalt.png">
+			<item name="asphalt" es.name="асфальт" icon="asphalt.png" type="way">
+            <key key="surface" value="asphalt" />
+			</item>
+    
+			<item name="concrete" es.name="бетон" icon="concrete.png" type="way">
+					<key key="surface" value="concrete" />
+			</item>
+    
+			<item name="paving_stones" es.name="брусчатка" icon="paving_stones.png" type="way">
+					<key key="surface" value="paving_stones" />
+			</item>
+    
+			<item name="gravel" es.name="гравий" icon="gravel.png" type="way">
+					<key key="surface" value="gravel" />
+			</item>
+    
+			<item name="wood" es.name="дерево" icon="wood.png" type="way">
+					<key key="surface" value="wood" />
+			</item>
+    
+			<item name="dirt" es.name="земля" icon="dirt.png" type="way">
+					<key key="surface" value="dirt" />
+			</item>
+    
+			<item name="sand" es.name="песок" icon="sand.png" type="way">
+					<key key="surface" value="sand" />
+			</item>
+    
+			<item name="grass" es.name="трава" icon="grass.png" type="way">
+			<key key="surface" value="grass" />
+			</item>
+		</group>
+                
+		<group name="additional" es.name="дополнительно" icon="bridge.png">
+			
+			<item name="bridge" es.name="мост" icon="bridge.png" type="way">
+            <key key="bridge" value="yes" />
+            <key key="layer" value="1" />
+			</item>
+    
+			<item name="tunnel" es.name="тоннель" icon="tunnel.png" type="way">
+            <key key="tunnel" value="yes" />
+            <key key="layer" value="-1" />
+			</item>
+		</group>
+	</group>
+	
+<group name="B.Traffic_signals" es.name="B.Traffic_signals" icon="ES_traffic_sign_dir.png">
+
+	<item name="DIRECTION" es.name="Sentido" icon="ES_traffic_sign_dir.png" type="node,way,relation">
+	<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+	</item>
+
+    <group name="Danger" es.name="Peligro" icon="ES_p50.png">
+	
+		<group name="CROSS" es.name="CRUCE" icon="ES_p1.png">
+		    <group name="PRIORITY" es.name="PRIORIDAD" icon="ES_r3.png">
+				
+				<item name="PRIORITY" es.name="PRIORIDAD" icon="ES_r3.png" type="node,way,relation">
+				<key key="traffic_sign" value="ES:r3" />
+						<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+				</item>
+				
+				<item name="END_PRIORITY" es.name="Final de Prioridad" icon="ES_r4.png" type="node,way,relation">
+				<key key="traffic_sign" value="ES:r4" />
+						<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+				</item>	 	        
+			</group>
+			
+		<item name="CROSS" es.name="Cruce con prioridad" icon="ES_p1.png" type="node,way,relation">
+		<key key="traffic_sign" value="ES:p1" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+		</item>
+		
+		<item name="CROSS_RIGHT" es.name="Cruce por la derecha" icon="ES_p1a.png" type="node,way,relation">
+		<key key="traffic_sign" value="ES:p1a" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+		</item>
+		
+		<item name="CROSS_LEFT" es.name="Cruce por la izquierda" icon="ES_p1b.png" type="node,way,relation">
+		<key key="traffic_sign" value="ES:p1b" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+		</item>
+		
+		<item name="INCORPORATION_RIGHT" es.name="Incorporación a la derecha" icon="ES_p1c.png" type="node,way,relation">
+		<key key="traffic_sign" value="ES:p1c" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+		</item>
+		
+		<item name="INCORPORATION_LEFT" es.name="Incorporación a la izquierda" icon="ES_p1d.png" type="node,way,relation">
+		<key key="traffic_sign" value="ES:p1d" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+		</item>
+		
+		<item name="NORMAL_CROSS" es.name="Cruce sin prioridad establecida" icon="ES_p2.png" type="node,way,relation">
+		<key key="traffic_sign" value="ES:p2" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+		</item>
+		
+		<item name="TRAFFIC_SIGNALS" es.name="Semáforo" icon="ES_p3.png" type="node,way,relation">
+		<key key="highway" value="traffic_signals" />
+		<key key="traffic_sign" value="ES:p3" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+		</item>	
+		
+		<item name="ROUNDABOUT" es.name="Rotonda" icon="ES_p4.png" type="node,way,relation">
+		<key key="traffic_sign" value="ES:p4" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+		</item>
+		
+	</group>
+	
+	<group name="RAILS" es.name="Vías" icon="ES_p7.png">
+    
+		<item name="TRAM" es.name="Tranvía" icon="ES_p6.png" type="node,way,relation">
+		<key key="railway" value="tram" />
+		<key key="traffic_sign" value="ES:p6" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+		</item>
+		
+		<item name="LEVEL_CROSSING" es.name="Peligro paso a nivel con barreras" icon="ES_p7.png" type="node,way,relation">
+		<key key="railway" value="level_crossing" />
+		<key key="level_crossing" value="automatic_barrier" />
+		<key key="traffic_sign" value="ES:p7" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  /></item>
+		
+		<item name="LEVEL_CROSSING_UNCONTROLLED" es.name="Peligro paso a nivel sin barreras" icon="ES_p8.png" type="node,way,relation">
+		<key key="railway" value="level_crossing" />
+		<key key="level_crossing" value="uncontrolled" />
+		<key key="traffic_sign" value="ES:p8" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  /></item>
+		
+		<item name="LEVEL_CROSSING_RIGHT_300m" es.name="paso a nivel lado derecho 300m" icon="ES_p9a.png" type="node,way,relation">
+		<key key="railway" value="level_crossing" />
+		<key key="distance" value="300" />
+		<key key="traffic_sign" value="ES:p9a" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  /></item>	
+		
+		<item name="LEVEL_CROSSING_RIGHT_200m" es.name="paso a nivel lado derecho 200m" icon="ES_p9b.png" type="node,way,relation">
+		<key key="railway" value="level_crossing" />
+		<key key="distance" value="200" />
+		<key key="traffic_sign" value="ES:p9b" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  /></item>
+		
+		<item name="LEVEL_CROSSING_RIGHT_100m" es.name="paso a nivel lado derecho 100m" icon="ES_p9c.png" type="node,way,relation">
+		<key key="railway" value="level_crossing" />
+		<key key="distance" value="100" />
+		<key key="traffic_sign" value="ES:p9c" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  /></item>
+		
+		<item name="LEVEL_CROSSING_LEFT_300m" es.name="paso a nivel lado izquierdo 300m" icon="ES_p10a.png" type="node,way,relation">
+		<key key="railway" value="level_crossing" />
+		<key key="distance" value="300" />
+		<key key="traffic_sign" value="ES:p10a" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  /></item>
+		
+		<item name="LEVEL_CROSSING_LEFT_200m" es.name="paso a nivel lado izquierdo 200m" icon="ES_p10b.png" type="node,way,relation">
+		<key key="railway" value="level_crossing" />
+		<key key="distance" value="200" />
+		<key key="traffic_sign" value="ES:p10b" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  /></item>
+	
+		<item name="LEVEL_CROSSING_LEFT_100m" es.name="paso a nivel lado izquierdo 100m" icon="ES_p10c.png" type="node,way,relation">
+		<key key="railway" value="level_crossing" />
+		<key key="distance" value="100" />
+		<key key="traffic_sign" value="ES:p10c" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  /></item>
+		
+		<item name="LEVEL_CROSSING_UNCONTROLLED_ONE RAIL" es.name="Peligro paso a nivel sin barreras una vía" icon="ES_p11.png" type="node,way,relation">
+		<key key="railway" value="level_crossing" />
+		<key key="level_crossing" value="uncontrolled" />
+		<key key="tracks" value="1" />
+		<key key="traffic_sign" value="ES:p11" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  /></item>
+		
+		<item name="LEVEL_CROSSING_UNCONTROLLED_TWO RAILS" es.name="Peligro paso a nivel sin barreras dos vías o más" icon="ES_p11a.png" type="node,way,relation">
+		<key key="railway" value="level_crossing" />
+		<key key="level_crossing" value="uncontrolled" />
+		<key key="tracks" value="2" />
+		<key key="traffic_sign" value="ES:p11a" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  /></item> 	
+	
+	</group>
+	
+	<item name="BRIDGE" es.name="Puente levadizo" icon="ES_p5.png" type="node,way,relation">
+	<key key="bridge" value="drawbridge" />
+    <key key="traffic_sign" value="ES:p5" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  /></item>
+	
+	<item name="AERODROME" es.name="Aeropuerto" icon="ES_p12.png" type="node,way,relation">
+	<key key="aeroway" value="aerodrome" />
+    <key key="traffic_sign" value="ES:p12" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  /></item>
+    
+		<group name="LANE" es.name="CALZADA" icon="ES_p17.png">
+		
+            <item name="CURVE_RIGHT" es.name="curva a la derecha" icon="ES_p13a.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p13a" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+	<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  /></item>
+			
+			<item name="CURVE_LEFT" es.name="curva a la izquierda" icon="ES_p13b.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p13b" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="CURVE_RIGHT_LEFT" es.name="curva a la derecha e izquierda" icon="ES_p14a.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p14a" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="CURVE_LEFT_RIGHT" es.name="curva a la izquierda y derecha" icon="ES_p14b.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p14b" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="RUMBLE_STRIP" es.name="Badenes" icon="ES_p15.png" type="node,way,relation">
+			<key key="traffic_calming" value="rumble_strip" />
+            <key key="traffic_sign" value="ES:p15" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="BUMP" es.name="Badén" icon="ES_p15a.png" type="node,way,relation">
+			<key key="traffic_calming" value="bump" />
+            <key key="traffic_sign" value="ES:p15a" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="BACHE" es.name="Bache" icon="ES_p15b.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p15b" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="INCLINE" es.name="Pendiente" icon="ES_p16a.png" type="way">
+			<label text="% de Pendiente .Positivo si es subida, negativo si es bajada.Símbolo % al final" />
+            <text key="incline" text="" />
+            <key key="traffic_sign" value="ES:p16a" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="NARROW" es.name="Estrechamiento calzada" icon="ES_p17.png" type="node,way,relation">
+            <key key="narrow" value="yes" />
+			<key key="traffic_sign" value="ES:p17" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+				<group name="PRIORITY" es.name="Prioridad" icon="ES_r6.png">
+				
+					<item name="BACKWARD" es.name="Paso estrecho sin prioridad" icon="ES_r5.png" type="node,way,relation">
+					<key key="traffic_sign" value="ES:r5" />
+					<key key="priority" value="backward" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+					
+					<item name="FORWARD" es.name="Paso estrecho con prioridad" icon="ES_r6.png" type="node,way,relation">
+					<key key="traffic_sign" value="ES:r6" />
+					<key key="priority" value="forward" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+					
+				</group>
+				
+			<item name="NARROW_right" es.name="Estrechamiento calzada derecha" icon="ES_p17a.png" type="node,way,relation">
+            <key key="narrow" value="yes" />
+			<key key="traffic_sign" value="ES:p17a" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="NARROW_left" es.name="Estrechamiento calzada izquierda" icon="ES_p17b.png" type="node,way,relation">
+            <key key="narrow" value="yes" />
+			<key key="traffic_sign" value="ES:p17b" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="BAD WEATHER" es.name="Calzada deslizante" icon="ES_p19.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p19" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="FOG" es.name="Niebla" icon="ES_p33.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p33" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="ICE" es.name="Hielo" icon="ES_p34.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p34" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="WINDSOCK" es.name="Viento lateral" icon="ES_p29.png" type="node,way,relation">
+            <key key="aeroway" value="windsock" />
+            <key key="traffic_sign" value="ES:p29" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="TWO_WAYS" es.name="Doble sentido" icon="ES_p25.png" type="node,way,relation">
+			<key key="oneway" value="no" />
+            <key key="traffic_sign" value="ES:p25" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="DOCK" es.name="Muelle sin proteger" icon="ES_p27.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p27" />
+			<key key="waterway" value="dock" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+		</group>
+		
+		<group name="THINGS_OF_THE_WAY" es.name="Cosas en la vía" icon="ES_p23.png">
+		
+        	<item name="PEDESTRIAN" es.name="Peatones" icon="ES_p20.png" type="node,way,relation">
+            <key key="highway" value="passing_place" />            
+			<key key="traffic_sign" value="ES:p20" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="SCHOOL" es.name="Escuela" icon="ES_p21.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p21" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="CYCLEWAY" es.name="Ciclistas" icon="ES_p22.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p22" />            
+			<key key="cycleway" value="lane" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="DOMESTIC_ANIMALS" es.name="Animales domésticos" icon="ES_p23.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p23" />
+			<key key="route" value="horse" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="FOREST_ANIMALS" es.name="Animales en libertad" icon="ES_p24.png" type="node,way,relation">
+			<key key="boundary" value="protected_area" />
+            <key key="traffic_sign" value="ES:p24" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="ROCKS" es.name="Desprendimientos" icon="ES_p26.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p26" />
+			<key key="natural" value="scree" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="GRAVEL" es.name="Gravilla suelta" icon="ES_p28.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p287" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="TRAFFIC_JAM" es.name="Atasco" icon="ES_p31.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p31" />
+			<key key="jams" value="yes" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="INDEFINITION" es.name="Indefinido" icon="ES_p50.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:p50" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+		</group>
+
+    </group>
+	
+	<item name="Stop" es.name="STOP" icon="ES_r2.png" type="node,way,relation">
+	<key key="highway" value="stop" />
+				<combo text="Hacia" key="direction" values="both,forward,backward"  default="forward" delete_if_empty="true" />
+			<combo text="Lado" key="side" values="both,right,left,up,down"  default="right" delete_if_empty="true" />
+			</item>
+	
+	<item name="Give Way / Yield" es.name="CEDA EL PASO" icon="ES_r1.png" type="node,way,relation">
+    <key key="highway" value="give_way" />
+	<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+    
+		<group name="FORBIDDEN" es.name="PROHIBICIÓN" icon="ES_r100.png">
+		
+			<item name="ACCES-NO" es.name="Prohibido vehículos" icon="ES_r100.png" type="node,way,relation">
+			<key key="access" value="no" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="ONEWAY" es.name="Dirección prohibida" icon="ES_r101.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:r101" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+						
+			<item name="DISTANCE" es.name="mantener una distancia más pequeña de" icon="ES_r300.png" type="node,way,relation">
+            <key key="traffic_sign" value="ES:r300" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+				<group name="VEHICLE" es.name="VEHÍCULOS" icon="ES_r103.png">
+				
+					<item name="MOTOR-NO" es.name="Prohibido vehículos con motor" icon="ES_r102.png" type="node,way,relation">
+					<key key="motor_vehicle" value="no" />
+					<key key="traffic_sign" value="ES:r102" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+					
+					<item name="CAR" es.name="Prohibido automóviles" icon="ES_r103.png" type="node,way,relation">
+					<key key="motorcar" value="no" />
+					<key key="traffic_sign" value="ES:r103" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+					
+					<item name="MOTORCYCLE" es.name="Prohibido motocicletas" icon="ES_r104.png" type="node,way,relation">
+					<key key="motorcycle" value="no" />
+					<key key="traffic_sign" value="ES:r104" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+					
+					<item name="CYCLOMOTOR" es.name="Prohibido ciclomotores" icon="ES_r105.png" type="node,way,relation">
+					<key key="traffic_sign" value="ES:r105" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+					
+					<item name="TRUCK" es.name="Prohibido camiones" icon="ES_r106.png" type="node,way,relation">
+					<key key="hgv" value="no" />
+					<key key="traffic_sign" value="ES:r106" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+					
+					<item name="MAX_WEIGHT" icon="ES_r107.png" >
+					<text key="maxweight" text="Peso máximo autorizado" />
+					<key key="traffic_sign" value="ES:r107" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>				
+				
+					<item name="DANGER MERCADERIES" es.name="Prohibido mercancías peligrosas" icon="ES_r108.png" type="node,way,relation">
+					<key key="hazmat" value="no" />
+					<key key="traffic_sign" value="ES:r108" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+					
+					<item name="WATER DANGER MERCADERIES" es.name="Prohibido mercancías contaminantes del agua" icon="ES_r109.png" type="node,way,relation">
+					<key key="traffic_sign" value="ES:r109" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+
+					<item name="FIRE DANGER MERCADERIES" es.name="Prohibido mercancías peligrosas" icon="ES_r110.png" type="node,way,relation">
+					<key key="traffic_sign" value="ES:r110" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+					<item name="TRACTORS" es.name="Prohibido tractores" icon="ES_r111.png" type="node,way,relation">
+					<key key="agricultural" value="no" />
+					<key key="traffic_sign" value="ES:r111" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+					<item name="MAX_AXLE_LOAD" icon="ES_r112.png" >
+					<text key="maxaxleload" text="Peso máximo autorizado en el remolque" />
+					<key key="traffic_sign" value="ES:r107" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>					
+					
+					<item name="HORSE_CAR" es.name="Prohibido carros" icon="ES_r113.png" type="node,way,relation">
+					<key key="traffic_sign" value="ES:r113" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+										
+					<item name="BICYCLES" es.name="Prohibido bicicletas" icon="ES_r114.png" type="node,way,relation">
+					<key key="bicycle" value="no" />
+					<key key="traffic_sign" value="ES:r114" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+					<item name="FOOT_CAR" es.name="Prohibido carros a mano" icon="ES_r115.png" type="node,way,relation">
+					<key key="traffic_sign" value="ES:r115" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>										
+															
+					<item name="PEDESTRIANS" es.name="Prohibido peatones" icon="ES_r116.png" type="node,way,relation">
+					<key key="foot" value="no" />
+					<key key="traffic_sign" value="ES:r116" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+										
+					<item name="HORSES" es.name="Prohibido caballos" icon="ES_r117.png" type="node,way,relation">
+					<key key="horse" value="no" />
+					<key key="traffic_sign" value="ES:r117" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+					<item name="MAX_WEIGTH" icon="ES_r201.png" >
+					<text key="maxweigth" text="Peso máximo autorizado" />
+					<key key="traffic_sign" value="ES:r201" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>					
+					
+					<item name="MAX_AXLE_LOAD" icon="ES_r202.png" >
+					<text key="maxaxleload" text="Peso máximo autorizado en el remolque" />
+					<key key="traffic_sign" value="ES:r202" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>					
+										
+					<item name="MAX_LENGTH" icon="ES_r203.png" >
+					<text key="maxlength" text="Largo máximo autorizado" />
+					<key key="traffic_sign" value="ES:r203" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>					
+										
+					<item name="MAX_WIDTH" icon="ES_r204.png" >
+					<text key="maxwidth" text="Ancho máximo autorizado" />
+					<key key="traffic_sign" value="ES:r204" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>					
+										
+					<item name="MAX_HEIGHT" icon="ES_r205.png" >
+					<text key="maxwheight" text="Peso máximo autorizado" />
+					<key key="traffic_sign" value="ES:r205" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>					
+					
+				</group>
+
+				<item name="MAXSPEED" icon="ES_r301-50.png" >
+				<text key="maxspeed" text="Velocidad" />
+				<text key="maxspeed:forward" text="A rellenar si la velocidad en el sentido de la vía es diferente" delete_if_empty="true" />
+				<text key="maxspeed:backward" text="A rellenar si la velocidad en el sentido contrario de la vía es diferente" delete_if_empty="true" />
+				<key key="traffic_sign" value="maxspeed" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>			
+				
+				<group name="DIRECTION" es.name="DIRECCIÓN" icon="ES_r302.png">
+            
+					<item name="NO_RIGHT_TURN" icon="ES_r302.png" >
+					<key key="restriction" value="no_right_turn" />
+					<key key="traffic_sign" value="ES:r302" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>					
+					
+					<item name="NO_LEFT_TURN" icon="ES_r303.png" >
+					<key key="restriction" value="no_left_turn" />
+					<key key="traffic_sign" value="ES:r303" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>					
+										
+					<item name="NO_U_TURN" icon="ES_r304.png" >
+					<key key="restriction" value="no_u_turn" />
+					<key key="traffic_sign" value="ES:r304" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>					
+			
+				</group>
+
+			<item name="OVERTAKING" icon="ES_r305.png" >
+			<combo text="Adelantar permitido?" key="overtaking" values="yes,no,both,forward,backward" default="no" delete_if_empty="true" />
+			<combo text="Fácil?" key="easy_overtaking" values="both,forward,backward" delete_if_empty="true" />
+			<check key="overtaking:hgv" text="Camiones?" value_on="no" default="off" delete_if_empty="true" />
+			<combo text="Hacia" key="direction" values="both,forward,backward"  default="forward" delete_if_empty="true" />
+			<combo text="Lado" key="side" values="both,right,left,up,down"  default="both" delete_if_empty="true" />
+			<key key="traffic_sign" value="overtaking" />
+			</item>	
+			          
+            <group name="PARKING" es.name="APARCAR" icon="ES_r308.png">
+			
+				<item name="NO_STOPPING" icon="ES_r307.png" >
+				<label text="SIDE" es.text="¿Qué lado de la calle vas a mapear?" />
+				<check key="parking_lane:right" text="Lado derecho de la calle" value_on="no_stopping" default="off" delete_if_empty="true" />
+				<check key="parking_lane:left" text="Lado izquierdo de la calle" value_on="no_stopping" default="off" delete_if_empty="true" />
+				<key key="traffic_sign" value="ES:r307" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+				
+				<item name="NO_PARKING" icon="ES_r308.png" >
+				<label text="SIDE" es.text="¿Qué lado de la calle vas a mapear?" />
+				<check key="parking_lane:right" text="Lado derecho de la calle" value_on="no_parking" default="off" delete_if_empty="true" />
+				<check key="parking_lane:left" text="Lado izquierdo de la calle" value_on="no_parking" default="off" delete_if_empty="true" />
+				<key key="traffic_sign" value="ES:r308" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+            </group>
+			
+			<item name="SNOOZE" es.name="Cláxon" icon="ES_r310.png" type="node,way,relation">
+			<key key="traffic_sign" value="ES:r310" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+		</group>
+		<group name="SPEED" es.name="VELOCIDAD" icon="ES_s7.png">
+			
+			<item name="MAXSPEED" icon="ES_r301-50.png" >
+			<text key="maxspeed" text="Velocidad" />
+			<key key="traffic_sign" value="maxspeed" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="MINSPEED" es.name="Velocidad mínima" icon="ES_r411.png" type="node,way">
+			<text key="minspeed" text="Velocidad mínima" />
+			<key key="traffic_sign" value="ES:r411" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="END LIMIT SPEED" es.name="Fin Límite velocidad" icon="ES_r501.png" type="node,way">
+			<key key="maxspeed" value="implicit" />
+			<key key="traffic_sign" value="maxspeed" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="RECOMMEND_SPEED" es.name="Velocidad recomendada" icon="ES_s7.png" >
+			<text key="recommend_speed" text="Velocidad recomendada" />
+			<key key="traffic_sign" value="ES:s7" />
+			<combo key="traffic_sign" text="Si has añadido un intérvalo escoje s9" values="ES:s7,ES:s9" default="ES:s7" delete_if_empty="true" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+			<item name="END RECOMMEND_SPEED" es.name="Final Velocidad recomendada" icon="ES_s8.png" type="node,way">
+			<key key="traffic_sign" value="ES:s8" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+				
+			<item name="END RECOMMEND_SPEED INTERVAL" es.name="Final Intérvalo velocidad recomendada" icon="ES_s10.png" type="node,way">
+			<key key="traffic_sign" value="ES:s10" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+
+			<item name="LIVING STREET" es.name="Zona residencial" icon="ES_s28.png" type="node,way">
+			<key key="highway" value="living_street" />
+			<key key="traffic_sign" value="ES:s28" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="END LIVING STREET" es.name="Fin Zona residencial" icon="ES_s29.png" type="node,way">
+			<key key="traffic_sign" value="ES:s29" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="ZONA 30" es.name="Zona 30" icon="ES_s30.png" type="node,way">
+			<key key="maxspeed" value="30" />
+			<key key="source:maxspeed" value="zone" />
+			<key key="traffic_sign" value="maxspeed" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+			
+			<item name="END ZONA 30" es.name="Fin Zona 30" icon="ES_s31.png" type="node,way">
+			<key key="traffic_sign" value="ES:s31" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>
+		
+		</group>
+		
+		<group name="DETENTION" es.name="DETENCIÓN" icon="ES_r200.png">
+ 										
+			<item name="BORDER_CONTROL" es.name="Aduana" icon="ES_r200.png" type="node,way,relation">
+			<key key="barrier" value="border_control" />
+			<key key="traffic_sign" value="ES:r200" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+       						
+			<item name="TOLL" es.name="Peaje" icon="ES_r200a.png" type="node,way,relation">
+			<key key="barrier" value="toll_booth" />
+			<key key="traffic_sign" value="ES:r200a" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+       		
+		</group>
+		<group name="OBLIGATION" es.name="OBLIGACIÓN" icon="ES_r401e.png">
+            
+			<group name="DIRECTION" es.name="DIRECCIÓN" icon="ES_r401e.png">
+			
+			<item name="ONLY_RIGHT_TURN" es.name="Sentido obligatorio a la derecha" icon="ES_r400a.png" type="node,way,relation">
+			<key key="restriction" value="only_right_turn" />
+			<key key="traffic_sign" value="ES:r400a" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+						
+			<item name="ONLY_LEFT_TURN" es.name="Sentido obligatorio a la izquierda" icon="ES_r400b.png" type="node,way,relation">
+			<key key="restriction" value="only_left_turn" />
+			<key key="traffic_sign" value="ES:r400b" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+						
+			<item name="ONLY_STRAIGHT_ON" es.name="Sentido obligatorio recto" icon="ES_r400c.png" type="node,way,relation">
+			<key key="restriction" value="only_straight_on" />
+			<key key="traffic_sign" value="ES:r400c" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+						
+			<item name="ONLY_RIGHT_TURN" es.name="Sentido obligatorio hacia la derecha" icon="ES_r400d.png" type="node,way,relation">
+			<key key="restriction" value="only_right_turn" />
+			<key key="traffic_sign" value="ES:r400d" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+						
+			<item name="ONLY_LEFT_TURN" es.name="Sentido obligatorio hacia la izquierda" icon="ES_r400e.png" type="node,way,relation">
+			<key key="restriction" value="only_left_turn" />
+			<key key="traffic_sign" value="ES:r400e" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+						
+			<item name="ONLY_RIGHT_TURN" es.name="Sentido obligatorio por la derecha" icon="ES_r401e.png" type="node,way,relation">
+			<key key="restriction" value="only_right_turn" />
+			<key key="traffic_sign" value="ES:r401a" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+						
+			<item name="ONLY_LEFT_TURN" es.name="Sentido obligatorio a la izquierda" icon="ES_r401d.png" type="node,way,relation">
+			<key key="restriction" value="only_left_turn" />
+			<key key="traffic_sign" value="ES:r401b" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+									
+			<item name="ROUNDABOUT" es.name="Rotonda" icon="ES_r402.png" type="node,way,relation">
+			<key key="junction" value="roundabout" />
+			<key key="oneway" value="yes" />
+			<key key="traffic_sign" value="ES:r402" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+				
+            </group>
+			
+            <group name="VEHICLE" es.name="VEHÍCULOS" icon="ES_r404.png">
+			
+			<item name="MOTORCAR" es.name="Obligatorio automóviles" icon="ES_r404.png" type="node,way">
+			<key key="motorcar" value="designated" />
+			<key key="traffic_sign" value="ES:r404" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+			<item name="MOTORCYCLE" es.name="Obligatorio motocicletas" icon="ES_r405.png" type="node,way">
+			<key key="motorcycle" value="designated" />
+			<key key="traffic_sign" value="ES:r405" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+			<item name="TRUCKS" es.name="Obligatorio camiones" icon="ES_r406.png" type="node,way">
+			<key key="hgv" value="designated" />
+			<key key="traffic_sign" value="ES:r406" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+												
+			<item name="DANGER" es.name="Mercancías peligrosas" icon="ES_r414.png" type="node,way">
+			<key key="traffic_sign" value="ES:r414" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+									
+			<item name="WATER" es.name="Contaminantes del agua" icon="ES_r412.png" type="node,way">
+			<key key="traffic_sign" value="ES:r415" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+									
+			<item name="EXPLOSIVE" es.name="mercancías explosivas o inflamables" icon="ES_r416.png" type="node,way">
+			<key key="traffic_sign" value="ES:r416" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>				
+			
+			<item name="BICYCLE" es.name="Obligatorio bicicicletas" icon="ES_r407.png" type="node,way">
+			<key key="bicycle" value="designated" />
+			<key key="traffic_sign" value="ES:r407" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+			<item name="END BIKE LANE" es.name="Fin Carril bici" icon="ES_r505.png" type="node,way">
+			<key key="traffic_sign" value="ES:r505" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+
+			<item name="REC BIKE" es.name="Recomendado bici" icon="ES_s33.png" type="node,way">
+			<key key="traffic_sign" value="ES:s33" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="BRIDLEWAY" es.name="Obligatorio carros" icon="ES_r408.png" type="node,way">
+			<key key="highway" value="bridleway" />
+			<key key="traffic_sign" value="ES:r408" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>				
+			
+			<item name="PEDESTRIAN" es.name="Obligatorio peatones" icon="ES_r410.png" type="node,way">
+			<key key="highway" value="pedestrian" />
+			<key key="traffic_sign" value="ES:r410" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>						
+			
+            </group>
+			
+			<item name="SPEED" es.name="Velocidad mínima" icon="ES_r411.png" type="node,way">
+			<text key="minspeed" text="Velocidad mínima" />
+			<key key="traffic_sign" value="ES:r411" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+						
+			<item name="STRINGS" es.name="Cadenas" icon="ES_r412.png" type="node,way">
+			<key key="traffic_sign" value="ES:r412" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+									
+			<item name="LIGHTS" es.name="Luz de cruce" icon="ES_r413.png" type="node,way">
+			<key key="traffic_sign" value="ES:r413" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+			<item name="END LIGHTS" es.name="Fin de luz de cruce" icon="ES_s24.png" type="node,way">
+			<key key="traffic_sign" value="ES:s24" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+													
+			<item name="BELT" es.name="Cinturón seguridad" icon="ES_r417.png" type="node,way">
+			<key key="traffic_sign" value="ES:r417" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+
+		</group>
+		
+        <group name="END" es.name="FIN" icon="ES_r500.png">
+										
+			<item name="FORBIDDEN" es.name="Prohibiciones" icon="ES_r500.png" type="node,way">
+			<key key="maxspeed" value="implicit" />
+			<key key="overtaking" value="yes" />
+			<key key="traffic_sign" value="maxspeed;overtaking" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+										
+			<item name="SPEED" es.name="Límite velocidad" icon="ES_r501.png" type="node,way">
+			<key key="maxspeed" value="implicit" />
+			<key key="traffic_sign" value="maxspeed" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>					
+												
+			<item name="OVERTAKING" es.name="Adelantar" icon="ES_r502.png" type="node,way">
+			<key key="overtaking" value="yes" />
+			<key key="traffic_sign" value="overtaking" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+												
+			<item name="OVERTAKING HGV" es.name="Adelantar camiones" icon="ES_r503.png" type="node,way">
+			<key key="overtaking:hgv" value="yes" />
+			<key key="traffic_sign" value="ES:r503" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+																	
+			<item name="PARKING HOUR" es.name="Estacionamiento controlado" icon="ES_r504.png" type="node,way">
+			<key key="traffic_sign" value="ES:r504" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+																			
+        </group>
+		
+        <group name="INFORMATION" es.name="INFORMACIÓN" icon="ES_s122.png">
+																	
+			<item name="TUNNEL" es.name="Túnel" icon="ES_s5.png" type="node,way">
+			<text key="name" text="Nombre del túnel" />
+			<key key="traffic_sign" value="ES:s5" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+
+			<item name="END TUNNEL" es.name="Final Túnel" icon="ES_s6.png" type="node,way">
+			<key key="traffic_sign" value="ES:s6" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+							
+			<item name="CROSSING" es.name="Paso de peatones" icon="ES_s13.png" type="node,way,relation">
+			<key key="highway" value="crossing" />
+			<key key="traffic_sign" value="ES:s13" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+       		
+			<item name="STEPS" es.name="Escaleras superiores" icon="ES_s14a.png" type="node,way,relation">
+			<key key="highway" value="steps" />
+			<key key="traffic_sign" value="ES:s14a" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+		
+			<item name="STEPS" es.name="Escaleras inferiores" icon="ES_s14b.png" type="node,way,relation">
+			<key key="highway" value="steps" />
+			<key key="traffic_sign" value="ES:s14b" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+			<item name="ESCAPE" es.name="Zona de Frenado de Emergencia" icon="ES_s16.png" type="node,way,relation">
+			<key key="highway" value="escape" />
+			<key key="traffic_sign" value="ES:s16" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+			<item name="PORT" es.name="Condiciones para pasar el puerto" icon="ES_s21.png" type="node,way,relation">
+			<key key="traffic_sign" value="ES:s21" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+			<item name="CHANGE" es.name="Cambio de sentido" icon="ES_s22.png" type="node,way,relation">
+			<text key="distance" text="Distancia" default="" delete_if_empty="true" />
+			<key key="traffic_sign" value="ES:s22" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+		
+		
+            <group name="LANES" es.name="CARRILES" icon="ES_s11a.png">
+					
+			<item name="ONEWAY ONE LANE" es.name="Sentido único" icon="ES_s11.png" type="node,way">
+			<key key="oneway" value="yes" />
+			<key key="lanes" value="1" />
+			<key key="traffic_sign" value="ES:s11" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+<item name="ONEWAY TWO LANES" es.name="Doble carril" icon="ES_s11a.png" type="node,way">
+			<key key="oneway" value="yes" />
+			<key key="lanes" value="2" />
+			<key key="traffic_sign" value="ES:s11a" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="ONEWAY THREE LANES" es.name="Tres carriles" icon="ES_s11b.png" type="node,way">
+			<key key="oneway" value="yes" />
+			<key key="lanes" value="3" />
+			<key key="traffic_sign" value="ES:s11b" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="ONEWAY STREET" es.name="Calle de dirección única" icon="ES_s12.png" type="node,way">
+			<key key="traffic_sign" value="ES:s12" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+                <group name="FAST-LOW" es.name="Rápidos-Lentos" icon="ES_s50a.png">
+				
+					<item name="FAST LANE" es.name="Carril para vehículos rápidos" icon="ES_s50a.png" type="node,way,relation">
+					<text key="minspeed:lanes:forward" text="Velocidad mínima exigida" delete_if_empty="true" default="70|" />
+					<key key="lanes" value="3" />
+					<key key="turn:lanes:forward" value="slight_left|through" />
+					<key key="lanes:forward" value="2" />
+					<key key="lanes:backward" value="1" />
+					<key key="traffic_sign" value="ES:s50a" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+					
+					<item name="LOW LANE" es.name="Carril para vehículos lentos" icon="ES_s50b.png" type="node,way,relation">
+					<text key="minspeed:lanes:forward" text="Velocidad mínima exigida" delete_if_empty="true" default="70|" />
+					<key key="lanes" value="3" />
+					<key key="turn:lanes:forward" value="through|slight_right" />
+					<key key="lanes:forward" value="2" />
+					<key key="lanes:backward" value="1" />
+					<key key="traffic_sign" value="ES:s50b" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+					<item name="NEW SECOND LANE" es.name="Surge segundo carril" icon="ES_s53.png" type="node,way,relation">
+					<key key="lanes" value="2" />
+					<key key="turn:lanes:forward" value="through|slight_right" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="2" />
+					<key key="traffic_sign" value="ES:s53" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+					<item name="NEW THIRD LANE" es.name="Surge tercer carril" icon="ES_s53b.png" type="node,way,relation">
+					<key key="lanes" value="3" />
+					<key key="turn:lanes:forward" value="through|through|slight_right" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="3" />
+					<key key="lanes:backward" value="0" />
+					<key key="traffic_sign" value="ES:s53b" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+					<item name="CONT LOW LANE" es.name="Continuación carril para vehículos lentos" icon="ES_s50d.png" type="node,way,relation">
+					<text key="minspeed:lanes:forward" text="Velocidad mínima exigida" delete_if_empty="true" default="70|" />
+					<key key="lanes" value="3" />
+					<key key="turn:lanes:forward" value="through|through" />
+					<key key="lanes:forward" value="2" />
+					<key key="lanes:backward" value="1" />
+					<key key="traffic_sign" value="ES:s50d" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+				
+					<item name="LOW LANE MOTORWAY" es.name="Carril para vehículos lentos en autopista" icon="ES_s50c.png" type="node,way,relation">
+					<text key="minspeed:lanes:forward" text="Velocidad mínima exigida" delete_if_empty="true" default="70|70|" />
+					<key key="lanes" value="3" />
+					<key key="turn:lanes:forward" value="through|through|slight_right" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="3" />
+					<key key="lanes:backward" value="0" />
+					<key key="traffic_sign" value="ES:s50c" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+					<item name="CONT LOW LANE MOTORWAY" es.name="Continuación carril para vehículos lentos en autopista" icon="ES_s50e.png" type="node,way,relation">
+					<text key="minspeed:lanes:forward" text="Velocidad mínima exigida" delete_if_empty="true" default="70|70|" />
+					<key key="lanes" value="3" />
+					<key key="oneway" value="yes" />
+					<key key="turn:lanes:forward" value="through|through|through" />
+					<key key="lanes:forward" value="3" />
+					<key key="lanes:backward" value="0" />
+					<key key="traffic_sign" value="ES:s50e" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+				</group>
+            
+				<group name="END" es.name="Acaban" icon="ES_s52a.png">
+				
+					<item name="END THIRD LANE" es.name="Finalización tercer carril" icon="ES_s52.png" type="node,way,relation">
+					<key key="lanes" value="3" />
+					<key key="oneway" value="yes" />
+					<key key="turn:lanes:forward" value="through|through|merge_to_left" />
+					<key key="lanes:forward" value="3" />
+					<key key="lanes:backward" value="0" />
+					<key key="traffic_sign" value="ES:s52" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+				
+					<item name="END SECOND LANE RIGHT" es.name="Fin del segundo carril derecho en vía de doble sentido" icon="ES_s52a.png" type="node,way,relation">
+					<key key="lanes" value="3" />
+					<key key="turn:lanes:forward" value="through|merge_to_left" />
+					<key key="lanes:forward" value="2" />
+					<key key="lanes:backward" value="1" />
+					<key key="traffic_sign" value="ES:s52a" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+					<item name="END SECOND LANE LEFT" es.name="Fin del segundo carril izquierdo en vía de doble sentido" icon="ES_s52b.png" type="node,way,relation">
+					<key key="lanes" value="3" />
+					<key key="turn:lanes:forward" value="merge_to_right|through" />
+					<key key="lanes:forward" value="2" />
+					<key key="lanes:backward" value="1" />
+					<key key="traffic_sign" value="ES:s52b" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+									
+				</group>
+				
+				<item name="CYCLE LANE" es.name="Carril derecho para las bicicletas" icon="ES_s64b.png" type="node,way,relation">
+				<key key="lanes:forward" value="3" />
+				<key key="oneway" value="yes" />
+				<key key="cycleway" value="lane" />
+				<key key="traffic_sign" value="ES:s64b" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+				
+				<item name="CYCLE LANE IN STREET" es.name="Carril derecho para las bicicletas en vía de doble sentido" icon="ES_s64a.png" type="node,way,relation">
+				<key key="cycleway:right" value="lane" />
+				<key key="lanes:forward" value="2" />
+				<key key="lanes:backward" value="1" />
+				<key key="traffic_sign" value="ES:s64a" />
+				<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+				
+			</group>
+			
+        <group name="CULDESAC" es.name="Calle cortada" icon="ES_s15a.png">
+        
+			<item name="CULDESAC" es.name="Calle cortada" icon="ES_s15a.png" type="node,way,relation">
+			<key key="noexit" value="yes" />
+			<key key="traffic_sign" value="ES:s15a" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+		
+			<item name="CULDESAC LEFT" es.name="A la izquierda calle cortada" icon="ES_s15b.png" type="node,way,relation">
+			<key key="traffic_sign" value="ES:s15b" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+			<item name="CULDESAC LINK" es.name="Calle adjacente cortada" icon="ES_s15c.png" type="node,way,relation">
+			<key key="traffic_sign" value="ES:s15c" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+			<item name="CULDESAC OTHER" es.name="Desvíos" icon="ES_s15d.png" type="node,way,relation">
+			<key key="traffic_sign" value="ES:s15d" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+											
+		</group>
+		
+        <group name="PARKING" es.name="Aparcamiento" icon="ES_s17.png">
+		
+			<item name="PARKING" es.name="Aparcamiento" icon="ES_s17.png" type="node,way,relation">
+			<key key="amenity" value="parking" />
+			<key key="traffic_sign" value="ES:s17" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+		
+		
+        </group>
+		
+        <group name="TRANSPORTS" es.name="Transporte" icon="ES_s19.png">
+			<item name="BUS STOP" es.name="Parada de Bus" type="node,relation,way">
+			<key key="highway" value="bus_stop" />
+			<text key="name" text="name stop" es.text="Nombre parada" delete_if_empty="true" default="" />
+			<text key="ref" text="reference stop" es.text="Referencia parada" delete_if_empty="true" default="" />
+			<text key="network" text="network" es.text="Red de la parada" delete_if_empty="true" default="" />
+			<text key="operator" text="operator" es.text="Empresa operadora" delete_if_empty="true" default="" />
+			<optional>
+			<check key="bench" text="Banco?" value_on="yes" default="off" delete_if_empty="true" />
+			<check key="shelter" text="Cubierta?" value_on="yes" default="off" delete_if_empty="true" />
+			<check key="tactile_paving" text="Pavimento táctil?" value_on="yes" default="off" delete_if_empty="true" />
+			</optional>
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="TRAM" es.name="Parada de tranvía" icon="ES_s20.png" type="node,way,relation">
+			<key key="railway" value="tram_stop" />
+			<key key="traffic_sign" value="ES:s20" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+		
+
+		</group>
+			<item name="DOCTORS" es.name="Sanidad" icon="ES_s23.png" type="node,way,relation">
+			<combo key="amenity" text="Tipo de centro" values="hospital,doctors,clinic" default="hospital" delete_if_empty="true" />
+			<key key="traffic_sign" value="ES:s23" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+			<item name="ITV" es.name="ITV" icon="ES_s102.png" type="node,way,relation">
+			<key key="traffic_sign" value="ES:s102" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+			<item name="MECHANIC" es.name="Taller mecánico" icon="ES_s103.png" type="node,way,relation">
+			<key key="shop" value="hardware" />
+			<key key="traffic_sign" value="ES:s103" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+			<item name="TELEPHONE" es.name="Teléfono" icon="ES_s104.png" type="node,way,relation">
+			<key key="amenity" value="telephone" />
+			<key key="traffic_sign" value="ES:s104" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>					
+			
+			<item name="FUEL" es.name="Gasolinera" icon="ES_s105.png" type="node,way,relation">
+			<key key="amenity" value="fuel" />
+			<key key="traffic_sign" value="ES:s105" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+						
+			<item name="FUEL MECHANIC" es.name="Gasolinera y Taller mecánico" icon="ES_s106.png" type="node,way,relation">
+			<key key="amenity" value="fuel" />
+			<key key="shop" value="hardware" />
+			<key key="traffic_sign" value="ES:s106" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="SPRING" es.name="Fuente" icon="ES_s108.png" type="node,way,relation">
+			<key key="natural" value="spring" />
+			<key key="traffic_sign" value="ES:s108" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+
+			<item name="VIEWPOINT" es.name="Lugar paisajístico" icon="ES_s109.png" type="node,way,relation">
+			<key key="tourism" value="viewpoint" />
+			<key key="traffic_sign" value="ES:s109" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="PICNIC" es.name="Zona de pícnic" icon="ES_s114.png" type="node,way,relation">
+			<key key="traffic_sign" value="ES:s114" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="EXCURSION" es.name="Zona para el excursionismo" icon="ES_s115.png" type="node,way,relation">
+			<key key="traffic_sign" value="ES:s115" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="RESTAURANT" es.name="Restaurant" icon="ES_s111.png" type="node,way,relation">
+			<key key="amenity" value="restaurant" />
+			<key key="traffic_sign" value="ES:s111" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+			<item name="CAFE" es.name="Cafetería" icon="ES_s112.png" type="node,way,relation">
+			<key key="amenity" value="cafe" />
+			<key key="traffic_sign" value="ES:s112" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="INFORMATION POINT" es.name="Punto de información" icon="ES_s118.png" type="node,way,relation">
+			<key key="tourism" value="information" />
+			<key key="information" value="office" />
+			<key key="traffic_sign" value="ES:s118" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="FISHING" es.name="Coto de pesca" icon="ES_s119.png" type="node,way,relation">
+			<key key="leisure" value="fishing" />
+			<key key="traffic_sign" value="ES:s119" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="NATURAL RESERVE" es.name="Parque natural" icon="ES_s120.png" type="node,way,relation">
+			<key key="leisure" value="natural_reserve" />
+			<key key="traffic_sign" value="ES:s120" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="MONUMENT" es.name="Monumento" icon="ES_s121.png" type="node,way,relation">
+			<key key="historic" value="monument" />
+			<key key="traffic_sign" value="ES:s121" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			<item name="REST_AREA" es.name="Zona de descanso" icon="ES_s123.png" type="node,way,relation">
+			<key key="highway" value="rest_area" />
+			<key key="traffic_sign" value="ES:s123" />
+			<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+			
+			
+			
+			
+			
+        <group name="CAMPING-HOTEL" es.name="Alojamiento-Camping" icon="ES_s107.png">
+		
+		<item name="CAMPING" es.name="Zona de acampada" icon="ES_s107.png" type="node,way,relation">
+		<key key="tourism" value="camp_site" />
+		<key key="traffic_sign" value="ES:s107" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+		
+		<item name="CARAVAN" es.name="Lugar para caravanas" icon="ES_s113.png" type="node,way,relation">
+		<key key="tourism" value="caravan_site" />
+		<key key="traffic_sign" value="ES:s113" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+		
+		<item name="CAMPING CARAVAN" es.name="Zona de acampada incluso para autocaravanas" icon="ES_s116.png" type="node,way,relation">
+		<key key="tourism" value="caravan_site" />
+		<key key="tents" value="yes" />
+		<key key="traffic_sign" value="ES:s116" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+		
+		<item name="PERNOCTATION" es.name="Lugar de pernoctación" icon="ES_s110.png" type="node,way,relation">
+		<key key="traffic_sign" value="ES:s110" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+		
+		<item name="SITE" es.name="Albergue" icon="ES_s117.png" type="node,way,relation">
+		<key key="tourism" value="picnic_site" />
+		<key key="traffic_sign" value="ES:s117" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+		
+        </group>
+		
+		<item name="" es.name="" icon="ES_s122.png" type="node,way,relation">
+		<key key="traffic_sign" value="ES:s122" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+		
+    </group>
+	
+	<group name="MOTORWAYS" es.name="Autopistas-Autovías" icon="ES_s1.png">
+	
+		<item name="MOTORWAY" es.name="Autopista" icon="ES_s1.png" type="node,way">
+		<key key="traffic_sign" value="ES:s1" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+
+		<item name="MOTORROAD" es.name="Autovía" icon="ES_s1a.png" type="node,way">
+		<key key="traffic_sign" value="ES:s1a" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+																		
+		<item name="END MOTORWAY" es.name="Fin autopista" icon="ES_s2.png" type="node,way">
+		<key key="traffic_sign" value="ES:s2" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+
+		<item name="END MOTORROAD" es.name="Fin autovía" icon="ES_s2a.png" type="node,way">
+		<key key="traffic_sign" value="ES:s2a" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+			
+		<item name="MOTORWAY JUNCTION" es.name="Salida" icon="ES_s26a.png" type="node,way">
+		<combo key="distance" text="Distancia de la salida" values="300,200,100" default="" delete_if_empty="true" />
+		<key key="highway" value="motorway_junction" />
+		<key key="traffic_sign" value="ES:s26a" />
+<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+
+		<item name="OB VIA T" es.name="Obligado Vía T" icon="ES_r418.png" type="node,way">
+		<key key="traffic_sign" value="ES:r418" />
+<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+
+		<item name="REC VIA T" es.name="Posibilidad Vía T" icon="ES_s32.png" type="node,way">
+		<key key="traffic_sign" value="ES:s32" />
+<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+
+		<item name="SOS" es.name="Poste SOS" icon="ES_s27.png" type="node,way,relation">
+		<key key="emergency" value="phone" />
+		<key key="traffic_sign" value="ES:s27" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>		
+
+		<item name="LANE EMERGENCY" es.name="Carril de parada" icon="ES_s34.png" type="node,way,relation">
+		<key key="traffic_sign" value="ES:s34" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+		
+		<item name="LANE SOS" es.name="Carril SOS" icon="ES_s34a.png" type="node,way,relation">
+		<key key="traffic_sign" value="ES:s34a" />
+		<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+		
+		<group name="LANES" es.name="Desvían" icon="ES_s63.png">
+									
+					<item name="LEFT LANE TURNS" es.name="Carril izquierdo se desvía" icon="ES_s60a.png" type="node,way,relation">
+					<key key="lanes" value="2" />
+					<key key="turn:lanes:forward" value="slight_left|through" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="2" />
+					<key key="traffic_sign" value="ES:s60a" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+					<item name="RIGHT LANE TURNS" es.name="Carril izquierdo se desvía" icon="ES_s60b.png" type="node,way,relation">
+					<key key="lanes" value="2" />
+					<key key="turn:lanes:forward" value="through|slight_right" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="2" />
+					<key key="traffic_sign" value="ES:s60b" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+				
+					<item name="RIGHT LANE TURNS(3)" es.name="Tercer carril se desvía a la izquierda" icon="ES_s61a.png" type="node,way,relation">
+					<key key="lanes" value="3" />
+					<key key="turn:lanes:forward" value="slight_left|through|through" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="3" />
+					<key key="traffic_sign" value="ES:s61a" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+				
+					<item name="LEFT LANE TURNS(3)" es.name="Tercer carril se desvía a la derecha" icon="ES_s61b.png" type="node,way,relation">
+					<key key="lanes" value="3" />
+					<key key="turn:lanes:forward" value="through|through|slight_right" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="3" />
+					<key key="traffic_sign" value="ES:s61b" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+				
+					<item name="LEFT LANE TURNS(4)" es.name="Tercer carril se desvía a la izquierda" icon="ES_s62a.png" type="node,way,relation">
+					<key key="lanes" value="4" />
+					<key key="turn:lanes:forward" value="slight_left|through|through|through" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="4" />
+					<key key="traffic_sign" value="ES:s62a" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+				
+					<item name="RIGHT LANE TURNS(4)" es.name="Tercer carril se desvía a la derecha" icon="ES_s62b.png" type="node,way,relation">
+					<key key="lanes" value="4" />
+					<key key="turn:lanes:forward" value="through|through|through|slight_right" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="4" />
+					<key key="traffic_sign" value="ES:s62b" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+				
+					<item name="LANES TURNS TO LEFT AND RIGHT" es.name="Carriles se dividen en dos direcciones" icon="ES_s63.png" type="node,way,relation">
+					<key key="lanes" value="4" />
+					<key key="turn:lanes:forward" value="slight_left|slight_left|slight_right|slight_right" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="4" />
+					<key key="traffic_sign" value="ES:s63" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+					<item name="LOW LANE MOTORWAY" es.name="Carril para vehículos lentos en autopista" icon="ES_s50c.png" type="node,way,relation">
+					<text key="minspeed:lanes:forward" text="Velocidad mínima exigida" delete_if_empty="true" default="70|70|" />
+					<key key="lanes" value="3" />
+					<key key="turn:lanes:forward" value="through|through|slight_right" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="3" />
+					<key key="lanes:backward" value="0" />
+					<key key="traffic_sign" value="ES:s50c" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+					
+					<item name="CONT LOW LANE MOTORWAY" es.name="Continuación carril para vehículos lentos en autopista" icon="ES_s50e.png" type="node,way,relation">
+					<text key="minspeed:lanes:forward" text="Velocidad mínima exigida" delete_if_empty="true" default="70|70|" />
+					<key key="lanes" value="3" />
+					<key key="oneway" value="yes" />
+					<key key="turn:lanes:forward" value="through|through|through" />
+					<key key="lanes:forward" value="3" />
+					<key key="lanes:backward" value="0" />
+					<key key="traffic_sign" value="ES:s50e" />
+					<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+			<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+			</item>	
+								
+				</group>
+</group>
+
+
+ <group name="OTHER" es.name="ALTRES" icon="CAT_radar.png">
+ 
+<item name="PK" es.name="Punto kilométrico" icon="ES_s573.png" type="node,way,relation">
+<text key="pk" text="Punto kilométrico" delete_if_empty="true" default="" />
+<text key="ref" text="Referencia" delete_if_empty="true" default="" />
+<text key="ref:colour" text="Color de la placa de la vía" delete_if_empty="true" default="" />
+<text key="ref_int" text="Referencia ruta europea si la hay" delete_if_empty="true" default="" />
+<key key="traffic_sign" value="ES:s572" />
+<key key="highway" value="milestone" />
+</item>
+
+<item name="SPEED_CAMERA" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+<text key="maxspeed" text="Velocidad" delete_if_empty="true" default="" />
+<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+<key key="traffic_sign" value="CAT:radar" />
+<key key="highway" value="speed_camera" />
+</item>
+
+                        <group name="DIR PANEL RIGHT" es.name="Panel direccional derecha" icon="ES_panel_dir_right_3.png">
+                
+                                <item name="PANEL RIGHT MOTORWAY" es.name="Curva peligrosa derecha autopista" icon="ES_panel_dir_right.png" type="node">
+                                <key key="traffic_sign" value="ES:panel:dir:right" />
+								<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+								<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+                                </item> 
+                                
+                                <item name="PANEL RIGHT HIGHWAY" es.name="Curva peligrosa derecha carretera" icon="ES_panel_dir_right_2.png" type="node">
+                                <key key="traffic_sign" value="ES:panel:dir:right:2" />
+								<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+								<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+                                </item> 
+                                
+                                <item name="PANEL RIGHT local" es.name="Curva peligrosa derecha local" icon="ES_panel_dir_right_3.png" type="node">
+                                <key key="traffic_sign" value="ES:panel:dir:right:3" />
+								<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+								<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+                                </item>
+                                
+                        </group>
+                        
+                        <group name="DIR PANEL LEFT" es.name="Panel direccional izquierda" icon="ES_panel_dir_left_3.png">
+                                <item name="PANEL LEFT MOTORWAY" es.name="Curva peligrosa izquierda autopista" icon="ES_panel_dir_left.png" type="node">
+                                <key key="traffic_sign" value="ES:panel:dir:left" />
+								<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+								<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+                                </item>
+                                
+                                <item name="PANEL LEFT HIGHWAY" es.name="Curva peligrosa izquierda carretera" icon="ES_panel_dir_left_2.png" type="node">
+                                <key key="traffic_sign" value="ES:panel:dir:left:2" />
+								<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+								<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+                                </item>
+                                
+                                <item name="PANEL LEFT local" es.name="Curva peligrosa izquierda local" icon="ES_panel_dir_left_3.png" type="node">
+                                <key key="traffic_sign" value="ES:panel:dir:left:3" />
+								<combo key="direction" text="Sentido" values="forward,backward,both" default="forward" delete_if_empty="true"  />
+								<combo key="side" text="Lado de la vía" values="right,left,up,down,both" default="right" delete_if_empty="true"  />
+                                </item>
+                                
+            </group>
+
+</group>
+</group>
+</group>
+
+
+</presets>
