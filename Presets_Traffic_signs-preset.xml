@@ -225,7 +225,7 @@ baselanguage="es">
 			<combo key="leisure" text="Garden or monument" ca.text="Jardí o Monument" es.text="Jardín o Monumento?" values="garden,monument" ca.display_values="jardí,monument" es.display_values="jardín,monumento" default="" />
 			</item>
 												
-			<item name="Traffic Signal" ca.name="Semàfor" es.name="Semáforo" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/styles/standard/vehicle/traffic_signals.svg" type="node" preset_name_label="true">
+			<item name="Traffic Signal" ca.name="Semàfor" es.name="Semáforo" icon="styles/standard/vehicle/traffic_signals.svg" type="node" preset_name_label="true">
 			<link href="http://wiki.openstreetmap.org/wiki/Tag:highway=traffic_signals"
 			ca.href="http://wiki.openstreetmap.org/wiki/CA:Tag:highway=traffic_signals"
 			es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=traffic_signals"
@@ -298,7 +298,7 @@ baselanguage="es">
 			<space />				 
 			</item>
 
-			<item name="Crossings" ca.name="Pas de vianants" es.name="Paso de peatones" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/styles/standard/vehicle/crossing.svg" type="node,closedway,way" preset_name_label="true">
+			<item name="Crossings" ca.name="Pas de vianants" es.name="Paso de peatones" icon="styles/standard/vehicle/crossing.svg" type="node,closedway,way" preset_name_label="true">
 			<key key="highway" value="crossing" />
 			<label text="Crossings:" ca.text="Pas de vianants:" es.text="Paso de peatones:"/>
 			<combo key="crossing" text="Crossing types" ca.text="Tipus de pas de vianants" es.text="Tipo de paso de peatones" values="uncontrolled,traffic_signals,island,unmarked,no" ca.display_values="no controlat,regulat semàfor,illeta,no marcat,no creuar" es.display_values="no controlado,regulado semáforo,isleta,no marcado,no cruzar"/>
@@ -368,7 +368,7 @@ baselanguage="es">
 			</item>
 		</group>
 
-		<item name="3.Tracks/Paths/Others" ca.name="3.Camins/Senders/Altres" es.name="3.Caminos/Senderos/Otros" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/styles/standard/transport/way/track.svg" type="node,relation,way,closedway">  
+		<item name="3.Tracks/Paths/Others" ca.name="3.Camins/Senders/Altres" es.name="3.Caminos/Senderos/Otros" icon="styles/standard/transport/way/track.svg" type="node,relation,way,closedway">  
 		<space />
 		<key key="lanes" value="1" />
 		<combo key="highway" text="Track or path or..." ca.text="Camí o sender o..." es.text="Camino o sendero o..." values="track,path,footway,steps,cycleway" ca.display_values="camí,sender/corriol,a peu,escales,via verda" es.display_values="camino,sendero,a pie,escaleras,vía verde" length="3" />
@@ -457,7 +457,7 @@ baselanguage="es">
 			<key key="highway" value="residential" />
 			</item>
 
-			<item name="Living street" ca.name="Residencial" es.name="Residencial" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/styles/standard/transport/way/way_living_street.svg" type="way,closedway,relation,node">
+			<item name="Living street" ca.name="Residencial" es.name="Residencial" icon="styles/standard/transport/way/way_living_street.svg" type="way,closedway,relation,node">
 			<key key="highway" value="living_street" />
 			</item>
 
