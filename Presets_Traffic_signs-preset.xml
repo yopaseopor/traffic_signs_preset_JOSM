@@ -6,7 +6,7 @@ fr.shortdescription="Signalisation routière"
 description="Tag easily ways and nodes for highways and traffic signals. Begin to be localizated."
 version="2.2016-04-17"
 baselanguage="es">
-<!-- Based on Quick-highways from lzhl, for parking options Parking Lanes from Sebastian Klemm, Kay Drangmeister.Partial french translation by Xapitoun.Spanish and Catalan translation by yopaseopor .We wish translations and localizations.Can you help us? -->
+<!-- Based on Quick-highways from lzhl, for parking options Parking Lanes from Sebastian Klemm, Kay Drangmeister.Icons from OSM Wiki , wikipedia and JOSM. Partial french translation by Xapitoun. Spanish and Catalan translation by yopaseopor .We wish translations and localizations.Can you help us? -->
 <group name="Traffic_signs" es.name="Traffic_signs" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/ES_road_beacon_big.png">
 	<group name="A.Ways" es.name="A.Vías" ca.name="A.Vies" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/ES_ruta_europea.png">		   
 		<group name="Highways" es.name="1.Carreteras" ca.name="1.Carreteres" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/secondary.png">
@@ -726,7 +726,7 @@ baselanguage="es">
 
 					</group>
 
-				<group name="Rails and others cuts" ca.name="Vies i altres talls" fr.name="Rails" es.name="Vías y otros cortes" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/ES_p7.png">
+				<group name="Rails and others cuts" ca.name="Vies i altres talls" fr.name="Rails" es.name="Vías y otros cortes" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_A41.png">
 
 					<item name="Swing bridge" ca.name="Pont mòbil" es.name="Puente móvil" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_A9.png" type="node,way,relation">
 					<key key="bridge" value="drawbridge" />
