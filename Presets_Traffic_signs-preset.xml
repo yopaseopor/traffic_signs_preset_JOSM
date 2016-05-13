@@ -1014,117 +1014,98 @@ baselanguage="es">
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="Maximum gross weight" ca.name="Pes màxim" es.name="Peso máximo" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/C21.png" >
+					<item name="Maximum gross weight" ca.name="Pes màxim" es.name="Peso máximo" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C21.png" >
 					<text key="maxweight" text="Specify the maximum gross weight" ca.text="Especifica el pes màxim autoritzat" es.text="Especifica el peso máximo autorizado" />
 					<key key="traffic_sign:forward" value="BE:C21" />
 					<key key="traffic_sign:backward" value="BE:C21" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="No explosives" ca.name="Prohibit mercaderies explosives" es.name="Prohibido mercancías explosivas" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r109.png" type="node,way,relation">
+					<item name="No explosives" ca.name="Prohibit mercaderies explosives" es.name="Prohibido mercancías explosivas" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C24b.png" type="node,way,relation">
 					<key key="hazmat" value="no" />
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<key key="traffic_sign:forward" value="BE:C24b" />
+					<key key="traffic_sign:backward" value="BE:C24b" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="No explosives (water)" ca.name="Prohibit mercaderies contaminants x aigua" es.name="Prohibido mercancías contaminantes x agua" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r110.png" type="node,way,relation">
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
-					<key key="hazmat" value="no" />
-					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
-					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
-					<item name="No flammable" ca.name="Prohibit mercaderies perilloses" es.name="Prohibido mercancías peligrosas" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r108.png" type="node,way,relation">
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<item name="No explosives (water)" ca.name="Prohibit mercaderies contaminants x aigua" es.name="Prohibido mercancías contaminantes x agua" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C24c.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:C24c" />
+					<key key="traffic_sign:backward" value="BE:C24c" />
 					<key key="hazmat" value="no" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="No agricultural vehicles" ca.name="Prohibit tractors" es.name="Prohibido tractores" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r111.png" type="node,way,relation">
-					<key key="agricultural" value="no" />
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<item name="No flammable" ca.name="Prohibit mercaderies perilloses" es.name="Prohibido mercancías peligrosas" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C24a.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:C24a" />
+					<key key="traffic_sign:backward" value="BE:C24a" />
+					<key key="hazmat" value="no" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="Maximum weight lorry" ca.name="Pes màxim remolc" es.name="Peso máximo remolque" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r112.png" >
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
-					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
-					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>		  
-
-					<item name="No horse-drawn" ca.name="Prohibit carros" es.name="Prohibido carros" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r113.png" type="node,way,relation">
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<item name="No horse-drawn" ca.name="Prohibit carros" es.name="Prohibido carros" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C13.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:C13" />
+					<key key="traffic_sign:backward" value="BE:C13" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="No bicycles" ca.name="Prohibit bicicletes" es.name="Prohibido bicicletas" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r114.png" type="node,way,relation">
+					<item name="No bicycles" ca.name="Prohibit bicicletes" es.name="Prohibido bicicletas" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C11.png" type="node,way,relation">
 					<key key="bicycle" value="no" />
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<key key="traffic_sign:forward" value="BE:C11" />
+					<key key="traffic_sign:backward" value="BE:C11" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="No human-drawn" ca.name="Prohibit carros a mà" es.name="Prohibido carros a mano" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r115.png" type="node,way,relation">
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<item name="No human-drawn" ca.name="Prohibit carros a mà" es.name="Prohibido carros a mano" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C17.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:C17" />
+					<key key="traffic_sign:backward" value="BE:C17" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
-					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>						  
-					<item name="No pedestrians" ca.name="Prohibit vianants" es.name="Prohibido peatones" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r116.png" type="node,way,relation">
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="No pedestrians" ca.name="Prohibit vianants" es.name="Prohibido peatones" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C19.png" type="node,way,relation">
 					<key key="foot" value="no" />
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<key key="traffic_sign:forward" value="BE:C19" />
+					<key key="traffic_sign:backward" value="BE:C19" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="No ridden horses" ca.name="Prohibit cavalls" es.name="Prohibido caballos" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r117.png" type="node,way,relation">
+					<item name="No ridden horses" ca.name="Prohibit cavalls" es.name="Prohibido caballos" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C15.png" type="node,way,relation">
 					<key key="horse" value="no" />
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<key key="traffic_sign:forward" value="BE:C15" />
+					<key key="traffic_sign:backward" value="BE:C15" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="Maximum gross weight" ca.name="Pes màxim autoritzat" es.name="Peso máximo autorizado" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r201.png" >
+					<item name="Maximum gross weight" ca.name="Pes màxim autoritzat" es.name="Peso máximo autorizado" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C21" >
 					<text key="maxweigth" text="Specify the maximum gross weight of the vehicle" ca.text="Especifica el pes màxim autoritzat" es.text="Especifica el peso máximo autorizado"/>
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<key key="traffic_sign:forward" value="BE:C21" />
+					<key key="traffic_sign:backward" value="BE:C21" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>		
 
-					<item name="Maximum axe load" ca.name="Pes màxim autoritzat x eix" es.name="Peso máximo autorizado x eje" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r202.png" >
-					<text key="maxaxleload" text="Specify maximum load of axe" ca.text="Especifica el pes màxim autoritzat al remolc" es.text="Peso máximo autorizado en el remolque"/>
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
-					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
-					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>		
-
-					<item name="Maximum length" ca.name="Llargada màxima" es.name="Largo máximo" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r203.png" >
+					<item name="Maximum length" ca.name="Llargada màxima" es.name="Largo máximo" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C25.png" >
 					<text key="maxlength" text="Specify maximum length authorized" ca.text="Llarg màxim autoritzat" es.text="Largo máximo autorizado"/>
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<key key="traffic_sign:forward" value="BE:C25" />
+					<key key="traffic_sign:backward" value="BE:C25" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>   
 
-					<item name="Maximum width" ca.name="Amplada màxima" es.name="Ancho máximo" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r204.png" >
+					<item name="Maximum width" ca.name="Amplada màxima" es.name="Ancho máximo" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C27.png" >
 					<text key="maxwidth" text="Specify maximum width authorized" ca.text="Especifica l'ample màxim autoritzat" es.text="Especifica el ancho máximo autorizado"/>
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<key key="traffic_sign:forward" value="BE:C27" />
+					<key key="traffic_sign:backward" value="BE:C27" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="Maximum height" ca.name="Alçada màxima" es.name="Altura máxima" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r205.png" >
+					<item name="Maximum height" ca.name="Alçada màxima" es.name="Altura máxima" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C29.png" >
 					<text key="maxwheight" text="Specify maximum height authorized" ca.text="Especifica l'alçada màxima autoritzada" es.text="Especifica la altura máxima autorizada" />
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<key key="traffic_sign:forward" value="BE:C29" />
+					<key key="traffic_sign:backward" value="BE:C29" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>				 
 
 				</group>
 
-					<item name="Maximum speed" ca.name="Velocitat màxima" es.name="Velocidad máxima" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r301-50.png" >
+					<item name="Maximum speed" ca.name="Velocitat màxima" es.name="Velocidad máxima" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C43.png" >
 					<key key="traffic_sign:forward" value="maxspeed" />
 					<text key="maxspeed" text="Specify maximum speed" ca.text="Especifica la velocitat màxima" es.text="Especifica la velocidad"/>
 					<text key="maxspeed:forward" text="Specify maximum speed forward if it is different from main" ca.text="Especifica si la velocitat en el sentit de la via és diferent" es.text="A rellenar si la velocidad en el sentido de la vía es diferente" />
@@ -1132,32 +1113,32 @@ baselanguage="es">
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-				<group name="Direction" ca.name="Direcció" es.name="Dirección" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r302.png">
+				<group name="Direction" ca.name="Direcció" es.name="Dirección" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C31.png">
 
-					<item name="No right turn" ca.name="Prohibit gir a la dreta" es.name="Prohibido giro a la derecha" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r302.png" >
+					<item name="No right turn" ca.name="Prohibit gir a la dreta" es.name="Prohibido giro a la derecha" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/BE_C31_RIGHT.png" >
 					<key key="restriction" value="no_right_turn" />
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<key key="traffic_sign:forward" value="BE:C31" />
+					<key key="traffic_sign:backward" value="BE:C31" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>				 
 
-					<item name="No left turn" ca.name="Prohibit gir a l'esquerra" es.name="Prohibido giro a la izquierda" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r303.png" >
+					<item name="No left turn" ca.name="Prohibit gir a l'esquerra" es.name="Prohibido giro a la izquierda" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C37_LEFT.png" >
 					<key key="restriction" value="no_left_turn" />
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<key key="traffic_sign:forward" value="BE:C31" />
+					<key key="traffic_sign:backward" value="BE:C31" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>		   
 
-					<item name="No U-turn" ca.name="Prohibida mitja volta" es.name="Prohibida media vuelta" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r304.png" >
+					<item name="No U-turn" ca.name="Prohibida mitja volta" es.name="Prohibida media vuelta" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C33.png" >
 					<key key="restriction" value="no_u_turn" />
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<key key="traffic_sign:forward" value="BE:C33" />
+					<key key="traffic_sign:backward" value="BE:C33" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
 
 				</group>
 
-				<item name="No overtaking" ca.name="Prohibit fer avançaments" es.name="Prohibido adelantar" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r305.png">
+				<item name="No overtaking" ca.name="Prohibit fer avançaments" es.name="Prohibido adelantar" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C35.png">
 				<combo text="Overtaking allowed?" ca.text="Avançaments permesos?" es.text="¿Adelantamientos permitidos?" key="overtaking" values="yes,no,both,forward,backward" ca.display_values="Sí,No,Ambdós,Sentit via, Sentit contrari" es.display_values="Sí,No,Ambos,Sentido vía, Sentido contrario" default="no" />
 				<combo text="Easy?" ca.text="Avançament fàcil?" es.text="¿Adelantamientos fáciles?" key="easy_overtaking" values="both,forward,backward" ca.display_values="Ambdós,Sentit via, Sentit contrari" es.display_values="Ambos,Sentido vía, Sentido contrario" default="no" />
 				<check key="overtaking:hgv" text="No goods vehiclex overtaking" ca.text="Prohibit avançar pels camions" es.text="Prohibido adelantar para camiones" value_on="no" default="off" />
@@ -1165,40 +1146,34 @@ baselanguage="es">
 				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="both" /></item> 
 
-				<group name="No Parking" ca.name="Prohibit aparcar" es.name="Prohibido aparcar" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r308.png">
+				<group name="No Parking" ca.name="Prohibit aparcar" es.name="Prohibido aparcar" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_E1.png">
 
-					<item name="No stopping" ca.name="Prohibit aturar-se" es.name="Prohibida la parada" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r307.png" >
+					<item name="No stopping" ca.name="Prohibit aturar-se" es.name="Prohibida la parada" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_E3.png" >
 					<label text="Side of the street" ca.text="Quin costat mapejarás?" es.text="¿Qué lado vas a mapear?" />
 					<check key="parking_lane:right" text="Right side" ca.text="Costat dret" es.text="Lado derecho" value_on="no_stopping" default="off" />
 					<check key="parking_lane:left" text="Left side" ca.text="Costat esquerre" es.text="Lado izquierdo" value_on="no_stopping" default="off" />
 					<check key="parking_lane:both" text="Both sides" ca.text="Ambdós costats" es.text="Ambos lados" value_on="no_stopping" default="off" />
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<key key="traffic_sign:forward" value="BE:E3" />
+					<key key="traffic_sign:backward" value="BE:E3" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>  
 
-					<item name="No parking" ca.name="Prohibit aparcar" es.name="Prohibido aparcar" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r308.png" >
+					<item name="No parking" ca.name="Prohibit aparcar" es.name="Prohibido aparcar" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_E1.png" >
 					<label text="Side of the street" ca.text="Quin costat mapejarás?" es.text="¿Qué lado vas a mapear?" />
 					<check key="parking_lane:right" text="Right side" ca.text="Costat dret" es.text="Lado derecho" value_on="no_parking" default="off" />
 					<check key="parking_lane:left" text="Left side" ca.text="Costat esquerre" es.text="Lado izquierdo" value_on="no_parking" default="off" />
 					<check key="parking_lane:both" text="Both sides" ca.text="Ambdós costats" es.text="Ambos lados" value_on="no_parking" default="off" />
-					<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+					<key key="traffic_sign:forward" value="BE:E1" />
+					<key key="traffic_sign:backward" value="BE:E1" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 				</group>
 
-				<item name="No snooze" ca.name="Clàxon" es.name="Claxon" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r310.png" type="node,way,relation">
-				<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
-				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
-				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
 			</group>
-			<group name="Speed" ca.name="Velocitat" es.name="Velocidad" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_s7.png">
+			<group name="Speed" ca.name="Velocitat" es.name="Velocidad" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C43.png">
 
-				<item name="Maximum speed" ca.name="Velocitat màxima" es.name="Velocidad máxima" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r301-50.png" type="node,way,relation">
+				<item name="Maximum speed" ca.name="Velocitat màxima" es.name="Velocidad máxima" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C43.png" type="node,way,relation">
 				<key key="traffic_sign:forward" value="maxspeed" />
 				<text key="maxspeed" text="Specify maximum speed" ca.text="Especifica la velocitat màxima" es.text="Especifica la velocidad máxima"/>
 				<text key="maxspeed:forward" text="Specify maximum speed forward if it is different from main" ca.text="Especifica si la velocitat en el sentit de la via és diferent" es.text="A rellenar si la velocidad en el sentido de la vía es diferente" />
@@ -1206,48 +1181,16 @@ baselanguage="es">
 				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-				<item name="End maximum speed limit" ca.name="Fi límit velocitat" es.name="Fin límite velocidad" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r501.png" type="node,way,relation">
+				<item name="End maximum speed limit" ca.name="Fi límit velocitat" es.name="Fin límite velocidad" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C45.png" type="node,way,relation">
 				<key key="maxspeed" value="implicit" />
 				<key key="traffic_sign:forward" value="maxspeed" />
-				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
-				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
-
-				<item name="Minimum speed" ca.name="Velocitat mínima" es.name="Velocidad mínima" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r411.png" type="node,way,relation">
-				<key key="traffic_sign:forward" value="minspeed" />
-				<text key="minspeed" text="Specify minimum speed" ca.text="Especifica la velocitat mínima" es.text="Especifica la velocidad mínima"/>
-				<text key="minspeed:forward" text="Specify minimum speed forward if it is different from main" ca.text="Especifica si la velocitat en el sentit de la via és diferent" es.text="A rellenar si la velocidad en el sentido de la vía es diferente" />
-				<text key="minspeed:backward" text="Specify minimum speed backward if it is different from main" ca.text="Especifica si la velocitat en el sentit contrari de la via és diferent" es.text="A rellenar si la velocidad en el sentido contrario de la vía es diferente" />
-				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
-				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
-				<item name="End minimum speed limit" ca.name="Fi velocitat mínima" es.name="Fin velocidad mínima" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_r506.png" type="node,way,relation">
-				<key key="minspeed" value="implicit" />
-				<key key="traffic_sign:forward" value="minspeed" />
-				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
-				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
-
-				<item name="Advisory speed" ca.name="Velocitat recomanada" es.name="Velocidad recomendada" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_s7.png" type="node,way,relation">
-				<text key="maxspeed:advisory" text="Specify advisory speed" ca.text="Velocitat recomanada" es.text="Velocidad recomendada"/>
-				<combo key="traffic_sign:forward" text="Interval (s9) or Unique (s7)" ca.text="Interval (s9) o única (s7)" es.text="Intérvalo (s9) o única (s7)" values="ES:s7,ES:s9" default="BE:" />
-				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
-				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
-				<item name="End of advisory speed" ca.name="Final de velocitat recomanada" es.name="Final de velocidad recomendada" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_s8.png" type="node,way,relation">
-				<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
-				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
-				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
-				<item name="End of advisory speed interval" ca.name="Final d'interval velocitat recomanada" es.name="Final intérvalo velocidad recomendada" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_s10.png" type="node,way,relation">
-				<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
 				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
 
 				<item name="Home zone" ca.name="Zona residencial" es.name="Zona residencial" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_s28.png" type="node,way,relation">
 				<key key="highway" value="living_street" />
 				<key key="traffic_sign:forward" value="BE:" />
-					<key key="traffic_sign:backward" value="BE:" />
+				<key key="traffic_sign:backward" value="BE:" />
 				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
 
