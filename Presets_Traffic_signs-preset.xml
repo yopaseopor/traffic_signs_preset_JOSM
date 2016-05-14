@@ -1075,7 +1075,7 @@ baselanguage="es">
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="Maximum gross weight" ca.name="Pes màxim autoritzat" es.name="Peso máximo autorizado" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C21" >
+					<item name="Maximum gross weight" ca.name="Pes màxim autoritzat" es.name="Peso máximo autorizado" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C21.png" >
 					<text key="maxweigth" text="Specify the maximum gross weight of the vehicle" ca.text="Especifica el pes màxim autoritzat" es.text="Especifica el peso máximo autorizado"/>
 					<key key="traffic_sign:forward" value="BE:C21" />
 					<key key="traffic_sign:backward" value="BE:C21" />
