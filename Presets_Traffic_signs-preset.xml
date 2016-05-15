@@ -1055,7 +1055,7 @@ baselanguage="es">
 				<group name="Direction" ca.name="Direcció" es.name="Dirección" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C31.png">
 
 					<item name="No right turn" ca.name="Prohibit gir a la dreta" es.name="Prohibido giro a la derecha" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/BE/BE_C31_RIGHT.png" >
-					<key key="restriction" value="no_right_turn" />
+					<key key="restriction" value="no_right_turn" /
 					<key key="traffic_sign:forward" value="BE:C31" />
 					<key key="traffic_sign:backward" value="BE:C31" />
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
