@@ -675,7 +675,7 @@ baselanguage="es">
 	<group name="B.Traffic signs (by countries)" ca.name="B.Senyals (per països)" es.name="B.Señales (por países)" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/ES_traffic_sign_dir.png">
 	
 				
-				<group name="Belgium" ca.name="Bèlgica" es.name="Bélgica" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/ES_traffic_sign_dir.png">
+				<group name="Belgium" ca.name="Bèlgica" es.name="Bélgica" icon="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg">
 
 			<item name="Direction" ca.name="Sentit" es.name="Sentido" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/ES_traffic_sign_dir.png" type="node,way,relation">
 			<combo key="direction" text="Direction of the traffic sign" ca.text="Sentit" es.text="Sentido" values="forward,backward,both" ca.display_values="Sentit via,Sentit contrari,Ambdós" es.display_values="Sentido vía,Sentido contrario,Ambos" default="forward"  />
@@ -14965,7 +14965,7 @@ baselanguage="es">
 	</group>
 	</group>
 	
-	<group name="Spain" ca.name="Espanya" es.name="España" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_traffic_sign_dir.png">
+	<group name="Spain" ca.name="Espanya" es.name="España" icon="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg">
 
 			<item name="Direction" ca.name="Sentit" es.name="Sentido" icon="https://raw.githubusercontent.com/yopaseopor/traffic_signs_preset_JOSM/master/traffic_signs/ES/ES_traffic_sign_dir.png" type="node,way,relation">
 			<combo key="direction" text="Direction of the traffic sign" ca.text="Sentit" es.text="Sentido" values="forward,backward,both" ca.display_values="Sentit via,Sentit contrari,Ambdós" es.display_values="Sentido vía,Sentido contrario,Ambos" default="forward"  />
