@@ -1322,8 +1322,173 @@ baselanguage="es">
 					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
 					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
 
+	<item name="Road reserved for pedestrians and bicycles" ca.name="Vianants, bicicletes i trànsit local" es.name="Peatones,bicicletas y tráfico local" icon="traffic_signs/BE/BE_F99a_FOOT_BICYCLE.png" type="node,way,relation">
+					<key key="access" value="destination" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:F99a" />
+					<key key="traffic_sign:backward" value="BE:F99a" />
+					<key key="maxspeed" value="30" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Road reserved for horses,pedestrians and bicycles" ca.name="Vianants, cavalls, bicicletes i trànsit local" es.name="Peatones, caballos, bicicletas y tráfico local" icon="traffic_signs/BE/BE_F99a_FOOT_BICYCLE_HORSE.png" type="node,way,relation">
+					<key key="access" value="destination" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="yes" />
+					<key key="traffic_sign:forward" value="BE:F99a" />
+					<key key="traffic_sign:backward" value="BE:F99a" />
+					<key key="maxspeed" value="30" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Road reserved for pedestrians and bicycles (segregated)" ca.name="Vianants, bicicletes i trànsit local (segregats)" es.name="Peatones,bicicletas y tráfico local (segregados)" icon="traffic_signs/BE/BE_F99b_FOOT_BICYCLE.png" type="node,way,relation">
+					<key key="access" value="destination" />
+					<key key="segregated" value="yes" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:F99b" />
+					<key key="traffic_sign:backward" value="BE:F99b" />
+					<key key="maxspeed" value="30" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Road reserved for horses,pedestrians and bicycles (segregated)" ca.name="Vianants, cavalls, bicicletes i trànsit local (segregats)" es.name="Peatones, caballos, bicicletas y tráfico local (segregados)" icon="traffic_signs/BE/BE_F99b_FOOT_BICYCLE_HORSE.png" type="node,way,relation">
+					<key key="access" value="destination" />
+					<key key="segregated" value="yes" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="yes" />
+					<key key="traffic_sign:forward" value="BE:F99b" />
+					<key key="traffic_sign:backward" value="BE:F99b" />
+					<key key="maxspeed" value="30" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Road reserved for horses,pedestrians,agricultural and bicycles" ca.name="Vianants, agrícoles, cavalls, bicicletes i trànsit local" es.name="Peatones, agrícolas, caballos, bicicletas y tráfico local" icon="traffic_signs/BE/BE_F99c.png" type="node,way,relation">
+					<key key="access" value="destination" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="agricultural" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="yes" />
+					<key key="maxspeed" value="30" />
+					<key key="traffic_sign:forward" value="BE:F99c" />
+					<key key="traffic_sign:backward" value="BE:F99c" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="End of road reserved for pedestrians" ca.name="Final de vianants i trànsit local" es.name="Final de peatones y tráfico local" icon="traffic_signs/BE/BE_F101a_FOOT.png" type="node,way,relation">
+					<key key="access" value="yes" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="no" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:F101a" />
+					<key key="traffic_sign:backward" value="BE:F101a" />
+					<key key="maxspeed" value="implicit" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="End of Road reserved for pedestrians and bicycles" ca.name="Final de Vianants, bicicletes i trànsit local" es.name="Final de Peatones,bicicletas y tráfico local" icon="traffic_signs/BE/BE_F101a_FOOT_BICYCLE.png" type="node,way,relation">
+					<key key="access" value="yes" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:F101a" />
+					<key key="traffic_sign:backward" value="BE:F101a" />
+					<key key="maxspeed" value="implicit" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="End of Road reserved for horses,pedestrians and bicycles" ca.name="Final de Vianants, cavalls, bicicletes i trànsit local" es.name="Final de Peatones, caballos, bicicletas y tráfico local" icon="traffic_signs/BE/BE_F101a_FOOT_BICYCLE_HORSE.png" type="node,way,relation">
+					<key key="access" value="yes" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="yes" />
+					<key key="traffic_sign:forward" value="BE:F101a" />
+					<key key="traffic_sign:backward" value="BE:F101a" />
+					<key key="maxspeed" value="implicit" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="End of Road reserved for pedestrians (segregated)" ca.name="Final de Vianants i trànsit local (segregats)" es.name="Final de Peatones y tráfico local (segregados)" icon="traffic_signs/BE/BE_F101b_FOOT.png" type="node,way,relation">
+					<key key="access" value="yes" />
+					<key key="segregated" value="yes" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="no" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="no" />
+					<key key="maxspeed" value="implicit" />
+					<key key="traffic_sign:forward" value="BE:F101b" />
+					<key key="traffic_sign:backward" value="BE:F101b" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Road reserved for pedestrians and bicycles (segregated)" ca.name="Vianants, bicicletes i trànsit local (segregats)" es.name="Peatones,bicicletas y tráfico local (segregados)" icon="traffic_signs/BE/BE_F101b_FOOT_BICYCLE.png" type="node,way,relation">
+					<key key="access" value="yes" />
+					<key key="segregated" value="yes" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:F101b" />
+					<key key="traffic_sign:backward" value="BE:F101b" />
+					<key key="maxspeed" value="implicit" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
 
-
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 
 
 
