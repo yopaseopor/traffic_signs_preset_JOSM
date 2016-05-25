@@ -673,18 +673,7 @@ baselanguage="es">
 	</group>
 
 	<group name="B.Traffic signs (by countries)" ca.name="B.Senyals (per països)" es.name="B.Señales (por países)" icon="ES_traffic_sign_dir.png">
-	
-				
-				
-	
-
-	<!-- Czech Republic---------------------------------------------
-	-->
-	<!-- Czech Republic---------------------------------------------
-	-->
-	<!-- Czech Republic---------------------------------------------
-	-->
-			
+		
 			<group name="Czech Republic" ca.name="República Txeca" es.name="República Checa" icon="traffic_signs/ES/ES_traffic_sign_dir.png">
 
 			<item name="Direction" ca.name="Sentit" es.name="Sentido" icon="traffic_signs/ES/ES_traffic_sign_dir.png" type="node,way,relation">
