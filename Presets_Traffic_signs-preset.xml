@@ -4,9 +4,11 @@ es.shortdescription="Señales tráfico"
 ca.shortdescription="Senyals trànsit"
 fr.shortdescription="Signalisation routière"
 description="Tag easily ways and nodes for highways and traffic signals. Begin to be localizated."
-version="2.2016-04-17"
+version="2.2016-05-25"
 baselanguage="es">
+
 <!-- Based on Quick-highways from lzhl, for parking options Parking Lanes from Sebastian Klemm, Kay Drangmeister.Icons from OSM Wiki , wikipedia and JOSM. Partial french translation by Xapitoun. Spanish and Catalan translation by yopaseopor .We wish translations and localizations.Can you help us? -->
+
 <group name="Traffic_signs" es.name="Traffic_signs" icon="ES_road_beacon_big.png">
 	<group name="A.Ways" es.name="A.Vías" ca.name="A.Vies" icon="ES_ruta_europea.png">		   
 		<group name="Highways" es.name="1.Carreteras" ca.name="1.Carreteres" icon="secondary.png">
