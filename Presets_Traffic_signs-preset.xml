@@ -673,6 +673,1717 @@ baselanguage="es">
 	</group>
 
 	<group name="B.Traffic signs (by countries)" ca.name="B.Senyals (per països)" es.name="B.Señales (por países)" icon="ES_traffic_sign_dir.png">
+	
+	<group name="Belgium" ca.name="Bèlgica" es.name="Bélgica" icon="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg">
+
+			<item name="Direction" ca.name="Sentit" es.name="Sentido" icon="ES_traffic_sign_dir.png" type="node,way,relation">
+			<combo key="direction" text="Direction of the traffic sign" ca.text="Sentit" es.text="Sentido" values="forward,backward,both" ca.display_values="Sentit via,Sentit contrari,Ambdós" es.display_values="Sentido vía,Sentido contrario,Ambos" default="forward"  />
+			<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
+			</item>
+
+			<group name="Warning" ca.name="Perill" es.name="Peligro" icon="traffic_signs/ES/ES_p50.png">
+				<group name="Cross" ca.name="Encreuament" es.name="Cruce" fr.name="Croisement" icon="traffic_signs/ES/ES_p1.png">
+					<group name="Priority" ca.name="Prioritat" es.name="Prioridad" icon="traffic_signs/BE/BE_B9.png">
+
+						<item name="Main road" ca.name="Carretera principal" es.name="Carretera principal" icon="traffic_signs/BE/BE_B9.png" type="node,way,relation">
+						<key key="traffic_sign:forward" value="BE:B9" />
+						<key key="traffic_sign:backward" value="BE:B9" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
+						</item>
+
+						<item name="End of main road" ca.name="Final de prioritat" es.name="Final de prioridad" icon="traffic_signs/BE/BE_B11.png" type="node,way,relation">
+						<key key="traffic_sign:forward" value="BE:B11" />
+						<key key="traffic_sign:backward" value="BE:B11" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
+						</item> 
+
+					</group>
+
+					<item name="Cross" ca.name="Encreuament amb prioritat" es.name="Cruce con prioridad" fr.name="Croisement" icon="traffic_signs/BE/BE_B15.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:B15" />
+					<key key="traffic_sign:backward" value="BE:B15" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
+					</item>
+
+					<item name="Cross without priority" ca.name="Encreuament sense prioritat establerta" es.name="Cruce sin prioridad establecida" icon="traffic_signs/BE/BE_B17.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:B17" />
+					<key key="traffic_sign:backward" value="BE:B17" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
+					</item>
+
+					<item name="Traffic signals" ca.name="Semàfor" es.name="Semáforo" icon="traffic_signs/BE/BE_A33.png" type="node,way,relation">
+					<key key="highway" value="traffic_signals" />
+					<key key="traffic_sign:forward" value="BE:A33" />
+					<key key="traffic_sign:backward" value="BE:A33" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
+					</item> 
+
+					</group>
+
+				<group name="Rails and others cuts" ca.name="Vies i altres talls" fr.name="Rails" es.name="Vías y otros cortes" icon="traffic_signs/BE/BE_A41.png">
+
+					<item name="Swing bridge" ca.name="Pont mòbil" es.name="Puente móvil" icon="traffic_signs/BE/BE_A9.png" type="node,way,relation">
+					<key key="bridge" value="drawbridge" />
+					<key key="traffic_sign:forward" value="BE:A9" />
+					<key key="traffic_sign:backward" value="BE:A9" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  /></item>
+
+					<item name="Tram" ca.name="Tramvia" es.name="Tranvía" icon="traffic_signs/BE/BE_A49.png" type="node,way,relation">
+					<key key="railway" value="tram" />
+					<key key="traffic_sign:forward" value="BE:A49" />
+					<key key="traffic_sign:backward" value="BE:A49" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
+					</item>
+
+					<item name="Level crossing" ca.name="Pas a nivell amb barreres" es.name="Paso a nivel con barreras" icon="traffic_signs/BE/BE_A41.png" type="node,way,relation">
+					<key key="railway" value="level_crossing" />
+					<key key="level_crossing" value="automatic_barrier" />
+					<key key="traffic_sign:forward" value="BE:A41" />
+					<key key="traffic_sign:backward" value="BE:A41" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  /></item>
+
+					<item name="Uncontrolled level crossing" ca.name="Pas a nivell sense barreres" es.name="Paso a nivel sin barreras" icon="traffic_signs/BE/BE_A43.png" type="node,way,relation">
+					<key key="railway" value="level_crossing" />
+					<key key="level_crossing" value="uncontrolled" />
+					<key key="traffic_sign:forward" value="BE:A43" />
+					<key key="traffic_sign:backward" value="BE:A43" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  /></item>
+
+					<item name="Uncontrolled level crossing 1 rail" ca.name="Pas a nivell sense barreres 1 via" es.name="Paso a nivel sin barreras 1 vía" icon="traffic_signs/BE/BE_A45.png" type="node,way,relation">
+					<key key="railway" value="level_crossing" />
+					<key key="level_crossing" value="uncontrolled" />
+					<key key="tracks" value="1" />
+					<key key="traffic_sign:forward" value="BE:A45" />
+					<key key="traffic_sign:backward" value="BE:A45" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  /></item>
+
+					<item name="Uncontrolled level crossing 2 rail" ca.name="Pas a nivell sense barreres 2 vies" es.name="Paso a nivel sin barreras 2 vías" icon="traffic_signs/BE/BE_A47.png" type="node,way,relation">
+					<key key="railway" value="level_crossing" />
+					<key key="level_crossing" value="uncontrolled" />
+					<key key="tracks" value="2" />
+					<key key="traffic_sign:forward" value="BE:A47" />
+					<key key="traffic_sign:backward" value="BE:A47" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  /></item>		  
+
+				</group>
+
+				<item name="Airport" ca.name="Aeroport" fr.name="Aéroport" es.name="Aeropuerto" icon="traffic_signs/BE/BE_A35.png" type="node,way,relation">
+				<key key="aeroway" value="aerodrome" />
+				<key key="traffic_sign:forward" value="BE:A35" />
+					<key key="traffic_sign:backward" value="BE:A35" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  /></item>
+
+				<group name="Lane" ca.name="Calçada" fr.name="Voie" es.name="Calzada" icon="traffic_signs/BE/BE_A7.png">
+
+					<item name="Right curve" ca.name="Corba a dreta" es.name="Curva a derecha" icon="traffic_signs/BE/BE_A1b.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:A1b" />
+					<key key="traffic_sign:backward" value="BE:A1b" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  /></item>
+
+					<item name="Left curve" ca.name="Corba a esquerra" es.name="Curva a izquierda" icon="traffic_signs/BE/BE_A1a.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:A1a" />
+					<key key="traffic_sign:backward" value="BE:A1a" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>  
+
+					<item name="Right then left curve" ca.name="Corba a dreta i esquerra" es.name="Curva a derecha e izquierda" icon="traffic_signs/BE/BE_A1d.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:A1d" />
+					<key key="traffic_sign:backward" value="BE:A1d" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Left then right curve" ca.name="Corba a esquerra i dreta" es.name="Curva a la izquierda y derecha" icon="traffic_signs/BE/BE_A1c.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:A1c" />
+					<key key="traffic_sign:backward" value="BE:A1c" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Rumble strips" ca.name="Bandes rugoses" es.name="Bandas sonoras" icon="traffic_signs/BE/BE_A13.png" type="node,way,relation">
+					<key key="traffic_calming" value="rumble_strip" />
+					<key key="traffic_sign:forward" value="BE:A13" />
+					<key key="traffic_sign:backward" value="BE:A13" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/BE/BE_A14.png" type="node,way,relation">
+					<key key="traffic_calming" value="bump" />
+					<key key="traffic_sign:forward" value="BE:A14" />
+					<key key="traffic_sign:backward" value="BE:A14" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Slope" ca.name="Pendent" fr.name="Inclinaison" es.name="Pendiente" icon="traffic_signs/BE/BE_A3.png" type="way">
+					<label text="% of slope .Positive if it is uphill forward, negative if it is downhill forward. % on final" ca.text="% de pendent .Positiva si fa pujada en el sentit de la via, negativa si fa baixada en el sentit de la via.Símbol % al final" es.text="% de Pendiente .Positivo si es subida, negativo si es bajada.Símbolo % al final"/>
+					<text key="incline" text="" />
+					<key key="traffic_sign:forward" value="BE:A3" />
+					<key key="traffic_sign:backward" value="BE:A3" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Narrow road" ca.name="Estretament calçada" es.name="Estrechamiento calzada" fr.name="Route étroite" icon="traffic_signs/BE/BE_A7.png" type="node,way,relation">
+					<key key="narrow" value="yes" />
+					<key key="traffic_sign:forward" value="BE:A7" />
+					<key key="traffic_sign:backward" value="BE:A7" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<group name="Priority" ca.name="Prioritat" es.name="Prioridad" icon="traffic_signs/BE/BE_B9.png">
+
+						<item name="Oncoming priority" ca.name="Pas estret sense prioritat" es.name="Paso estrecho sin prioridad" fr.name="Priorité" icon="traffic_signs/BE/BE_B19.png" type="node,way,relation">
+						<key key="traffic_sign:forward" value="BE:B19" />
+					<key key="traffic_sign:backward" value="BE:B19" />
+						<key key="priority" value="backward" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+						<item name="Over oncoming priority" ca.name="Pas estret amb prioritat" es.name="Paso estrecho con prioridad" icon="traffic_signs/BE/BE_B21.png" type="node,way,relation">
+						<key key="traffic_sign:forward" value="BE:B21" />
+					<key key="traffic_sign:backward" value="BE:B21" />
+						<key key="priority" value="forward" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					</group>
+
+					<item name="Narrows" ca.name="Estretament calçada" es.name="Estrechamiento calzada" icon="traffic_signs/BE/BE_A7.png" type="node,way,relation">
+					<key key="narrow" value="yes" />
+					<key key="traffic_sign:forward" value="BE:A7" />
+					<key key="traffic_sign:backward" value="BE:A7" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Slippery road" ca.name="Paviment lliscant" es.name="Calzada deslizante" icon="traffic_signs/BE/BE_A15.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:A15" />
+					<key key="traffic_sign:backward" value="BE:A15" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Side winds" ca.name="Vent lateral" es.name="Viento lateral" fr.name="Vent latéral" icon="traffic_signs/BE/BE_A37.png" type="node,way,relation">
+					<key key="aeroway" value="windsock" />
+					<key key="traffic_sign:forward" value="BE:A37" />
+					<key key="traffic_sign:backward" value="BE:A37" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Two-way traffic" ca.name="Doble sentit" es.name="Doble sentido" icon="traffic_signs/BE/BE_A39.png" type="node,way,relation">
+					<key key="oneway" value="no" />
+					<key key="traffic_sign:forward" value="BE:A39" />
+					<key key="traffic_sign:backward" value="BE:A39" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Quayside/Riverbank" ca.name="Moll sense protegir" es.name="Muelle sin proteger" icon="traffic_signs/BE/BE_A11.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:A11" />
+					<key key="traffic_sign:backward" value="BE:A11" />
+					<key key="waterway" value="dock" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				</group>
+
+				<group name="Obstacles/Other warnings" ca.name="Obstacles i altres a la via" es.name="Obstáculos y otros en la vía" icon="traffic_signs/BE/BE_A29.png">
+
+					<item name="Pedestrian" ca.name="Peatones" es.name="Peatones" icon="traffic_signs/BE/BE_A21.png" type="node,way,relation">
+					<key key="highway" value="passing_place" />			
+					<key key="traffic_sign:forward" value="BE:A21" />
+					<key key="traffic_sign:backward" value="BE:A21" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="School" ca.name="Escola" es.name="Escuela" icon="traffic_signs/BE/BE_A23.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:A23" />
+					<key key="traffic_sign:backward" value="BE:A23" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Pedal cycle" ca.name="Ciclistes" es.name="Ciclistas" icon="traffic_signs/BE/BE_A25.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:A25" />
+					<key key="traffic_sign:backward" value="BE:A25" />
+					<key key="cycleway" value="lane" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Cattle" ca.name="Animals domèstics" es.name="Animales domésticos" icon="traffic_signs/BE/BE_A29.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:A29" />
+					<key key="traffic_sign:backward" value="BE:A29" />
+					<key key="route" value="horse" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Wild animals" ca.name="Animals en llibertat" es.name="Animales en libertad" icon="traffic_signs/BE/BE_A27.png" type="node,way,relation">
+					<key key="boundary" value="protected_area" />
+					<key key="traffic_sign:forward" value="BE:A27" />
+					<key key="traffic_sign:backward" value="BE:A27" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Risk of falling rocks" ca.name="Desprendiments" es.name="Desprendimientos" icon="traffic_signs/BE/BE_A19.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:A19" />
+					<key key="traffic_sign:backward" value="BE:A19" />
+					<key key="natural" value="scree" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Gravel" ca.name="Grava sense compactar" es.name="Gravilla suelta" icon="traffic_signs/BE/BE_A17.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:A17" />
+					<key key="traffic_sign:backward" value="BE:A17" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/BE/BE_A51.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:A51" />
+					<key key="traffic_sign:backward" value="BE:A51" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				</group>
+			</group>
+
+			<item name="Stop" ca.name="Stop" es.name="Stop" icon="traffic_signs/BE/BE_B5.png" type="node,way,relation">
+			<key key="highway" value="stop" />
+			<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+			<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+			<item name="Give way/Yield" ca.name="Cedeix el pas" es.name="Ceda el paso" icon="traffic_signs/BE/BE_B1.png" type="node,way,relation">
+			<key key="highway" value="give_way" />
+			<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+			<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+			<group name="Regulatory" ca.name="Reglamentació" es.name="Reglamentación" icon="traffic_signs/BE/BE_C3.png">
+				<item name="No vehicles" ca.name="Circulació prohibida" es.name="Circulación prohibida" icon="traffic_signs/BE/BE_C3.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:C3" />
+					<key key="traffic_sign:backward" value="BE:C3" />
+				<key key="access" value="no" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="One-way road" ca.name="Entrada prohibida" es.name="Entrada prohibida" icon="traffic_signs/BE/BE_C1.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:C1" />
+					<key key="traffic_sign:backward" value="BE:C1" />
+				<key key="oneway" value="yes" />
+				<combo key="direction" text="Direction of the traffic sign" ca.text="Sentit" es.text="Sentido" values="forward,backward,both" ca.display_values="Sentit via,Sentit contrari,Ambdós" es.display_values="Sentido vía,Sentido contrario,Ambos" default="backward"  />
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="left" /></item> 
+
+				<group name="Vehicles" ca.name="Vehicles" es.name="Vehículos" icon="traffic_signs/BE/BE_C5.png">
+
+					<item name="No motor vehicles" ca.name="Prohibit vehicles a motor" es.name="Prohibido vehículos con motor" icon="traffic_signs/BE/BE_C5-C7.png" type="node,way,relation">
+					<key key="motor_vehicle" value="no" />
+					<key key="traffic_sign:forward" value="BE:C5;BE:C7" />
+					<key key="traffic_sign:backward" value="BE:C5;BE:C7" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="No cars" ca.name="Prohibit automòbils" es.name="Prohibido automóviles" icon="traffic_signs/BE/BE_C5.png" type="node,way,relation">
+					<key key="motorcar" value="no" />
+					<key key="traffic_sign:forward" value="BE:C5" />
+					<key key="traffic_sign:backward" value="BE:C5" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="No motorcycles" ca.name="Prohibit motocicletes" es.name="Prohibido motocicletas" icon="traffic_signs/BE/BE_C6.png" type="node,way,relation">
+					<key key="motorcycle" value="no" />
+					<key key="traffic_sign:forward" value="BE:C6" />
+					<key key="traffic_sign:backward" value="BE:C6" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="No moped" ca.name="Prohibit ciclomotors" es.name="Prohibido ciclomotores" icon="traffic_signs/BE/BE_C7.png" type="node,way,relation">
+					<key key="moped" value="no" />
+					<key key="traffic_sign:forward" value="BE:C7" />
+					<key key="traffic_sign:backward" value="BE:C7" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="No goods vehicles" ca.name="Prohibit camions" es.name="Prohibido camiones" icon="traffic_signs/BE/BE_C23.png" type="node,way,relation">
+					<key key="hgv" value="no" />
+					<key key="traffic_sign:forward" value="BE:C23" />
+					<key key="traffic_sign:backward" value="BE:C23" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Maximum gross weight" ca.name="Pes màxim autoritzat" es.name="Peso máximo autorizado" icon="traffic_signs/BE/BE_C21.png" >
+					<text key="maxweigth" text="Specify the maximum gross weight of the vehicle" ca.text="Especifica el pes màxim autoritzat" es.text="Especifica el peso máximo autorizado"/>
+					<key key="traffic_sign:forward" value="BE:C21" />
+					<key key="traffic_sign:backward" value="BE:C21" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>		
+
+					<item name="Maximum length" ca.name="Llargada màxima" es.name="Largo máximo" icon="traffic_signs/BE/BE_C25.png" >
+					<text key="maxlength" text="Specify maximum length authorized" ca.text="Llarg màxim autoritzat" es.text="Largo máximo autorizado"/>
+					<key key="traffic_sign:forward" value="BE:C25" />
+					<key key="traffic_sign:backward" value="BE:C25" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>   
+
+					<item name="Maximum width" ca.name="Amplada màxima" es.name="Ancho máximo" icon="traffic_signs/BE/BE_C27.png" >
+					<text key="maxwidth" text="Specify maximum width authorized" ca.text="Especifica l'ample màxim autoritzat" es.text="Especifica el ancho máximo autorizado"/>
+					<key key="traffic_sign:forward" value="BE:C27" />
+					<key key="traffic_sign:backward" value="BE:C27" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Maximum height" ca.name="Alçada màxima" es.name="Altura máxima" icon="traffic_signs/BE/BE_C29.png" >
+					<text key="maxwheight" text="Specify maximum height authorized" ca.text="Especifica l'alçada màxima autoritzada" es.text="Especifica la altura máxima autorizada" />
+					<key key="traffic_sign:forward" value="BE:C29" />
+					<key key="traffic_sign:backward" value="BE:C29" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>				 
+
+				</group>
+
+					<item name="Maximum speed" ca.name="Velocitat màxima" es.name="Velocidad máxima" icon="traffic_signs/BE/BE_C43.png" >
+					<key key="traffic_sign:forward" value="maxspeed" />
+					<text key="maxspeed" text="Specify maximum speed" ca.text="Especifica la velocitat màxima" es.text="Especifica la velocidad"/>
+					<text key="maxspeed:forward" text="Specify maximum speed forward if it is different from main" ca.text="Especifica si la velocitat en el sentit de la via és diferent" es.text="A rellenar si la velocidad en el sentido de la vía es diferente" />
+					<text key="maxspeed:backward" text="Specify maximum speed backward if it is different from main" ca.text="Especifica si la velocitat en el sentit contrari de la via és diferent" es.text="A rellenar si la velocidad en el sentido contrario de la vía es diferente" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<group name="Direction" ca.name="Direcció" es.name="Dirección" icon="traffic_signs/BE/BE_C31.png">
+
+					<item name="No right turn" ca.name="Prohibit gir a la dreta" es.name="Prohibido giro a la derecha" icon="traffic_signs/BE/BE_C31_RIGHT.png" >
+					<key key="restriction" value="no_right_turn" />
+					<key key="traffic_sign:forward" value="BE:C31" />
+					<key key="traffic_sign:backward" value="BE:C31" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>				 
+
+					<item name="No left turn" ca.name="Prohibit gir a l'esquerra" es.name="Prohibido giro a la izquierda" icon="traffic_signs/BE/BE_C31_LEFT.png" >
+					<key key="restriction" value="no_left_turn" />
+					<key key="traffic_sign:forward" value="BE:C31" />
+					<key key="traffic_sign:backward" value="BE:C31" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>		   
+
+					<item name="No U-turn" ca.name="Prohibida mitja volta" es.name="Prohibida media vuelta" icon="traffic_signs/BE/BE_C33.png" >
+					<key key="restriction" value="no_u_turn" />
+					<key key="traffic_sign:forward" value="BE:C33" />
+					<key key="traffic_sign:backward" value="BE:C33" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+
+				</group>
+
+				<item name="No overtaking" ca.name="Prohibit fer avançaments" es.name="Prohibido adelantar" icon="traffic_signs/BE/BE_C35.png">
+				<combo text="Overtaking allowed?" ca.text="Avançaments permesos?" es.text="¿Adelantamientos permitidos?" key="overtaking" values="yes,no,both,forward,backward" ca.display_values="Sí,No,Ambdós,Sentit via, Sentit contrari" es.display_values="Sí,No,Ambos,Sentido vía, Sentido contrario" default="no" />
+				<combo text="Easy?" ca.text="Avançament fàcil?" es.text="¿Adelantamientos fáciles?" key="easy_overtaking" values="both,forward,backward" ca.display_values="Ambdós,Sentit via, Sentit contrari" es.display_values="Ambos,Sentido vía, Sentido contrario" default="no" />
+				<check key="overtaking:hgv" text="No goods vehiclex overtaking" ca.text="Prohibit avançar pels camions" es.text="Prohibido adelantar para camiones" value_on="no" default="off" />
+				<key key="traffic_sign:forward" value="overtaking" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="both" /></item> 
+
+				<group name="No Parking" ca.name="Prohibit aparcar" es.name="Prohibido aparcar" icon="traffic_signs/BE/BE_E1.png">
+
+					<item name="No stopping" ca.name="Prohibit aturar-se" es.name="Prohibida la parada" icon="traffic_signs/BE/BE_E3.png" >
+					<label text="Side of the street" ca.text="Quin costat mapejarás?" es.text="¿Qué lado vas a mapear?" />
+					<check key="parking_lane:right" text="Right side" ca.text="Costat dret" es.text="Lado derecho" value_on="no_stopping" default="off" />
+					<check key="parking_lane:left" text="Left side" ca.text="Costat esquerre" es.text="Lado izquierdo" value_on="no_stopping" default="off" />
+					<check key="parking_lane:both" text="Both sides" ca.text="Ambdós costats" es.text="Ambos lados" value_on="no_stopping" default="off" />
+					<key key="traffic_sign:forward" value="BE:E3" />
+					<key key="traffic_sign:backward" value="BE:E3" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>  
+
+					<item name="No parking" ca.name="Prohibit aparcar" es.name="Prohibido aparcar" icon="traffic_signs/BE/BE_E1.png" >
+					<label text="Side of the street" ca.text="Quin costat mapejarás?" es.text="¿Qué lado vas a mapear?" />
+					<check key="parking_lane:right" text="Right side" ca.text="Costat dret" es.text="Lado derecho" value_on="no_parking" default="off" />
+					<check key="parking_lane:left" text="Left side" ca.text="Costat esquerre" es.text="Lado izquierdo" value_on="no_parking" default="off" />
+					<check key="parking_lane:both" text="Both sides" ca.text="Ambdós costats" es.text="Ambos lados" value_on="no_parking" default="off" />
+					<key key="traffic_sign:forward" value="BE:E1" />
+					<key key="traffic_sign:backward" value="BE:E1" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				</group>
+
+			</group>
+			<group name="Speed" ca.name="Velocitat" es.name="Velocidad" icon="traffic_signs/BE/BE_C43.png">
+
+				<item name="Maximum speed" ca.name="Velocitat màxima" es.name="Velocidad máxima" icon="traffic_signs/BE/BE_C43.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="maxspeed" />
+				<text key="maxspeed" text="Specify maximum speed" ca.text="Especifica la velocitat màxima" es.text="Especifica la velocidad máxima"/>
+				<text key="maxspeed:forward" text="Specify maximum speed forward if it is different from main" ca.text="Especifica si la velocitat en el sentit de la via és diferent" es.text="A rellenar si la velocidad en el sentido de la vía es diferente" />
+				<text key="maxspeed:backward" text="Specify maximum speed backward if it is different from main" ca.text="Especifica si la velocitat en el sentit contrari de la via és diferent" es.text="A rellenar si la velocidad en el sentido contrario de la vía es diferente" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="End maximum speed limit" ca.name="Fi límit velocitat" es.name="Fin límite velocidad" icon="traffic_signs/BE/BE_C45.png" type="node,way,relation">
+				<key key="maxspeed" value="implicit" />
+				<key key="traffic_sign:forward" value="maxspeed" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+
+				<item name="Home zone" ca.name="Zona residencial" es.name="Zona residencial" icon="traffic_signs/BE/BE_F12a.png" type="node,way,relation">
+				<key key="highway" value="living_street" />
+				<key key="traffic_sign:forward" value="BE:F12a" />
+				<key key="traffic_sign:backward" value="BE:F12a" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+
+				<item name="End of home zone" ca.name="Fi zona residencial" es.name="Fin zona residencial" icon="traffic_signs/BE/BE_F12b.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:F12b" />
+					<key key="traffic_sign:backward" value="BE:F12b" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="30km/h zone" ca.name="Zona 30" es.name="Zona 30" icon="traffic_signs/BE/BE_F4a.png" type="node,way,relation">
+				<key key="maxspeed" value="30" />
+				<key key="source:maxspeed" value="zone" />
+				<key key="traffic_sign:forward" value="maxspeed" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="End 30km/h zone" ca.name="Fi zona 30" es.name="Fin zona 30" icon="traffic_signs/BE/BE_F4b.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:F4b" />
+					<key key="traffic_sign:backward" value="BE:F4b" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+
+			</group>
+			<group name="Stop" ca.name="Detenció" es.name="Detención" icon="traffic_signs/ES/ES_r200.png">
+
+				<item name="Border control" ca.name="Duana" es.name="Aduana" icon="traffic_signs/ES/ES_r200.png" type="node,way,relation">
+				<key key="barrier" value="border_control" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+
+				<item name="Toll" ca.name="Peatge" es.name="Peaje" icon="traffic_signs/BE/BE_C47.png" type="node,way,relation">
+				<key key="barrier" value="toll_booth" />
+				<key key="traffic_sign:forward" value="BE:C47" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>						
+
+			</group>
+			
+			<group name="Compulsory" ca.name="Obligació" es.name="Obligación" icon="traffic_signs/BE/BE_D1.png">
+
+				<group name="Designated" ca.name="Direcció" es.name="Dirección" icon="traffic_signs/BE/BE_D1.png">
+
+					<item name="Turn right" ca.name="Sentit obligatori (dreta)" es.name="Sentido obligatorio (derecha)" icon="traffic_signs/BE/BE_D1_RIGHT.png" type="node,way,relation">
+					<key key="restriction" value="only_right_turn" />
+					<key key="traffic_sign:forward" value="BE:D1" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Turn left" ca.name="Sentit obligatori (esquerra)" es.name="Sentido obligatorio (esquerra)" icon="traffic_signs/BE/BE_D1_LEFT.png" type="node,way,relation">
+					<key key="restriction" value="only_left_turn" />
+					<key key="traffic_sign:forward" value="BE:D1" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Straight ahead" ca.name="Sentit obligatori (recte)" es.name="Sentido obligatorio (recto)" icon="traffic_signs/BE/BE_D1_UP.png" type="node,way,relation">
+					<key key="restriction" value="only_straight_on" />
+					<key key="traffic_sign:forward" value="BE:D1" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Turn right ahead" ca.name="Sentit obligatori (recte dreta)" es.name="Sentido obligatorio (recto derecha)" icon="traffic_signs/BE/BE_D1_CURVEDRIGHT.png" type="node,way,relation">
+					<key key="restriction" value="only_right_turn" />
+					<key key="traffic_sign:forward" value="BE:D1" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Turn left ahead" ca.name="Sentit obligatori (recte esquerra)" es.name="Sentido obligatorio (recto izquierda)" icon="traffic_signs/BE/BE_D1_CURVEDLEFT.png" type="node,way,relation">
+					<key key="restriction" value="only_left_turn" />
+					<key key="traffic_sign:forward" value="BE:D1" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Keep right" ca.name="Pas obligatori (dreta)" es.name="Paso obligatorio (derecha)" icon="traffic_signs/BE/BE_D1_DOWNRIGHT.png" type="node,way,relation">
+					<key key="restriction" value="only_right_turn" />
+					<key key="traffic_sign:forward" value="BE:D1" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+													
+					<item name="Keep left" ca.name="Pas obligatori (esquerra)" es.name="Paso obligatorio (izquierda)" icon="traffic_signs/BE/BE_D1_DOWNLEFT.png" type="node,way,relation">
+					<key key="restriction" value="only_left_turn" />
+					<key key="traffic_sign:forward" value="BE:D1" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Roundabout" ca.name="Rotonda" es.name="Rotonda" icon="traffic_signs/BE/BE_D5.png" type="node,way,relation">
+					<key key="junction" value="roundabout" />
+					<key key="traffic_sign:forward" value="BE:D5" />
+					<key key="traffic_sign:backward" value="BE:D5" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				</group>
+				<group name="Vehicles" ca.name="Vehicles" es.name="Vehículos" icon="traffic_signs/BE/BE_D7.png">
+
+					<item name="Motorcar" ca.name="Via per a automòbils" es.name="Vía para automóviles" icon="traffic_signs/BE/BE_F9.png" type="node,way,relation">
+					<key key="motorcar" value="designated" />
+					<key key="traffic_sign:forward" value="BE:F9" />
+					<key key="traffic_sign:backward" value="BE:F9" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+					
+					<item name="End Motorcar" ca.name="Final via per a automòbils" es.name="Final vía para automóviles" icon="traffic_signs/BE/BE_F11.png" type="node,way,relation">
+					<key key="motorcar" value="designated" />
+					<key key="traffic_sign:forward" value="BE:F11" />
+					<key key="traffic_sign:backward" value="BE:F11" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Goods vehicles" ca.name="Via per a camions" es.name="Vía para camiones" icon="traffic_signs/BE/BE_F107.png" type="node,way,relation">
+					<key key="hgv" value="designated" />
+					<key key="traffic_sign:forward" value="BE:F107" />
+					<key key="traffic_sign:backward" value="BE:F107" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+
+					<item name="End Goods vehicles" ca.name="Final via per a camions" es.name="Final vía para camiones" icon="traffic_signs/BE/BE_F109.png" type="node,way,relation">
+					<key key="hgv" value="designated" />
+					<key key="traffic_sign:forward" value="BE:F109" />
+					<key key="traffic_sign:backward" value="BE:F109" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>					
+
+					<item name="Pedal cycles" ca.name="Carril bici" es.name="Carril bici" icon="traffic_signs/BE/BE_D7.png" type="node,way,relation">
+					<combo key="cicleway" text="Cicleway track or lane?" ca.text="Carril bici segregat?" es.text="Carril bici segregado?" values="track,lane" ca.display_values="segregat,no segregat" es.display_values="segregado,no segregado" default="lane" />
+					<key key="access" value="no" />
+					<key key="mofa" value="designated" />
+					<key key="moped" value="no" />
+					<key key="foot" value="no" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:D7" />
+					<key key="traffic_sign:backward" value="BE:D7" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+					
+					<item name="Pedal cycles and sidewalk segregated" ca.name="Carril bici i vorera segregats" es.name="Carril bici y acera segregados" icon="traffic_signs/BE/BE_D9.png" type="node,way,relation">
+					<key key="access" value="no" />
+					<key key="moped" value="no" />
+					<key key="cicleway:foot" value="designated" />
+					<key key="cicleway:segregated" value="yes" />
+					<key key="mofa" value="designated" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:D9" />
+					<key key="traffic_sign:backward" value="BE:D9" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+					
+					<item name="Pedal cycles and sidewalk no segregated" ca.name="Carril bici i vorera no segregats" es.name="Carril bici y acera no segregados" icon="traffic_signs/BE/BE_D10.png" type="node,way,relation">
+					<key key="access" value="no" />
+					<key key="moped" value="no" />
+					<key key="cicleway:foot" value="designated" />
+					<key key="cicleway:segregated" value="no" />
+					<key key="mofa" value="designated" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:D10" />
+					<key key="traffic_sign:backward" value="BE:D10" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+
+					<item name="Carriage" ca.name="Tracció animal" es.name="Tracción animal" icon="traffic_signs/BE_D13.png" type="node,way,relation">
+					<key key="highway" value="bridleway" />
+					<key key="traffic_sign:forward" value="BE:D13" />
+					<key key="traffic_sign:backward" value="BE:D13" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
+					</item>
+
+					<item name="Pedestrian only" ca.name="Vianants" es.name="Peatones" icon="traffic_signs/BE_D11.png" type="node,way,relation">
+					<key key="highway" value="pedestrian" />
+					<key key="traffic_sign:forward" value="BE:D11" />
+					<key key="traffic_sign:backward" value="BE:D11" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
+					</item>
+					
+					<item name="Road reserved for pedestrians" ca.name="Vianants i trànsit local" es.name="Peatones y tráfico local" icon="traffic_signs/BE/BE_F99a_FOOT.png" type="node,way,relation">
+					<key key="access" value="destination" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="no" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:F99a" />
+					<key key="traffic_sign:backward" value="BE:F99a" />
+					<key key="maxspeed" value="30" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Road reserved for pedestrians and bicycles" ca.name="Vianants, bicicletes i trànsit local" es.name="Peatones,bicicletas y tráfico local" icon="traffic_signs/BE/BE_F99a_FOOT_BICYCLE.png" type="node,way,relation">
+					<key key="access" value="destination" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:F99a" />
+					<key key="traffic_sign:backward" value="BE:F99a" />
+					<key key="maxspeed" value="30" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Road reserved for horses,pedestrians and bicycles" ca.name="Vianants, cavalls, bicicletes i trànsit local" es.name="Peatones, caballos, bicicletas y tráfico local" icon="traffic_signs/BE/BE_F99a_FOOT_BICYCLE_HORSE.png" type="node,way,relation">
+					<key key="access" value="destination" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="yes" />
+					<key key="traffic_sign:forward" value="BE:F99a" />
+					<key key="traffic_sign:backward" value="BE:F99a" />
+					<key key="maxspeed" value="30" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Road reserved for pedestrians and bicycles (segregated)" ca.name="Vianants, bicicletes i trànsit local (segregats)" es.name="Peatones,bicicletas y tráfico local (segregados)" icon="traffic_signs/BE/BE_F99b_FOOT_BICYCLE.png" type="node,way,relation">
+					<key key="access" value="destination" />
+					<key key="segregated" value="yes" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:F99b" />
+					<key key="traffic_sign:backward" value="BE:F99b" />
+					<key key="maxspeed" value="30" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Road reserved for horses,pedestrians and bicycles (segregated)" ca.name="Vianants, cavalls, bicicletes i trànsit local (segregats)" es.name="Peatones, caballos, bicicletas y tráfico local (segregados)" icon="traffic_signs/BE/BE_F99b_FOOT_BICYCLE_HORSE.png" type="node,way,relation">
+					<key key="access" value="destination" />
+					<key key="segregated" value="yes" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="yes" />
+					<key key="traffic_sign:forward" value="BE:F99b" />
+					<key key="traffic_sign:backward" value="BE:F99b" />
+					<key key="maxspeed" value="30" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Road reserved for horses,pedestrians,agricultural and bicycles" ca.name="Vianants, agrícoles, cavalls, bicicletes i trànsit local" es.name="Peatones, agrícolas, caballos, bicicletas y tráfico local" icon="traffic_signs/BE/BE_F99c.png" type="node,way,relation">
+					<key key="access" value="destination" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="agricultural" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="yes" />
+					<key key="maxspeed" value="30" />
+					<key key="traffic_sign:forward" value="BE:F99c" />
+					<key key="traffic_sign:backward" value="BE:F99c" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="End of road reserved for pedestrians" ca.name="Final de vianants i trànsit local" es.name="Final de peatones y tráfico local" icon="traffic_signs/BE/BE_F101a_FOOT.png" type="node,way,relation">
+					<key key="access" value="yes" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="no" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:F101a" />
+					<key key="traffic_sign:backward" value="BE:F101a" />
+					<key key="maxspeed" value="implicit" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="End of Road reserved for pedestrians and bicycles" ca.name="Final de Vianants, bicicletes i trànsit local" es.name="Final de Peatones,bicicletas y tráfico local" icon="traffic_signs/BE/BE_F101a_FOOT_BICYCLE.png" type="node,way,relation">
+					<key key="access" value="yes" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:F101a" />
+					<key key="traffic_sign:backward" value="BE:F101a" />
+					<key key="maxspeed" value="implicit" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="End of Road reserved for horses,pedestrians and bicycles" ca.name="Final de Vianants, cavalls, bicicletes i trànsit local" es.name="Final de Peatones, caballos, bicicletas y tráfico local" icon="traffic_signs/BE/BE_F101a_FOOT_BICYCLE_HORSE.png" type="node,way,relation">
+					<key key="access" value="yes" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="yes" />
+					<key key="traffic_sign:forward" value="BE:F101a" />
+					<key key="traffic_sign:backward" value="BE:F101a" />
+					<key key="maxspeed" value="implicit" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="End of Road reserved for pedestrians (segregated)" ca.name="Final de Vianants i trànsit local (segregats)" es.name="Final de Peatones y tráfico local (segregados)" icon="traffic_signs/BE/BE_F101b_FOOT.png" type="node,way,relation">
+					<key key="access" value="yes" />
+					<key key="segregated" value="yes" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="no" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="no" />
+					<key key="maxspeed" value="implicit" />
+					<key key="traffic_sign:forward" value="BE:F101b" />
+					<key key="traffic_sign:backward" value="BE:F101b" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Road reserved for pedestrians and bicycles (segregated)" ca.name="Vianants, bicicletes i trànsit local (segregats)" es.name="Peatones,bicicletas y tráfico local (segregados)" icon="traffic_signs/BE/BE_F101b_FOOT_BICYCLE.png" type="node,way,relation">
+					<key key="access" value="yes" />
+					<key key="segregated" value="yes" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="no" />
+					<key key="traffic_sign:forward" value="BE:F101b" />
+					<key key="traffic_sign:backward" value="BE:F101b" />
+					<key key="maxspeed" value="implicit" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="End of Road reserved for horses,pedestrians and bicycles (segregated)" ca.name="Final de Vianants, cavalls, bicicletes i trànsit local (segregats)" es.name="Final de Peatones, caballos, bicicletas y tráfico local (segregados)" icon="traffic_signs/BE/BE_F101b_FOOT_BICYCLE_HORSE.png" type="node,way,relation">
+					<key key="access" value="yes" />
+					<key key="segregated" value="yes" />
+					<key key="emergency" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="yes" />
+					<key key="traffic_sign:forward" value="BE:F101b" />
+					<key key="traffic_sign:backward" value="BE:F101b" />
+					<key key="maxspeed" value="implicit" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="End of Road reserved for horses,pedestrians,agricultural and bicycles" ca.name="Final de Vianants, agrícoles, cavalls, bicicletes i trànsit local" es.name="Final de Peatones, agrícolas, caballos, bicicletas y tráfico local" icon="traffic_signs/BE/BE_F101c.png" type="node,way,relation">
+					<key key="access" value="yes" />
+					<key key="segregated" value="no" />
+					<key key="emergency" value="yes" />
+					<key key="agricultural" value="yes" />
+					<key key="moped" value="no" />
+					<key key="foot" value="yes" />
+					<key key="bicycle" value="yes" />
+					<key key="mofa" value="no" />
+					<key key="horse" value="yes" />
+					<key key="maxspeed" value="implicit" />
+					<key key="traffic_sign:forward" value="BE:F101c" />
+					<key key="traffic_sign:backward" value="BE:F101c" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					
+					
+				</group>
+
+					<item name="Minimum speed" ca.name="Velocitat mínima" es.name="Velocidad mínima" icon="traffic_signs/ES/ES_r411.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="minspeed" />
+					<text key="minspeed" text="Specify minimum speed" ca.text="Especifica la velocitat mínima" es.text="Especifica la velocidad mínima"/>
+					<text key="minspeed:forward" text="Specify minimum speed forward if it is different from main" ca.text="Especifica si la velocitat en el sentit de la via és diferent" es.text="A rellenar si la velocidad en el sentido de la vía es diferente" />
+					<text key="minspeed:backward" text="Specify minimum speed backward if it is different from main" ca.text="Especifica si la velocitat en el sentit contrari de la via és diferent" es.text="A rellenar si la velocidad en el sentido contrario de la vía es diferente" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>  
+
+					<item name="Snow chains" ca.name="Cadenes" es.name="Cadenas" icon="traffic_signs/ES/ES_r412.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Lights" ca.name="Llum de cruïlla" es.name="Luz de cruce" icon="traffic_signs/ES/ES_r413.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="End lights" ca.name="Fi d'obligació de llum de cruïlla" es.name="Fin de luz de cruce" icon="traffic_signs/ES/ES_s24.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Seat belt" ca.name="Cinturó seguretat" es.name="Cinturón seguridad" icon="traffic_signs/ES/ES_r417.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				</group>
+				
+				<group name="End" ca.name="Fi" es.name="Fin" icon="traffic_signs/ES/ES_r500.png">
+
+					<item name="National speed and overtaking" ca.name="Prohibicions" es.name="Prohibiciones" icon="traffic_signs/ES/ES_r500.png" type="node,way,relation">
+					<key key="maxspeed" value="implicit" />
+					<key key="overtaking" value="yes" />
+					<key key="traffic_sign:forward" value="maxspeed;overtaking" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="National speed limit" ca.name="Límit velocitat" es.name="Límite velocidad" icon="traffic_signs/ES/ES_r501.png" type="node,way,relation">
+					<key key="maxspeed" value="implicit" />
+					<key key="traffic_sign:forward" value="maxspeed" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
+					</item>
+
+					<item name="Overtaking" ca.name="Fer avançaments" es.name="Adelantar" icon="traffic_signs/ES/ES_r502.png" type="node,way,relation">
+					<key key="overtaking" value="yes" />
+					<key key="traffic_sign:forward" value="overtaking" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Overtaking goods" ca.name="Fer avançaments per camions" es.name="Adelantar para camiones" icon="traffic_signs/ES/ES_r503.png" type="node,way,relation">
+					<key key="overtaking:hgv" value="yes" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Parking Zone" ca.name="Estacionamient limitat" es.name="Estacionamiento limitado" icon="traffic_signs/ES/ES_r504.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+
+					<item name="End of no snooze" ca.name="Clàxon" es.name="Claxon" icon="traffic_signs/ES/ES_r505.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>				
+
+				</group>
+
+				<group name="Information" ca.name="Informació" es.name="Información" icon="traffic_signs/ES/ES_s122.png">
+
+					<item name="Tunnel" ca.name="Túnel" es.name="Túnel" icon="traffic_signs/ES/ES_s5.png" type="node,way,relation">
+					<text key="name" text="Name" ca.text="Nom" es.text="Nombre"/>
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="End of tunnel" ca.name="Final túnel" es.name="Final túnel" icon="traffic_signs/ES/ES_s6.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
+					<key key="highway" value="crossing" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Steps (up)" ca.name="Escales amunt" es.name="Escaleras arriba" icon="traffic_signs/ES/ES_s14a.png" type="node,way,relation">
+					<key key="highway" value="steps" />
+					<key key="incline" value="up" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+				
+					<item name="Steps (down)" ca.name="Escales avall" es.name="Escaleras abajo" icon="traffic_signs/ES/ES_s14b.png" type="node,way,relation">
+					<key key="highway" value="steps" />
+					<key key="incline" value="down" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Escape lane" ca.name="Zona de frenada d'emergència" es.name="Zona de frenado de emergencia" icon="traffic_signs/ES/ES_s16.png" type="node,way,relation">
+					<key key="highway" value="escape" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Mountain pass (conditions)" ca.name="Port de muntanya (condicions)" es.name="Puerto de Montaña (condiciones)" icon="traffic_signs/ES/ES_s21.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Change direction same level" ca.name="Canvi de sentit mateix nivell" es.name="Cambio de sentido mismo nivel" icon="traffic_signs/ES/ES_s22.png" type="node,way,relation">
+					<text key="distance" text="Distance" ca.text="Distància" es.text="Distancia" default="" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+
+					<item name="Change direction different level" ca.name="Canvi de sentit diferent nivell" es.name="Cambio de sentido diferente nivel" icon="traffic_signs/ES/ES_s25.png" type="node,way,relation">
+					<text key="distance" text="Distance" ca.text="Distància" es.text="Distancia" default="" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>				 
+
+				<group name="Lanes" ca.name="Carrils" es.name="Carriles" icon="traffic_signs/ES/ES_s11a.png">
+
+					<item name="One-way 1 lane" ca.name="Sentit únic" es.name="Sentido único" icon="traffic_signs/ES/ES_s11.png" type="node,way,relation">
+					<key key="oneway" value="yes" />
+					<key key="lanes" value="1" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="One-way 2 lanes" ca.name="Doble carril" es.name="Doble carril" icon="traffic_signs/ES/ES_s11a.png" type="node,way,relation">
+					<key key="oneway" value="yes" />
+					<key key="lanes" value="2" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="One-way 3 lanes" ca.name="Tres carrils" es.name="Tres carriles" icon="traffic_signs/ES/ES_s11b.png" type="node,way,relation">
+					<key key="oneway" value="yes" />
+					<key key="lanes" value="3" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="One-way" ca.name="Carrer de direcció única" es.name="Calle de dirección única" icon="traffic_signs/ES/ES_s12.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<group name="Fast-Low" ca.name="Ràpids-Lents" es.name="Rápidos-Lentos" icon="traffic_signs/ES/ES_s50a.png">
+
+						<item name="Fast lane" ca.name="Carril per vehicles ràpids" es.name="Carril para vehículos rápidos" icon="traffic_signs/ES/ES_s50a.png" type="node,way,relation">
+						<text key="minspeed:lanes:forward" text="Minimum speed x lane" ca.text="Velocitat mínima exigida" es.text="Velocidad mínima exigida" default="70|" />
+						<key key="lanes" value="3" />
+						<key key="turn:lanes:forward" value="through|through" />
+						<key key="lanes:forward" value="2" />
+						<key key="lanes:backward" value="1" />
+						<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+						<item name="Low lane" ca.name="Carril per vehicles lents" es.name="Carril para vehículos lentos" icon="traffic_signs/ES/ES_s50b.png" type="node,way,relation">
+						<text key="minspeed:lanes:forward" text="Minimum speed x lane" ca.text="Velocitat mínima exigida" es.text="Velocidad mínima exigida" default="70|" />
+						<key key="lanes" value="3" />
+						<key key="turn:lanes:forward" value="through|slight_right" />
+						<key key="lanes:forward" value="2" />
+						<key key="lanes:backward" value="1" />
+						<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+						<item name="New dual carriageway" ca.name="Sorgeix segon carril" es.name="Surge segundo carril" icon="traffic_signs/ES/ES_s53.png" type="node,way,relation">
+						<key key="lanes" value="2" />
+						<key key="turn:lanes:forward" value="through|slight_right" />
+						<key key="oneway" value="yes" />
+						<key key="lanes:forward" value="2" />
+						<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+						<item name="3-lane carriageway" ca.name="Sorgeix tercer carril" es.name="Surge tercer carril" icon="traffic_signs/ES/ES_s53b.png" type="node,way,relation">
+						<key key="lanes" value="3" />
+						<key key="turn:lanes:forward" value="through|through|slight_right" />
+						<key key="oneway" value="yes" />
+						<key key="lanes:forward" value="3" />
+						<key key="lanes:backward" value="0" />
+						<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+						<item name="Dual carriageway" ca.name="Continuació carril per vehicles lents" es.name="Continuación carril para vehículos lentos" icon="traffic_signs/ES/ES_s50d.png" type="node,way,relation">
+						<text key="minspeed:lanes:forward" text="Minimum speed x lane" ca.text="Velocitat mínima exigida" es.text="Velocidad mínima exigida" default="70|" />
+						<key key="lanes" value="3" />
+						<key key="turn:lanes:forward" value="through|through" />
+						<key key="lanes:forward" value="2" />
+						<key key="lanes:backward" value="1" />
+						<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+
+	<item name="Goods vehicles lane" ca.name="Carril per vehicles lents" es.name="Carril para vehículos lentos" icon="traffic_signs/ES/ES_s50c.png" type="node,way,relation">
+						<text key="minspeed:lanes:forward" text="Minimum speed x lane" ca.text="Velocitat mínima exigida" es.text="Velocidad mínima exigida" default="70|70|" />
+						<key key="lanes" value="3" />
+						<key key="turn:lanes:forward" value="through|through|slight_right" />
+						<key key="oneway" value="yes" />
+						<key key="lanes:forward" value="3" />
+						<key key="lanes:backward" value="0" />
+						<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+						<item name="Goods vehicles lane (cont.)" ca.name="Carril per vehicles lents (cont.)" es.name="Carril para vehículos lentos (cont.)" icon="traffic_signs/ES/ES_s50e.png" type="node,way,relation">
+						<text key="minspeed:lanes:forward" text="Velocidad mínima exigida" default="70|70|" />
+						<key key="lanes" value="3" />
+						<key key="oneway" value="yes" />
+						<key key="turn:lanes:forward" value="through|through|through" />
+						<key key="lanes:forward" value="3" />
+						<key key="lanes:backward" value="0" />
+						<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					</group>
+							
+							<group name="Loss lanes" ca.name="Final de carrils" es.name="Final de carriles" icon="traffic_signs/ES/ES_s52a.png">
+
+						<item name="Loss right-hand lane 3 to 2" ca.name="Final tercer carril dret" es.name="Final tercer carril derecho" icon="traffic_signs/ES/ES_s52.png" type="node,way,relation">
+						<key key="lanes" value="3" />
+						<key key="oneway" value="yes" />
+						<key key="turn:lanes:forward" value="through|through|merge_to_left" />
+						<key key="lanes:forward" value="3" />
+						<key key="lanes:backward" value="0" />
+						<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+						<item name="Loss right-hand lane 2 to 1" ca.name="Final segon carril dret a via de doble sentit" es.name="Final segundo carril derecho en vía de doble sentido" icon="traffic_signs/ES/ES_s52a.png" type="node,way,relation">
+						<key key="lanes" value="3" />
+						<key key="turn:lanes:forward" value="through|merge_to_left" />
+						<key key="lanes:forward" value="2" />
+						<key key="lanes:backward" value="1" />
+						<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+						<item name="Loss left-hand lane 2 to 1" ca.name="Final segon carril esquerre a via de doble sentit" es.name="Final segundo carril izquierdo en vía de doble sentido" icon="traffic_signs/ES/ES_s52b.png" type="node,way,relation">
+						<key key="lanes" value="3" />
+						<key key="turn:lanes:forward" value="merge_to_right|through" />
+						<key key="lanes:forward" value="2" />
+						<key key="lanes:backward" value="1" />
+						<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+						<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+						<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					</group>
+	<item name="Flow pedal cycle lane oneway" ca.name="Carril dret x bicicletes" es.name="Carril derecho x bicicletas" icon="traffic_signs/ES/ES_s64b.png" type="node,way,relation">
+					<key key="lanes:forward" value="3" />
+					<key key="oneway" value="yes" />
+					<key key="cycleway" value="lane" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+				
+					<item name="Flow pedal cycle lane" ca.name="Carril dret x bicicletes (via de doble sentit)" es.name="Carril derecho x las bicicletas (vía doble sentido)" icon="traffic_signs/ES/ES_s64a.png" type="node,way,relation">
+					<key key="cycleway:right" value="lane" />
+					<key key="lanes:forward" value="2" />
+					<key key="lanes:backward" value="1" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+							
+													</group>
+													
+									<group name="No through road" ca.name="Carrer tallat" es.name="Calle cortada" icon="traffic_signs/ES/ES_s15a.png">
+
+					<item name="No through road" ca.name="Carrer tallat" es.name="Calle cortada" icon="traffic_signs/ES/ES_s15a.png" type="node,way,relation">
+					<key key="noexit" value="yes" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="No through road (left)" ca.name="Carrer tallat (esquerra)" es.name="Calle cortada (izquierda)" icon="traffic_signs/ES/ES_s15b.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="No through road (direction)" ca.name="Carrer tallat (direcció)" es.name="Calle cortada (dirección)" icon="traffic_signs/ES/ES_s15c.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="No through road (ahead)" ca.name="Carrer tallat (endavant)" es.name="Calle cortada (adelante)" icon="traffic_signs/ES/ES_s15d.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				</group>
+							
+									<item name="Parking" ca.name="Aparcament" es.name="Aparcamiento" icon="traffic_signs/ES/ES_s17.png" type="node,way,relation">
+				<key key="amenity" value="parking" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+							
+									<group name="Public Transport" ca.name="Transport públic" es.name="Transporte público" icon="traffic_signs/ES/ES_s19.png">
+					
+					<item name="Bus stop" ca.name="Parada bus" es.name="Parada bus" type="node,relation,way">
+					<key key="highway" value="bus_stop" />
+					<key key="bus" value="yes" />
+					<key key="public_transport" value="stop_position" />
+					<text key="name" text="Name" ca.text="Nom parada" es.text="Nombre parada" default="" />
+					<text key="ref" text="Reference" ca.text="Referència parada" es.text="Referencia parada" default="" />
+					<text key="network" text="Network" ca.text="Xarxa de la parada" es.text="Red de la parada" default="" />
+					<text key="operator" text="Operator" ca.text="Operador" es.text="Operador" default="" />
+					<optional>
+					<check key="bench" text="Bench" ca.text="Banc" es.text="Banco" value_on="yes" default="off" />
+					<check key="shelter" text="Shelter" ca.text="Coberta" es.text="Cubierta" value_on="yes" default="off" />
+					<check key="tactile_paving" text="Tactile paving" ca.text="Paviment tàctil" es.text="Pavimento táctil" value_on="yes" default="off" />
+					</optional>
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+							
+					<item name="Tram stop" ca.name="Parada tramvia" es.name="Parada tranvía" icon="traffic_signs/ES/ES_s20.png" type="node,way,relation">
+					<key key="railway" value="tram_stop" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+				
+					<item name="Taxi" ca.name="Parada taxi" es.name="Parada taxi" icon="traffic_signs/ES/ES_s18.png" type="node,way,relation">
+					<key key="amenity" value="taxi" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				</group>
+													<item name="Doctors" ca.name="Salut" es.name="Salud" icon="traffic_signs/ES/ES_s23.png" type="node,way,relation">
+				<combo key="amenity" text="Type" ca.text="Tipus" es.text="Tipo" values="hospital,doctors,clinic" ca.display_values="Hospital,C.A.P." es.display_values="Hospital,Centro de salud, Clínica" default="hospital" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="ITV" ca.name="ITV" es.name="ITV" icon="traffic_signs/ES/ES_s102.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Workshop" ca.name="Taller mecànic" es.name="Taller mecánico" icon="traffic_signs/ES/ES_s103.png" type="node,way,relation">
+				<key key="shop" value="hardware" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Telephone" ca.name="Telèfon" es.name="Teléfono" icon="traffic_signs/ES/ES_s104.png" type="node,way,relation">
+				<key key="amenity" value="telephone" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>					  
+
+				<item name="Fuel" ca.name="Benzinera" es.name="Gasolinera" icon="traffic_signs/ES/ES_s105.png" type="node,way,relation">
+				<key key="amenity" value="fuel" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Fuel and Workshop" ca.name="Benzinera i taller mecànic" es.name="Gasolinera y Taller mecánico" icon="traffic_signs/ES/ES_s106.png" type="node,way,relation">
+				<key key="amenity" value="fuel" />
+				<key key="shop" value="hardware" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Spring" ca.name="Font" es.name="Fuente" icon="traffic_signs/ES/ES_s108.png" type="node,way,relation">
+				<key key="natural" value="spring" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Viewpoint" ca.name="Lloc paisatgístic" es.name="Lugar paisajístico" icon="traffic_signs/ES/ES_s109.png" type="node,way,relation">
+				<key key="tourism" value="viewpoint" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Picnic place" ca.name="Zona de pícnic" es.name="Zona de pícnic" icon="traffic_signs/ES/ES_s114.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Hiking zone" ca.name="Zona d'excursionisme" es.name="Zona de excursionismo" icon="traffic_signs/ES/ES_s115.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Restaurant" ca.name="Restaurant" es.name="Restaurante" icon="traffic_signs/ES/ES_s111.png" type="node,way,relation">
+				<key key="amenity" value="restaurant" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Café" ca.name="Cafeteria" es.name="Cafetería" icon="traffic_signs/ES/ES_s112.png" type="node,way,relation">
+				<key key="amenity" value="cafe" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Information office" ca.name="Oficina de turisme" es.name="Oficina de turismo" icon="traffic_signs/ES/ES_s118.png" type="node,way,relation">
+				<key key="tourism" value="information" />
+				<key key="information" value="office" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Fishing reserve" ca.name="Zona de pesca controlada" es.name="Coto de pesca" icon="traffic_signs/ES/ES_s119.png" type="node,way,relation">
+				<key key="leisure" value="fishing" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Natural reserve" ca.name="Parc natural" es.name="Parque natural" icon="traffic_signs/ES/ES_s120.png" type="node,way,relation">
+				<key key="leisure" value="natural_reserve" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Monument" ca.name="Monument" es.name="Monumento" icon="traffic_signs/ES/ES_s121.png" type="node,way,relation">
+				<key key="historic" value="monument" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Resting Area" ca.name="Àrea de descans" es.name="Área de descanso" icon="traffic_signs/ES/ES_s123.png" type="node,way,relation">
+				<key key="highway" value="rest_area" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+									<group name="Accommodation" ca.name="Allotjament i acampada" es.name="Alojamiento-Camping" icon="traffic_signs/ES/ES_s107.png">
+							
+							<item name="Camp site" ca.name="Zona d`acampada" es.name="Zona de acampada" icon="traffic_signs/ES/ES_s107.png" type="node,way,relation">
+					<key key="tourism" value="camp_site" />
+					<key key="tents" value="yes" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+							
+					<item name="Caravan" ca.name="Lloc per caravanes" es.name="Lugar para caravanas" icon="traffic_signs/ES/ES_s113.png" type="node,way,relation">
+					<key key="tourism" value="caravan_site" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+							
+					<item name="Camp and Caravan site" ca.name="Zona d`acampada també per a caravanes" es.name="Campamento y terreno para remolques-vivienda" icon="traffic_signs/ES/ES_s116.png" type="node,way,relation">
+					<key key="tourism" value="caravan_site" />
+					<key key="tents" value="yes" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+		
+					<item name="Hotel" ca.name="Hotel" es.name="Hotel" icon="traffic_signs/ES/ES_s110.png" type="node,way,relation">
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Youth hostel" ca.name="Alberg de joventut" es.name="Albergue de juventud" icon="traffic_signs/ES/ES_s117.png" type="node,way,relation">
+					<key key="tourism" value="picnic_site" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				</group>
+
+				<item name="Other info" ca.name="Altres informacions" es.name="Otras informaciones" icon="traffic_signs/ES/ES_s122.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+			</group>
+
+			<group name="Motorways" ca.name="Autopistes-Autovies" es.name="Autopistas-Autovías" icon="traffic_signs/ES/ES_s1.png">
+
+				<item name="Motorway" ca.name="Autopista" es.name="Autopista" icon="traffic_signs/ES/ES_s1.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Motor road" ca.name="Autovia" es.name="Autovía" icon="traffic_signs/ES/ES_s1a.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="End motorway" ca.name="Fi d'autopista" es.name="Fin de autopista" icon="traffic_signs/ES/ES_s2.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>   
+
+				<item name="End motor road" ca.name="Fi d'autovia" es.name="Fin de autovía" icon="traffic_signs/ES/ES_s2a.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>   
+
+				<item name="Motorway junction" ca.name="Sortida" es.name="Salida" icon="traffic_signs/ES/ES_s26a.png" type="node,way,relation">
+				<combo key="distance" text="Junction's distance" ca.text="Distància de la sortida" es.text="Distancia de la salida" values="300,200,100" default="" />
+				<text key="exit_to" text="Exit to" ca.text="Sortida cap a" es.text="Salida hacia" default="" />
+				<text key="name" text="Name of the junction" ca.text="Nom de la sortida" es.text="Nombre de la salida" default="" />
+				<text key="ref" text="Reference of the junction" ca.text="Número de sortida" es.text="Número de salida" default="" />
+				<key key="highway" value="motorway_junction" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+							<space />
+							<key key="type" value="destination_sign" />
+							<key key="direction" value="forward" />
+									<combo key="traffic_sign:forward" text="signal type" es.text="Tipo de señal" ca.text="Tipus de senyal">
+									<list_entry value="" display_value="" es.short_description="" ca.short_description=""  />
+					<list_entry value="BE:" display_value="Area servicio cercana" es.short_description="Área de Servicio/Descanso" ca.short_description="Àrea de Servei/Descans" />
+					<list_entry value="BE:" display_value="Salida" icon="traffic_signs/ES/ES_s225.png" short_description="Salida" />
+									<list_entry value="BE:" display_value="Salida_referencia" icon="traffic_signs/ES/ES_s235.png" short_description="Salida con referencia" />
+									<list_entry value="ES:s235a" display_value="Pórtico" icon="traffic_signs/ES/ES_s235a.png" short_description="Pórticos verticales" />
+									<list_entry value="BE:" display_value="Orientación" icon="traffic_signs/ES/ES_s602.png" short_description="Orientación (Tiempo y distancia)" />
+							</combo>
+					<text key="colour:back" text="Colour of background" />
+					<text key="colour:text" text="Colour of text" />
+					<text key="colour:arrow" text="Colour of border/arrow" />
+	<text key="ref" text="Reference" />
+									<combo key="colour:ref" text="Colour ref">                
+									<list_entry value="black" display_value="black" icon="black.png" es.short_description="Negro" ca.short_description="Negre" />
+									<list_entry value="white" display_value="white" icon="white.png" es.short_description="Blanco" ca.short_description="Blanc" />
+									<list_entry value="blue" display_value="blue" icon="blue.png" es.short_description="Azul" ca.short_description="Blau" />
+									<list_entry value="turquese" display_value="turquese" icon="turquese.png" es.short_description="Turquesa" ca.short_description="Turquesa" />
+									<list_entry value="yellow" display_value="yellow" icon="yellow.png" es.short_description="Amarillo" ca.short_description="Groc" />
+									<list_entry value="orange" display_value="orange" icon="orange.png" es.short_description="Naranja" ca.short_description="Orange" />
+									<list_entry value="red" display_value="red" icon="red.png" es.short_description="Rojo" ca.short_description="Vermell" />             
+									<list_entry value="purple" display_value="purple" icon="purple.png" es.short_description="Lila" ca.short_description="Lila"  />
+									<list_entry value="brown" display_value="brown"  icon="brown.png" es.short_description="Marrón" ca.short_description="Marró" />
+									<list_entry value="green" display_value="green"  icon="green.png" es.short_description="Verde" ca.short_description="Verd" />
+																									</combo>
+									<text key="length" text="Distancia que queda para el cruce" />
+													<combo key="turn:destination" icon="black.png" text="Flecha">
+	<list_entry value="through" display_value="through" icon="black_through_city.png" es.short_description="Recto" ca.short_description="Recte" />
+	<list_entry value="slight_right" display_value="slight_right" icon="black_slight_right_city.png" es.short_description="Derecha superior" ca.short_description="Dreta superior" />
+	<list_entry value="right" display_value="right" icon="black_right_city.png" es.short_description="Derecha" ca.short_description="Dreta" />
+	<list_entry value="sharp_right" display_value="sharp_right" icon="black_sharp_right_city.png" es.short_description="Derecha inferior" ca.short_description="Dreta inferior" />
+	<list_entry value="under" display_value="under" icon="black_under_city.png" es.short_description="Debajo" ca.short_description="Sota" />
+	<list_entry value="sharp_left" display_value="sharp_left" icon="black_sharp_left_city.png" es.short_description="Izquierda inferior" ca.short_description="Esquerra inferior" />             
+	<list_entry value="left" display_value="left" icon="black_left_city.png" es.short_description="Izquierda" ca.short_description="Esquerra"  />
+	<list_entry value="slight_left" display_value="slight_left"  icon="black_slight_left_city.png" es.short_description="Izquierda superior" ca.short_description="Esquerra superior" />
+																									</combo>
+							<text key="destination:1" text="Destination 1"  />
+													<text key="destination" text="Destination unique or 2"  />
+													<text key="destination:3" text="Destination 3" />
+							<text key="distance:1" text="Distance (km)" />
+													<text key="distance" text="Distance (km)unique or 2" />
+													<text key="distance:3" text="Distance (km)" />
+							<text key="time:1" text="Time (hh:mm, for trekking)" />
+													<text key="time" text="Time 2 or unique (hh:mm, for trekking)" />
+													<text key="time:3" text="Time (hh:mm, for trekking)" />
+													<text key="sign:1" text="Sign 1" />
+													<text key="sign" text="Sign 2 or unique" />
+													<text key="sign:3" text="Sign 3" />
+
+					 <combo key="traffic_sign:b" text="signal type" es.text="Tipo de señal" ca.text="Tipus de senyal">                         
+									<list_entry value="BE:" display_value="Salida_referencia" short_description="Salida con referencia" />
+									<list_entry value="ES:s235a" display_value="Pórtico" short_description="Pórticos verticales" />
+	</combo>
+													 <text key="colour:back:b" text="Colour of background:b" />
+							<text key="colour:text:b" text="Colour of text:b" />
+							<text key="colour:arrow:b" text="Colour of border/arrow:b" />
+	<text key="ref:b" text="Reference:b" />
+													<text key="colour:ref:b" text="color referencia:b" />
+													<text key="length:b" text="Distancia que queda para el cruce:b" />
+											   <combo key="turn:destination:b" icon="black.png" text="Flecha 1">
+	<list_entry value="through" display_value="through" icon="black_through_city.png" es.short_description="Recto" ca.short_description="Recte" />
+	<list_entry value="slight_right" display_value="slight_right" icon="black_slight_right_city.png" es.short_description="Derecha superior" ca.short_description="Dreta superior" />
+	<list_entry value="right" display_value="right" icon="black_right_city.png" es.short_description="Derecha" ca.short_description="Dreta" />
+	<list_entry value="sharp_right" display_value="sharp_right" icon="black_sharp_right_city.png" es.short_description="Derecha inferior" ca.short_description="Dreta inferior" />
+	<list_entry value="under" display_value="under" icon="black_under_city.png" es.short_description="Debajo" ca.short_description="Sota" />
+	<list_entry value="sharp_left" display_value="sharp_left" icon="black_sharp_left_city.png" es.short_description="Izquierda inferior" ca.short_description="Esquerra inferior" />             
+	<list_entry value="left" display_value="left" icon="black_left_city.png" es.short_description="Izquierda" ca.short_description="Esquerra"  />
+	<list_entry value="slight_left" display_value="slight_left"  icon="black_slight_left_city.png" es.short_description="Izquierda superior" ca.short_description="Esquerra superior" />
+																									</combo>
+							<text key="destination:b:1" text="Destination 1:b"  />
+													<text key="destination:b" text="Destination:b unique or 2"  />
+													<text key="destination:b:3" text="Destination:b 3" />
+							<text key="distance:b:1" text="Distance:b (km)" />
+													<text key="distance:b" text="Distance:b (km)unique or 2" />
+													<text key="distance:b:3" text="Distance:b (km)" />
+							<text key="time:b:1" text="Time:b (hh:mm, for trekking)" />
+													<text key="time:b" text="Time 2:b or unique (hh:mm, for trekking)" />
+													<text key="time:b:3" text="Time:b (hh:mm, for trekking)" />
+													<text key="sign:b:1" text="Sign:b 1" />
+													<text key="sign:b" text="Sign:b 2 or unique" />
+													<text key="sign:b:3" text="Sign:b 3" />
+													
+
+	 </item>
+
+				<item name="Compulsory automatic toll" ca.name="Obligació Via T" es.name="Obligación Vía T" icon="traffic_signs/ES/ES_r418.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<key key="toll:automatic" value="Via T" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>   
+
+				<item name="Advisory automatic toll" ca.name="Posibilitat Vía T" es.name="Posibilidad Vía T" icon="traffic_signs/ES/ES_s32.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<key key="toll:automatic" value="Via T" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Emergency phone" ca.name="Pal SOS" es.name="Poste SOS" icon="traffic_signs/ES/ES_s27.png" type="node,way,relation">
+				<key key="emergency" value="phone" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>  
+
+				<item name="Refuge area" ca.name="Apartador al túnel" es.name="Apartadero en túneles" icon="traffic_signs/ES/ES_s34.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Emergency refuge area" ca.name="Apartador al túnel (SOS)" es.name="Apartadero en túnel (SOS)" icon="traffic_signs/ES/ES_s34a.png" type="node,way,relation">
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<group name="Lane drop" ca.name="Enllaços" es.name="Enlaces" icon="traffic_signs/ES/ES_s63.png">
+
+					<item name="Slight left|Through" ca.name="Esquerra|Recte" es.name="Izquierda|Recto" icon="traffic_signs/ES/ES_s60a.png" type="node,way,relation">
+					<key key="lanes" value="2" />
+					<key key="turn:lanes:forward" value="slight_left|through" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="2" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Through|Slight right" ca.name="Recte|Dreta" es.name="Recto|Derecha" icon="traffic_signs/ES/ES_s60b.png" type="node,way,relation">
+					<key key="lanes" value="2" />
+					<key key="turn:lanes:forward" value="through|slight_right" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="2" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Slight left|Through|Through" ca.name="Esquerra|Recte|Recte" es.name="Izquierda|Recto|Recto" icon="traffic_signs/ES/ES_s61a.png" type="node,way,relation">
+					<key key="lanes" value="3" />
+					<key key="turn:lanes:forward" value="slight_left|through|through" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="3" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Through|Through|Slight right" ca.name="Recte|Recte|Dreta" es.name="Recto|Recto|Derecha" icon="traffic_signs/ES/ES_s61b.png" type="node,way,relation">
+					<key key="lanes" value="3" />
+					<key key="turn:lanes:forward" value="through|through|slight_right" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="3" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Slight left|Through|Through|Through" ca.name="Esquerra|Recte|Recte|Recte" es.name="Izquierda|Recto|Recto|Recto" icon="traffic_signs/ES/ES_s62a.png" type="node,way,relation">
+					<key key="lanes" value="4" />
+					<key key="turn:lanes:forward" value="slight_left|through|through|through" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="4" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Through|Through|Through|Slight right" ca.name="Recte|Recte|Recte|Dreta" es.name="Recto|Recto|Recto|Derecha" icon="traffic_signs/ES/ES_s62b.png" type="node,way,relation">
+					<key key="lanes" value="4" />
+					<key key="turn:lanes:forward" value="through|through|through|slight_right" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="4" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Slight left|Slight left|Slight right|Slight right" ca.name="Esquerra|Esquerra|Dreta|Dreta" es.name="Izquierda|Izquierda|Derecha|Derecha" icon="traffic_signs/ES/ES_s63.png" type="node,way,relation">
+					<key key="lanes" value="4" />
+					<key key="turn:lanes:forward" value="slight_left|slight_left|slight_right|slight_right" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="4" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Goods vehicles lane" ca.name="Carril per vehicles lents" es.name="Carril para vehículos lentos" icon="traffic_signs/ES/ES_s50c.png" type="node,way,relation">
+					<text key="minspeed:lanes:forward" text="Minimum speed x lane" ca.text="Velocitat mínima exigida" es.text="Velocidad mínima exigida" default="70|70|" />
+					<key key="lanes" value="3" />
+					<key key="turn:lanes:forward" value="through|through|slight_right" />
+					<key key="oneway" value="yes" />
+					<key key="lanes:forward" value="3" />
+					<key key="lanes:backward" value="0" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Goods vehicles lane (cont.)" ca.name="Carril per vehicles lents (cont.)" es.name="Carril para vehículos lentos (cont.)" icon="traffic_signs/ES/ES_s50e.png" type="node,way,relation">
+					<text key="minspeed:lanes:forward" text="Velocidad mínima exigida" default="70|70|" />
+					<key key="lanes" value="3" />
+					<key key="oneway" value="yes" />
+					<key key="turn:lanes:forward" value="through|through|through" />
+					<key key="lanes:forward" value="3" />
+					<key key="lanes:backward" value="0" />
+					<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>  
+
+				</group>
+			</group>
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+
+				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
+				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
+				<text key="ref" text="In which road?" ca.text="A quina carretera?" es.text="¿En qué carretera?" default="" />
+				<text key="ref:colour" text="Colour of highways`s plate" ca.text="Color de la placa de la via" es.text="Color de la placa de la vía" default="" />
+				<text key="ref_int" text="European route (if any)" ca.text="Ruta europea (si n`hi pertany)" es.text="Referencia ruta europea si la hay" default="" />
+				<key key="traffic_sign:forward" value="BE:" />
+					<key key="traffic_sign:backward" value="BE:" />
+				<key key="highway" value="milestone" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
+				</item>
+
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<text key="maxspeed" text="Velocidad" default="" />
+				<key key="traffic_sign:forward" value="CAT:radar" />
+				<key key="highway" value="speed_camera" />
+				<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+				<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<group name="Beacons" ca.name="Balises" es.name="Balizas" icon="traffic_signs/ES/ES_road_beacon_big.png">
+					
+					<item name="Beacon" ca.name="Balisa" es.name="Baliza" icon="traffic_signs/ES/ES_road_beacon_little.png" type="node">
+					<key key="traffic_sign:forward" value="ES:road:beacon:little" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+
+					<item name="Junction beacon" ca.name="Balisa de sortida" es.name="Baliza de salida" icon="traffic_signs/ES/ES_road_beacon_big.png" type="node">
+					<key key="traffic_sign:forward" value="ES:road:beacon:big" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+
+				<group name="Beacon to right" ca.name="Balisa corba a dreta" es.name="Baliza curva a derecha" icon="traffic_signs/ES/ES_panel_dir_right_3.png">
+
+					<item name="Beacon right motorway" ca.name="Balisa corba dreta autopista" es.name="Baliza curva derecha autopista" icon="traffic_signs/ES/ES_panel_dir_right.png" type="node">
+					<key key="traffic_sign:forward" value="ES:panel:dir:right" />
+					<text key="panels" text="Number of beacons" ca.text="Nombre de balises" es.text="Número de balizas" default="" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Beacon right highway" ca.name="Balisa corba dreta carretera" es.name="Baliza curva derecha carretera" icon="traffic_signs/ES/ES_panel_dir_right_2.png" type="node">
+					<key key="traffic_sign:forward" value="ES:panel:dir:right:2" />
+					<text key="panels" text="Number of beacons" ca.text="Nombre de balises" es.text="Número de balizas" default="" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>  
+
+					<item name="Beacon right tertiary" ca.name="Balisa corba dreta local" es.name="Baliza curva derecha local" icon="traffic_signs/ES/ES_panel_dir_right_3.png" type="node">
+					<key key="traffic_sign:forward" value="ES:panel:dir:right:3" />
+					<text key="panels" text="Number of beacons" ca.text="Nombre de balises" es.text="Número de balizas" default="" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				</group>
+
+				<group name="Beacon to left" ca.name="Balisa corba a esquerra" es.name="Baliza curva a izquierda" icon="traffic_signs/ES/ES_panel_dir_left_3.png">
+					<item name="Beacon left motorway" ca.name="Balisa corba esquerra autopista" es.name="Baliza curva izquierda autopista" icon="traffic_signs/ES/ES_panel_dir_left.png" type="node">
+					<key key="traffic_sign:forward" value="ES:panel:dir:left" />
+					<text key="panels" text="Number of beacons" ca.text="Nombre de balises" es.text="Número de balizas" default="" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Beacon left highway" ca.name="Balisa corba esquerra carretera" es.name="Baliza curva izquierda carretera" icon="traffic_signs/ES/ES_panel_dir_left_2.png" type="node">
+					<key key="traffic_sign:forward" value="ES:panel:dir:left:2" />
+					<text key="panels" text="Number of beacons" ca.text="Nombre de balises" es.text="Número de balizas" default="" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+					<item name="Beacon right tertiary" ca.name="Balisa corba dreta local" es.name="Baliza curva derecha local" icon="traffic_signs/ES/ES_panel_dir_left_3.png" type="node">
+					<key key="traffic_sign:forward" value="ES:panel:dir:left:3" />
+					<text key="panels" text="Number of beacons" ca.text="Nombre de balises" es.text="Número de balizas" default="" />
+					<label text="Important note: Delete the one you don't use. " ca.text="Nota important: esborra el que no facis servir." es.text="Nota importante: borra la que no vayas a utilizar."/>
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+	</group>
+	</group>
+	</group>
+	</group>
 		
 			<group name="Czech Republic" ca.name="República Txeca" es.name="República Checa" icon="traffic_signs/ES/ES_traffic_sign_dir.png">
 
@@ -11663,6 +13374,8 @@ baselanguage="es">
 	</group>
 	</group>
 	</group>
+	
+	
 	
 	<group name="Slovakia" ca.name="Eslovàquia" es.name="Eslovaquia" icon="traffic_signs/ES/ES_traffic_sign_dir.png">
 
