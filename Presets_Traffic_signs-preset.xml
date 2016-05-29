@@ -1150,8 +1150,9 @@ baselanguage="es">
 					<item name="Straight ahead" ca.name="Sentit obligatori (recte)" es.name="Sentido obligatorio (recto)" icon="traffic_signs/BE/BE_D1_UP.png" type="node,way,relation">
 					<key key="restriction" value="only_straight_on" />
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_on="BE:D1" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_on="BE:D1" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
+<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_on="BE:D1" /></item> 
+
 					<item name="Turn right ahead" ca.name="Sentit obligatori (recte dreta)" es.name="Sentido obligatorio (recto derecha)" icon="traffic_signs/BE/BE_D1_CURVEDRIGHT.png" type="node,way,relation">
 					<key key="restriction" value="only_right_turn" />
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_on="BE:D1" />
