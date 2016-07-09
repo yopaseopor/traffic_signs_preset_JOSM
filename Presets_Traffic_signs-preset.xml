@@ -326,12 +326,19 @@ baselanguage="es">
 			<key key="highway" value="crossing" />
 			<label text="Crossings:" ca.text="Pas de vianants:" es.text="Paso de peatones:"/>
 			<combo key="crossing" text="Crossing types" ca.text="Tipus de pas de vianants" es.text="Tipo de paso de peatones" values="uncontrolled,traffic_signals,island,unmarked,no" ca.display_values="no controlat,regulat semàfor,illeta,no marcat,no creuar" es.display_values="no controlado,regulado semáforo,isleta,no marcado,no cruzar"/>
+			<label text="Controlled by traffic signals" ca.text="Amb semàfor" es.text="Con semáforo"/>
 			<check key="button_operated" text="Button operated" ca.text="Semàfor amb botó" es.text="Semáforo con botón"/>
-			<check key="sloped_curb" text="Adapted kerb" ca.text="Vorada adaptada" es.text="Bordillo adaptado"/>
 			<check key="traffic_signals:sound" text="Sound signals" ca.text="Senyals sonors" es.text="Señales acústicas"/>
+			<check key="traffic_signals:vibration" text="Vibration signals" ca.text="Senyals vibratoris" es.text="Señales vibratorias"/>
+			<label text="Others" ca.text="Resta" es.text="Resto"/>
+			<combo key="kerb" text="Adapted kerb" ca.text="Vorada adaptada" es.text="Bordillo adaptado" values="lowered,flush" ca.display_values="reduïda, anivellada" es.display_values="reducido,nivelado"/>
 			<combo key="supervised" text="Crossing attendant" ca.text="Pas regulat" es.text="Paso regulado" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" />
 			<check key="bicycle" text="Cross by bicycle" ca.text="Bicicletes" es.text="Bicicletas"/>
 			<check key="horse" text="Cross on horseback" ca.text="Cavalls" es.text="Caballos"/>
+			<check key="segregated" text="Segregated" ca.text="Segregat" es.text="Segregado"/>
+			<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
+			
 			<optional text="Optional values for specific countries">
 			<combo key="crossing_ref" text="Crossing type name (UK)" values="zebra,pelican,toucan,puffin,pegasus,tiger" />
 			<text key="name" text="Name" ca.text="Nom" es.text="Nombre"/>
@@ -804,7 +811,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/BE/BE_A14.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="BE:A14" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="BE:A14" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -1613,6 +1622,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/BE/BE_F49.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="BE:F49" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="BE:F49" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -1620,12 +1631,16 @@ baselanguage="es">
 <item name="Bike crossing" ca.name="Pas de bicicletes" es.name="Paso de bicicletas" icon="traffic_signs/BE/BE_F50.png" type="node,way,relation">
 					<key key="bicycle" value="yes" />
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="BE:F49" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="BE:F49" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
 
 <item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/BE/BE_F87.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="BE:F87" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="BE:F87" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
@@ -2058,7 +2073,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/ES/ES_p15a.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:p15a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -2617,6 +2634,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s13" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -3446,7 +3465,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/FI/FI_141a.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:141a" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:141a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -4084,6 +4105,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -4949,7 +4972,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/ES/ES_p15a.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:p15a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -5508,6 +5533,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s13" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -6309,7 +6336,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/ES/ES_p15a.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:p15a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -6868,6 +6897,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s13" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -7669,7 +7700,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/ES/ES_p15a.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:p15a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -8228,6 +8261,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s13" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -8997,7 +9032,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/NL/NL_J38.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="NL:J38" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="NL:J38" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -9100,7 +9137,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 <item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/NL/NL_J22.png" type="node,way,relation">
-					<key key="highway" value="crossing" />			
+					<key key="highway" value="crossing" />
+<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>					
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="NL:J22" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="NL:J22" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
@@ -9614,6 +9653,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/NL/NL_L2.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="NL:L2" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="NL:L2" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -10177,7 +10218,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/ES/ES_p15a.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:p15a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -10739,6 +10782,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s13" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -11540,7 +11585,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/ES/ES_p15a.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:p15a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -12099,6 +12146,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s13" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -12902,7 +12951,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/ES/ES_p15a.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:p15a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -13461,6 +13512,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s13" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
@@ -14290,7 +14343,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/ES/ES_p15a.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:P15a" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:P15a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -14955,6 +15010,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S13" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S13" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -15847,7 +15904,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/ES/ES_p15a.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:P15a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -16495,6 +16554,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S13" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -17404,7 +17465,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/ES/ES_p15a.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:P15a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -18052,6 +18115,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S13" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -18961,7 +19026,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/ES/ES_p15a.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:P15a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -19609,6 +19676,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S13" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -20518,7 +20587,9 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Bump" ca.name="Ressalt" es.name="Resalto" fr.name="Ralentisseur" icon="traffic_signs/ES/ES_p15a.png" type="node,way,relation">
-					<key key="traffic_calming" value="bump" />
+					<combo key="traffic_calming" text="Type of bump" ca.text="Tipus de ressalt" es.text="Tipo de resalto" values="bump,hump,table,cushion" ca.display_values="estret,gros,pas de vianants,quadrat" es.display_values="estrecho,ancho,paso de peatones,cuadrado" default="right" />
+					<check key="highway" text="Crossing" ca.text="Pas de vianants pintat" es.text="Paso de peatones pintado" default="off" value_off="" value_on="crossing" />
+					<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:P15a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
@@ -21166,6 +21237,8 @@ baselanguage="es">
 
 					<item name="Crossing" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs/ES/ES_s13.png" type="node,way,relation">
 					<key key="highway" value="crossing" />
+					<check key="traffic_calming" text="Table on road?" ca.text="Ressalt" es.text="Resalto" value_on="table"/>
+			<combo key="flashing_lights" text="Flashing lights" ca.text="Indicat amb llum" es.text="Indicado con luz" values="yes,no,always" ca.display_values="sí,no,sempre" es.display_values="si,no,siempre"/>
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S13" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
