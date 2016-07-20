@@ -9,11 +9,11 @@ baselanguage="es">
 
 <!-- Based on Quick-highways from lzhl, for parking options Parking Lanes from Sebastian Klemm, Kay Drangmeister.Icons from OSM Wiki , wikipedia and JOSM. Partial french translation by Xapitoun. Spanish and Catalan translation by yopaseopor .We wish translations and localizations.Can you help us? -->
 
-<group name="Traffic_signs" es.name="Traffic_signs" icon="ES_road_beacon_big.png">
-	<group name="A.Ways" es.name="A.Vías" ca.name="A.Vies" icon="ES_ruta_europea.png">		   
-		<group name="Highways" es.name="1.Carreteras" ca.name="1.Carreteres" icon="secondary.png">
+<group name="Traffic_signs" es.name="Traffic_signs" icon="traffic_signs_presets/ES_road_beacon_big.png">
+	<group name="A.Ways" es.name="A.Vías" ca.name="A.Vies" icon="traffic_signs_presets/ES_ruta_europea.png">		   
+		<group name="Highways" es.name="1.Carreteras" ca.name="1.Carreteres" icon="traffic_signs_presets/secondary.png">
 
-			<item name="Motorway" es.name="Autopista/Autovía" ca.name="Autopista/Autovia" fr.name="Autoroute" icon="ES_motorway.png" type="node,relation,way,closedway">
+			<item name="Motorway" es.name="Autopista/Autovía" ca.name="Autopista/Autovia" fr.name="Autoroute" icon="traffic_signs_presets/ES_motorway.png" type="node,relation,way,closedway">
 			<label text="Common propierties" ca.text="Propietats comuns" es.text="Propiedades comunes" icon="https://upload.wikimedia.org/wikipedia/commons/3/3f/Motorway_photo_300px.jpg"/>
 			<combo key="highway" text="Main lane or link" es.text="Carril principal o enlace" ca.text="Carril principal o enllaç" default="motorway"> 
 			<list_entry value="motorway" display_value="Main" short_description="Main road" icon="http://wiki.openstreetmap.org/w/images/thumb/d/d0/Cesta_od_Le%C5%A1tiny_do_Lipnice_nad_S%C3%A1zavou_%282%29.jpg/80px-Cesta_od_Le%C5%A1tiny_do_Lipnice_nad_S%C3%A1zavou_%282%29.jpg" ca.display_value="Principal" ca.short_description="Calçada principal de l'autopista" es.display_value="Principal" es.short_description="Calzada principal de la autopista" />
@@ -38,7 +38,7 @@ baselanguage="es">
 			<check key="lit"  text="Lit" ca.text="Il·luminació" es.text="Iluminación" default="off" value_off="" />
 			</item>
 
-			<item name="Trunk" ca.name="Carretera nacional o Carretera autonòmica de primer nivell en bon estat" fr.name="Voie rapide" es.name="Carretera nacional o Carretera autonómica de primer nivel en buen estado" icon="ES_trunk.png" type="node,relation,way,closedway">
+			<item name="Trunk" ca.name="Carretera nacional o Carretera autonòmica de primer nivell en bon estat" fr.name="Voie rapide" es.name="Carretera nacional o Carretera autonómica de primer nivel en buen estado" icon="traffic_signs_presets/ES_trunk.png" type="node,relation,way,closedway">
 			<combo key="highway" text="Main lane or link" es.text="Carril principal o enlace" ca.text="Carril principal o enllaç" values="trunk,trunk_link" ca.display_values="Principal,Enllaç" en.display_values="Main,Link" es.display_values="Principal,Enlace" />
 			<text key="ref" text="Reference" es.text="Referencia de la carretera" ca.text="Referència de la carretera" />
 			<text key="name" text="Name" es.text="Nombre" ca.text="Nom" />
@@ -63,7 +63,7 @@ baselanguage="es">
 			<check key="lit"  text="Lit" ca.text="Il·luminació" es.text="Iluminación" default="off" value_off="" />			  
 			</item>
 
-			<item name="Primary" ca.name="Carretera nacional o Carretera autonòmica de primer nivel en mal estat" es.name="Carretera nacional o Carretera autonómica de primer nivel en mal estado" icon="ES_primary.png" type="node,relation,way,closedway">
+			<item name="Primary" ca.name="Carretera nacional o Carretera autonòmica de primer nivel en mal estat" es.name="Carretera nacional o Carretera autonómica de primer nivel en mal estado" icon="traffic_signs_presets/ES_primary.png" type="node,relation,way,closedway">
 			<combo key="highway" text="Main lane or link" es.text="Carril principal o enlace" ca.text="Carril principal o enllaç" values="primary,primary_link" ca.display_values="Principal,Enllaç" en.display_values="Main,Link" es.display_values="Principal,Enlace"/>
 			<text key="ref" text="Reference" es.text="Referencia de la carretera" ca.text="Referència de la carretera" />
 			<text key="name" text="Name" es.text="Nombre" ca.text="Nom" />
@@ -89,7 +89,7 @@ baselanguage="es">
 			<check key="lit"  text="Lit" ca.text="Il·luminació" es.text="Iluminación" default="off" value_off="" />			  
 			</item>
 
-			<item name="Secondary" ca.name="Carretera secundària o autonòmica de segon nivell" es.name="Carretera secundaria o autonómica de segundo nivel" icon="ES_secondary.png" type="node,relation,way,closedway">
+			<item name="Secondary" ca.name="Carretera secundària o autonòmica de segon nivell" es.name="Carretera secundaria o autonómica de segundo nivel" icon="traffic_signs_presets/ES_secondary.png" type="node,relation,way,closedway">
 			<combo key="highway" text="Main lane or link" es.text="Carril principal o enlace" ca.text="Carril principal o enllaç" values="secondary,secondary_link" ca.display_values="Principal,Enllaç" en.display_values="Main,Link" es.display_values="Principal,Enlace"/>
 			<text key="ref" text="Reference" es.text="Referencia de la carretera" ca.text="Referència de la carretera" />
 			<text key="name" text="Name" es.text="Nombre" ca.text="Nom" />
@@ -115,7 +115,7 @@ baselanguage="es">
 			<check key="lit"  text="Lit" ca.text="Il·luminació" es.text="Iluminación" default="off" value_off="" />			  
 			</item>
 
-			<item name="Tertiary" ca.name="Carretera local" es.name="Carretera local" icon="ES_tertiary.png" type="node,relation,way,closedway">
+			<item name="Tertiary" ca.name="Carretera local" es.name="Carretera local" icon="traffic_signs_presets/ES_tertiary.png" type="node,relation,way,closedway">
 			<combo key="highway" text="Main lane or link" es.text="Carril principal o enlace" ca.text="Carril principal o enllaç" values="tertiary,tertiary_link" ca.display_values="Principal,Enllaç" en.display_values="Main,Link" es.display_values="Principal,Enlace"/>
 			<text key="ref" text="Reference" es.text="Referencia de la carretera" ca.text="Referència de la carretera" />
 			<text key="name" text="Name" es.text="Nombre" ca.text="Nom" />
@@ -142,7 +142,7 @@ baselanguage="es">
 			<check key="lit"  text="Lit" ca.text="Il·luminació" es.text="Iluminación" default="off" value_off="" />
 			</item>
 
-			<item name="Unclassified" ca.name="Carretera sense referència" es.name="Carretera sin referencia" icon="unclassified.png" type="node,relation,way,closedway">
+			<item name="Unclassified" ca.name="Carretera sense referència" es.name="Carretera sin referencia" icon="traffic_signs_presets/unclassified.png" type="node,relation,way,closedway">
 			<key key="highway" value="unclassified" />
 			<text key="name" text="Name" es.text="Nombre" ca.text="Nom" />
 			<check key="oneway" text="Oneway" es.text="Sentido único" ca.text="Sentit únic" default="off" value_off="" />
@@ -168,12 +168,12 @@ baselanguage="es">
 			<check key="lit"  text="Lit" ca.text="Il·luminació" es.text="Iluminación" default="off" value_off="" />
 			</item>
 
-			<item name="Road" ca.name="Per arreglar/NS NC" es.name="Por arreglar/NS NC" icon="unclassified.png" type="node,relation,way,closedway">
+			<item name="Road" ca.name="Per arreglar/NS NC" es.name="Por arreglar/NS NC" icon="traffic_signs_presets/unclassified.png" type="node,relation,way,closedway">
 			<text key="name" text="Name" es.text="Nombre" ca.text="Nom" />
 			<text key="fixme" text="Reason why you have to fix this way" ca.text="Motiu pel qual cal corregir la via" es.text="Motivo por el cual hay que corregir la vía"/>
 			</item>
 
-			<item name="Street" ca.name="Carrer" es.name="Calle" icon="residential.png" type="node,relation,way,closedway">
+			<item name="Street" ca.name="Carrer" es.name="Calle" icon="traffic_signs_presets/residential.png" type="node,relation,way,closedway">
 			<combo key="highway" text="Type of street" ca.text="Tipus de carrer" es.text="Tipo de calle" values="residential,living_street,pedestrian,service" />
 			<text key="name" text="Name" es.text="Nombre" ca.text="Nom" />
 			<text key="width" text="Width.Default is 4 x lane.There are thinner streets" ca.text="Amplada. Per defecte és 4 però hi ha carrers més estrets" es.text="Anchura.Por defecto 4 por carril.Hay calles más estrechas" />
@@ -219,7 +219,7 @@ baselanguage="es">
 			</optional>
 			</item>
 
-			<item name="Sidewalks" ca.name="Voreres" es.name="Aceras" icon="residential.png" type="node,relation,way,closedway">
+			<item name="Sidewalks" ca.name="Voreres" es.name="Aceras" icon="traffic_signs_presets/residential.png" type="node,relation,way,closedway">
 			<key key="highway" value="footway" />
 			<key key="lanes" value="1" />
 			<combo key="footway" text="Types" ca.text="Tipus" es.text="Tipos" values="sidewalk,crossing" ca.display_values="vorera,pas de vianants" es.display_values="acera,cruce de peatones" />
@@ -233,7 +233,7 @@ baselanguage="es">
 			</optional>
 			</item>
 
-			<item name="Square/Park" ca.name="Plaça/Parc urbà" es.name="Plaza/Parque urbano" icon="service.png" type="node,relation,way,closedway">
+			<item name="Square/Park" ca.name="Plaça/Parc urbà" es.name="Plaza/Parque urbano" icon="traffic_signs_presets/service.png" type="node,relation,way,closedway">
 			<key key="area" value="yes" />
 			<key key="layer" value="1" />
 			<text key="name" text="Name" ca.text="Nom" es.text="Nombre"/>
@@ -242,14 +242,14 @@ baselanguage="es">
 			<check key="landuse" text="Grass" ca.text="Herba,descurat" es.text="Hierba,sin cuidado" value_on="grass" />
 			</item>
 
-			<item name="Traffic_island" ca.name="Illeta" es.name="Isleta" icon="service.png" type="way,closedway,relation,node">
+			<item name="Traffic_island" ca.name="Illeta" es.name="Isleta" icon="traffic_signs_presets/service.png" type="way,closedway,relation,node">
 			<key key="area" value="yes" />
 			<key key="landuse" value="traffic_island" />
 			<check key="kerb" text="Kerb" ca.text="Vorada" es.text="Bordillo"/>
 			<combo key="leisure" text="Garden or monument" ca.text="Jardí o Monument" es.text="Jardín o Monumento?" values="garden,monument" ca.display_values="jardí,monument" es.display_values="jardín,monumento" default="" />
 			</item>
 												
-			<item name="Traffic Signal" ca.name="Semàfor" es.name="Semáforo" icon="styles/standard/vehicle/traffic_signals.svg" type="node" preset_name_label="true">
+			<item name="Traffic Signal" ca.name="Semàfor" es.name="Semáforo" icon="traffic_signs_presets/traffic_signals.svg" type="node" preset_name_label="true">
 			<link href="http://wiki.openstreetmap.org/wiki/Tag:highway=traffic_signals"
 			ca.href="http://wiki.openstreetmap.org/wiki/CA:Tag:highway=traffic_signals"
 			es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=traffic_signals"
@@ -278,7 +278,7 @@ baselanguage="es">
 			</optional>
 			</item>
 
-			<item name="Service" es.name="Via de servicio" ca.name="Via de servei" icon="service.png" type="node,relation,way,closedway">
+			<item name="Service" es.name="Via de servicio" ca.name="Via de servei" icon="traffic_signs_presets/service.png" type="node,relation,way,closedway">
 			<key key="highway" value="service" />
 			<key key="lanes" value="1" />
 			<check key="oneway" text="Oneway" ca.text="Sentit únic" es.text="Sentido único" default="on" />
@@ -287,7 +287,7 @@ baselanguage="es">
 			<combo key="access" text="Private" ca.text="Privat" es.text="Privado" value_on="private" value_off="yes" default="" />
 			</item>
 
-			<item name="Parking" ca.name="Aparcament" es.name="Aparcamiento" icon="presets/parking.png" type="node,closedway,way" preset_name_label="true">
+			<item name="Parking" ca.name="Aparcament" es.name="Aparcamiento" icon="traffic_signs_presets/parking.png" type="node,closedway,way" preset_name_label="true">
 			<combo key="amenity" text="Type" ca.text="Tipus" es.text="Tipo" values="parking,parking_space,parking_entrance,motorcycle_parking,bicycle_parking" ca.display_values="aparcament (genèric),plaça d'aparcament,entrada d'aparcament,motos,bicicletes" es.display_values="aparcamiento (genérico),plaza de aparcamiento,entrada de aparcamiento,motos,bicicletas"/>  
 			<text key="name" text="Name" ca.text="Nom" es.text="Nombre"/>
 			<combo key="parking" text="Type" ca.text="Tipus" es.text="Tipo" values="multi-storey,surface,underground,rooftop" ca.display_values="edifici d'aparcament,superfície,soterrani,d'àtic" es.display_values="edificio de aparcamiento,superficie,subterráneo,de ático"/>
@@ -322,7 +322,7 @@ baselanguage="es">
 			<space />				 
 			</item>
 
-			<item name="Crossings" ca.name="Pas de vianants" es.name="Paso de peatones" icon="styles/standard/vehicle/crossing.svg" type="node,closedway,way" preset_name_label="true">
+			<item name="Crossings" ca.name="Pas de vianants" es.name="Paso de peatones" icon="traffic_signs_presets/crossing.svg" type="node,closedway,way" preset_name_label="true">
 			<key key="highway" value="crossing" />
 			<label text="Crossings:" ca.text="Pas de vianants:" es.text="Paso de peatones:"/>
 			<combo key="crossing" text="Crossing types" ca.text="Tipus de pas de vianants" es.text="Tipo de paso de peatones" values="uncontrolled,traffic_signals,island,unmarked,no" ca.display_values="no controlat,regulat semàfor,illeta,no marcat,no creuar" es.display_values="no controlado,regulado semáforo,isleta,no marcado,no cruzar"/>
@@ -347,7 +347,7 @@ baselanguage="es">
 			</optional>
 			</item>
 
-			<item name="Bicycle Road" ca.name="Carril bici" es.name="Carril bici" icon="bicycle_road.svg" type="node,relation,way,closedway" preset_name_label="true">
+			<item name="Bicycle Road" ca.name="Carril bici" es.name="Carril bici" icon="traffic_signs_presets/bicycle_road.svg" type="node,relation,way,closedway" preset_name_label="true">
 			<key key="bicycle_road" value="yes" />
 			<key key="bicycle" value="designated" />
 			<combo key="highway" text="Highway type" ca.text="Tipus de via del carril" es.text="Tipo de vía del carril" values="residential,service,unclassified,path,cycleway" ca.display_values="carrer,via de servei,carretera,sender,carril bici exclusiu" es.display_values="calle,vía de servicio,carretera,sendero,carril bici exclusivo" values_context="Highway" default="residential" />
@@ -368,7 +368,7 @@ baselanguage="es">
 			</optional>
 			</item>
 
-			<item name="Construction" ca.name="En construcció" es.name="En construcción" icon="presets/construction.png" type="way,closedway">
+			<item name="Construction" ca.name="En construcció" es.name="En construcción" icon="traffic_signs_presets/construction.png" type="way,closedway">
 			<label text="Edit Highway Under Construction" ca.text="Editar via en construcció" es.text="Editar vía en construcción"/>
 			<link href="http://wiki.openstreetmap.org/wiki/Tag:highway=construction"
 			ca.href="http://wiki.openstreetmap.org/wiki/CA:Key:construction"
@@ -399,7 +399,7 @@ baselanguage="es">
 			</item>
 		</group>
 
-		<item name="3.Tracks/Paths/Others" ca.name="3.Camins/Senders/Altres" es.name="3.Caminos/Senderos/Otros" icon="styles/standard/transport/way/track.svg" type="node,relation,way,closedway">  
+		<item name="3.Tracks/Paths/Others" ca.name="3.Camins/Senders/Altres" es.name="3.Caminos/Senderos/Otros" icon="traffic_signs_presets/track.svg" type="node,relation,way,closedway">  
 		<space />
 		<key key="lanes" value="1" />
 		<combo key="highway" text="Track or path or..." ca.text="Camí o sender o..." es.text="Camino o sendero o..." values="track,path,footway,steps,cycleway" ca.display_values="camí,sender/corriol,a peu,escales,via verda" es.display_values="camino,sendero,a pie,escaleras,vía verde" length="3" />
@@ -456,47 +456,47 @@ baselanguage="es">
 		</optional>
 		</item>
 
-		<group name="Basic Tracks" ca.name="Camins Bàsic" es.name="Caminos Básico" icon="black.png">
-			<item name="unclassified" es.name="Carretera asfaltada" icon="asphalt.png" type="way,closedway,relation,node">
+		<group name="Basic Tracks" ca.name="Camins Bàsic" es.name="Caminos Básico" icon="traffic_signs_presets/black.png">
+			<item name="unclassified" es.name="Carretera asfaltada" icon="traffic_signs_presets/asphalt.png" type="way,closedway,relation,node">
 			<key key="highway" value="unclassified" />
 			</item>
 
-			<item name="Track" ca.name="Pista" es.name="Camino" icon="grass.png" type="way,closedway,relation,node">
+			<item name="Track" ca.name="Pista" es.name="Camino" icon="traffic_signs_presets/grass.png" type="way,closedway,relation,node">
 			<key key="highway" value="track" />
 			</item>
 
-			<item name="Track Grade 1" ca.name="Camí asfaltat" es.name="Camino asfaltado" icon="concrete.png" type="way,closedway,relation,node">
+			<item name="Track Grade 1" ca.name="Camí asfaltat" es.name="Camino asfaltado" icon="traffic_signs_presets/concrete.png" type="way,closedway,relation,node">
 			<key key="highway" value="track" />
 			<key key="tracktype" value="grade1" />
 			</item>
 
-			<item name="Track Grade 2" ca.name="Camí sense asfaltar" es.name="Camino sin asfaltar" icon="dirt.png" type="way,closedway,relation,node">
+			<item name="Track Grade 2" ca.name="Camí sense asfaltar" es.name="Camino sin asfaltar" icon="traffic_signs_presets/dirt.png" type="way,closedway,relation,node">
 			<key key="highway" value="track" />
 			<key key="tracktype" value="grade2" />
 			</item>
 
-			<item name="Track Grade 3" ca.name="Camí dolent" es.name="Camino malo" icon="grass.png" type="way,closedway,relation,node">
+			<item name="Track Grade 3" ca.name="Camí dolent" es.name="Camino malo" icon="traffic_signs_presets/grass.png" type="way,closedway,relation,node">
 			<key key="highway" value="track" />
 			<key key="tracktype" value="grade3" />
 			</item>
 
-			<item name="Path" ca.name="Sender" es.name="Sendero" icon="sand.png" type="way,closedway,relation,node">
+			<item name="Path" ca.name="Sender" es.name="Sendero" icon="traffic_signs_presets/sand.png" type="way,closedway,relation,node">
 			<key key="highway" value="path" />
 			</item>
 
-			<item name="Street" ca.name="Carrer" es.name="Calle" icon="residential.png" type="way,closedway,relation,node">
+			<item name="Street" ca.name="Carrer" es.name="Calle" icon="traffic_signs_presets/residential.png" type="way,closedway,relation,node">
 			<key key="highway" value="residential" />
 			</item>
 
-			<item name="Living street" ca.name="Residencial" es.name="Residencial" icon="styles/standard/transport/way/way_living_street.svg" type="way,closedway,relation,node">
+			<item name="Living street" ca.name="Residencial" es.name="Residencial" icon="traffic_signs_presets/way_living_street.svg" type="way,closedway,relation,node">
 			<key key="highway" value="living_street" />
 			</item>
 
-			<item name="Service" ca.name="Via de servei" es.name="Vía de servicio" icon="service.png" type="way,closedway,relation,node">
+			<item name="Service" ca.name="Via de servei" es.name="Vía de servicio" icon="traffic_signs_presets/service.png" type="way,closedway,relation,node">
 			<key key="highway" value="service" />
 			</item>
 
-			<item name="Destination sign" icon="presets/guidepost.png" type="relation" preset_name_label="true">
+			<item name="Destination sign" icon="traffic_signs_presets/guidepost.png" type="relation" preset_name_label="true">
 			<link href="http://wiki.openstreetmap.org/wiki/Relation:destination_sign"
 			de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:destination_sign"
 			es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:destination_sign"
@@ -520,27 +520,27 @@ baselanguage="es">
 			<text key="colour:text" text="Colour of text" />
 			<text key="colour:arrow" text="Colour of border/arrow" />
 			<combo key="colour:ref" text="Colour ref">
-			<list_entry value="black" display_value="black" icon="black.png" es.short_description="Negro" ca.short_description="Negre" />
-			<list_entry value="white" display_value="white" icon="white.png" es.short_description="Blanco" ca.short_description="Blanc" />
-			<list_entry value="blue" display_value="blue" icon="blue.png" es.short_description="Azul" ca.short_description="Blau" />
-			<list_entry value="turquese" display_value="turquese" icon="turquese.png" es.short_description="Turquesa" ca.short_description="Turquesa" />
-			<list_entry value="yellow" display_value="yellow" icon="yellow.png" es.short_description="Amarillo" ca.short_description="Groc" />
-			<list_entry value="orange" display_value="orange" icon="orange.png" es.short_description="Naranja" ca.short_description="Orange" />
-			<list_entry value="red" display_value="red" icon="red.png" es.short_description="Rojo" ca.short_description="Vermell" />		   
-			<list_entry value="purple" display_value="purple" icon="purple.png" es.short_description="Lila" ca.short_description="Lila"  />
-			<list_entry value="brown" display_value="brown"  icon="brown.png" es.short_description="Marrón" ca.short_description="Marró" />
-			<list_entry value="green" display_value="green"  icon="green.png" es.short_description="Verde" ca.short_description="Verd" />
+			<list_entry value="black" display_value="black" icon="traffic_signs_presets/black.png" es.short_description="Negro" ca.short_description="Negre" />
+			<list_entry value="white" display_value="white" icon="traffic_signs_presets/white.png" es.short_description="Blanco" ca.short_description="Blanc" />
+			<list_entry value="blue" display_value="blue" icon="traffic_signs_presets/blue.png" es.short_description="Azul" ca.short_description="Blau" />
+			<list_entry value="turquese" display_value="turquese" icon="traffic_signs_presets/turquese.png" es.short_description="Turquesa" ca.short_description="Turquesa" />
+			<list_entry value="yellow" display_value="yellow" icon="traffic_signs_presets/yellow.png" es.short_description="Amarillo" ca.short_description="Groc" />
+			<list_entry value="orange" display_value="orange" icon="traffic_signs_presets/orange.png" es.short_description="Naranja" ca.short_description="Orange" />
+			<list_entry value="red" display_value="red" icon="traffic_signs_presets/red.png" es.short_description="Rojo" ca.short_description="Vermell" />		   
+			<list_entry value="purple" display_value="purple" icon="traffic_signs_presets/purple.png" es.short_description="Lila" ca.short_description="Lila"  />
+			<list_entry value="brown" display_value="brown"  icon="traffic_signs_presets/brown.png" es.short_description="Marrón" ca.short_description="Marró" />
+			<list_entry value="green" display_value="green"  icon="traffic_signs_presets/green.png" es.short_description="Verde" ca.short_description="Verd" />
 			</combo>
 			<text key="length" text="Distancia que queda para el cruce" />
-			<combo key="turn:destination:1" icon="black.png" text="Flecha 1">
-			<list_entry value="through" display_value="through" icon="black_through_city.png" es.short_description="Recto" ca.short_description="Recte" />
-			<list_entry value="slight_right" display_value="slight_right" icon="black_slight_right_city.png" es.short_description="Derecha superior" ca.short_description="Dreta superior" />
-			<list_entry value="right" display_value="right" icon="black_right_city.png" es.short_description="Derecha" ca.short_description="Dreta" />
-			<list_entry value="sharp_right" display_value="sharp_right" icon="black_sharp_right_city.png" es.short_description="Derecha inferior" ca.short_description="Dreta inferior" />
-			<list_entry value="under" display_value="under" icon="black_under_city.png" es.short_description="Debajo" ca.short_description="Sota" />
-			<list_entry value="sharp_left" display_value="sharp_left" icon="black_sharp_left_city.png" es.short_description="Izquierda inferior" ca.short_description="Esquerra inferior" />		   
-			<list_entry value="left" display_value="left" icon="black_left_city.png" es.short_description="Izquierda" ca.short_description="Esquerra"  />
-			<list_entry value="slight_left" display_value="slight_left"  icon="black_slight_left_city.png" es.short_description="Izquierda superior" ca.short_description="Esquerra superior" />
+			<combo key="turn:destination:1" icon="traffic_signs_presets/black.png" text="Flecha 1">
+			<list_entry value="through" display_value="through" icon="traffic_signs_presets/black_through_city.png" es.short_description="Recto" ca.short_description="Recte" />
+			<list_entry value="slight_right" display_value="slight_right" icon="traffic_signs_presets/black_slight_right_city.png" es.short_description="Derecha superior" ca.short_description="Dreta superior" />
+			<list_entry value="right" display_value="right" icon="traffic_signs_presets/black_right_city.png" es.short_description="Derecha" ca.short_description="Dreta" />
+			<list_entry value="sharp_right" display_value="sharp_right" icon="traffic_signs_presets/black_sharp_right_city.png" es.short_description="Derecha inferior" ca.short_description="Dreta inferior" />
+			<list_entry value="under" display_value="under" icon="traffic_signs_presets/black_under_city.png" es.short_description="Debajo" ca.short_description="Sota" />
+			<list_entry value="sharp_left" display_value="sharp_left" icon="traffic_signs_presets/black_sharp_left_city.png" es.short_description="Izquierda inferior" ca.short_description="Esquerra inferior" />		   
+			<list_entry value="left" display_value="left" icon="traffic_signs_presets/black_left_city.png" es.short_description="Izquierda" ca.short_description="Esquerra"  />
+			<list_entry value="slight_left" display_value="slight_left"  icon="traffic_signs_presets/black_slight_left_city.png" es.short_description="Izquierda superior" ca.short_description="Esquerra superior" />
 			</combo>
 			<combo key="turn:destination" text="Flecha unique or 2">
 			<list_entry value="right" display_value="right" es.short_description="" ca.short_description="" />
@@ -610,7 +610,7 @@ baselanguage="es">
 			</item>
 			<separator/>
 
-			<item name="MOTORWAY JUNCTION" es.name="Salida" icon="ES_s26a.png" type="node,way,relation">
+			<item name="MOTORWAY JUNCTION" es.name="Salida" icon="traffic_signs_presets/ES_s26a.png" type="node,way,relation">
 			<combo key="distance" text="Distancia de la salida" values="300,200,100" default="" />
 			<text key="exitto" text="exit_to" default="" />
 			<text key="name" text="name" default="" />
@@ -623,65 +623,65 @@ baselanguage="es">
 
 		</group>
 
-		<group name="Surface=*" ca.name="Superfície" es.name="Superficie" icon="asphalt.png">
-			<item name="Asphalt" ca.name="Asfalt" es.name="Asfalto" ru.name="асфальт" icon="asphalt.png" type="way">
+		<group name="Surface=*" ca.name="Superfície" es.name="Superficie" icon="traffic_signs_presets/asphalt.png">
+			<item name="Asphalt" ca.name="Asfalt" es.name="Asfalto" ru.name="асфальт" icon="traffic_signs_presets/asphalt.png" type="way">
 			<key key="surface" value="asphalt" />
 			</item>
 
-			<item name="Concrete" ca.name="Formigó" es.name="Hormigón" ru.name="бетон" icon="concrete.png" type="way">
+			<item name="Concrete" ca.name="Formigó" es.name="Hormigón" ru.name="бетон" icon="traffic_signs_presets/concrete.png" type="way">
 			<key key="surface" value="concrete" />
 			</item>
 
-			<item name="Paving stones" ca.name="Llambordes" es.name="Adoquines" ru.name="брусчатка" icon="paving_stones.png" type="way">
+			<item name="Paving stones" ca.name="Llambordes" es.name="Adoquines" ru.name="брусчатка" icon="traffic_signs_presets/paving_stones.png" type="way">
 			<key key="surface" value="paving_stones" />
 			</item>
 
-			<item name="Gravel" ca.name="Grava" es.name="Gravilla" ru.name="гравий" icon="gravel.png" type="way">
+			<item name="Gravel" ca.name="Grava" es.name="Gravilla" ru.name="гравий" icon="traffic_signs_presets/gravel.png" type="way">
 			<key key="surface" value="gravel" />
 			</item>
 
-			<item name="Wood" ca.name="Fusta" es.name="Madera" ru.name="дерево" icon="wood.png" type="way">
+			<item name="Wood" ca.name="Fusta" es.name="Madera" ru.name="дерево" icon="traffic_signs_presets/wood.png" type="way">
 			<key key="surface" value="wood" />
 			</item>
 
-			<item name="Dirt" ca.name="Terra" es.name="Tierra" ru.name="земля" icon="dirt.png" type="way">
+			<item name="Dirt" ca.name="Terra" es.name="Tierra" ru.name="земля" icon="traffic_signs_presets/dirt.png" type="way">
 			<key key="surface" value="dirt" />
 			</item>
 
-			<item name="Sand" ca.name="Sorra" es.name="Arena" ru.name="песок" icon="sand.png" type="way">
+			<item name="Sand" ca.name="Sorra" es.name="Arena" ru.name="песок" icon="traffic_signs_presets/sand.png" type="way">
 			<key key="surface" value="sand" />
 			</item>
 
-			<item name="Grass" ca.name="Herba" es.name="Hierba" ru.name="трава" icon="grass.png" type="way">
+			<item name="Grass" ca.name="Herba" es.name="Hierba" ru.name="трава" icon="traffic_signs_presets/grass.png" type="way">
 			<key key="surface" value="grass" />
 			</item>
 
 		</group>
 
-		<group name="Additional" ca.name="Addicional" es.name="Adicional" ru.name="дополнительно" icon="bridge.png">
+		<group name="Additional" ca.name="Addicional" es.name="Adicional" ru.name="дополнительно" icon="traffic_signs_presets/bridge.png">
 
-			<item name="Bridge" ca.name="Pont" es.name="Puente" ru.name="мост" icon="bridge.png" type="way">
+			<item name="Bridge" ca.name="Pont" es.name="Puente" ru.name="мост" icon="traffic_signs_presets/bridge.png" type="way">
 			<key key="bridge" value="yes" />
 			<key key="layer" value="1" />
 			</item>
 
-			<item name="Tunnel" ca.name="Túnel" es.name="Túnel" ru.name="тоннель" icon="tunnel.png" type="way">
+			<item name="Tunnel" ca.name="Túnel" es.name="Túnel" ru.name="тоннель" icon="traffic_signs_presets/tunnel.png" type="way">
 			<key key="tunnel" value="yes" />
 			<key key="layer" value="-1" />
 			</item>
 
-<item name="Oneway" ca.name="1 sentit" es.name="1 Sentido" icon="ES_r101.png" type="way">
+<item name="Oneway" ca.name="1 sentit" es.name="1 Sentido" icon="traffic_signs_presets/ES_r101.png" type="way">
 			<key key="oneway" value="yes" />
 			</item>
 			
-			<item name="Noname" ca.name="Sense nom" es.name="Sin nombre" icon="ES_r101.png" type="way">
+			<item name="Noname" ca.name="Sense nom" es.name="Sin nombre" icon="traffic_signs_presets/ES_r101.png" type="way">
 			<key key="noname" value="yes" />
 			</item>
 
 		</group>
 	</group>
 
-	<group name="B.Traffic signs (by countries)" ca.name="B.Senyals (per països)" es.name="B.Señales (por países)" icon="ES_traffic_sign_dir.png">
+	<group name="B.Traffic signs (by countries)" ca.name="B.Senyals (per països)" es.name="B.Señales (por países)" icon="traffic_signs_presets/ES_traffic_sign_dir.png">
 	
 	<group name="Belgium" ca.name="Bèlgica" es.name="Bélgica" icon="traffic_signs/BE/BE_.png">
 
