@@ -685,7 +685,7 @@ baselanguage="es">
 	
 	<group name="Belgium" ca.name="Bèlgica" es.name="Bélgica" icon="traffic_signs/BE/BE_.png">
 
-			<item name="Direction" ca.name="Sentit" es.name="Sentido" icon="ES_traffic_sign_dir.png" type="node,way,relation">
+			<item name="Direction" ca.name="Sentit" es.name="Sentido" icon="traffic_signs_presets/ES_traffic_sign_dir.png" type="node,way,relation">
 			<combo key="direction" text="Direction of the traffic sign" ca.text="Sentit" es.text="Sentido" values="forward,backward,both" ca.display_values="Sentit via,Sentit contrari,Ambdós" es.display_values="Sentido vía,Sentido contrario,Ambos" default="forward"  />
 			<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
 			</item>
@@ -3198,7 +3198,7 @@ baselanguage="es">
 
 				</group>
 			</group>
-			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/ES/CAT_radar.png">
 
 				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
 				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
@@ -3210,7 +3210,7 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
 				</item>
 
-				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="traffic_signs/ES/CAT_radar.png" type="node,way,relation">
 				<text key="maxspeed" text="Velocidad" default="" />
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="CAT:radar" />
 				<key key="highway" value="speed_camera" />
@@ -4723,7 +4723,7 @@ baselanguage="es">
 
 				</group>
 			</group>
-			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/ES/CAT_radar.png">
 
 				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
 				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
@@ -4736,7 +4736,7 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
 				</item>
 
-				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="traffic_signs/ES/CAT_radar.png" type="node,way,relation">
 				<text key="maxspeed" text="Velocidad" default="" />
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="CAT:radar" />
 				<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="CAT:radar" />
@@ -6097,7 +6097,7 @@ baselanguage="es">
 
 				</group>
 			</group>
-			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/ES/CAT_radar.png">
 
 				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
 				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
@@ -6109,7 +6109,7 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
 				</item>
 
-				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="traffic_signs/ES/CAT_radar.png" type="node,way,relation">
 				<text key="maxspeed" text="Velocidad" default="" />
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="CAT:radar" />
 				<key key="highway" value="speed_camera" />
@@ -7461,7 +7461,7 @@ baselanguage="es">
 
 				</group>
 			</group>
-			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/ES/CAT_radar.png">
 
 				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
 				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
@@ -7473,7 +7473,7 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
 				</item>
 
-				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="traffic_signs/ES/CAT_radar.png" type="node,way,relation">
 				<text key="maxspeed" text="Velocidad" default="" />
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="CAT:radar" />
 				<key key="highway" value="speed_camera" />
@@ -8825,7 +8825,7 @@ baselanguage="es">
 
 				</group>
 			</group>
-			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/ES/CAT_radar.png">
 
 				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
 				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
@@ -8837,7 +8837,7 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
 				</item>
 
-				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="traffic_signs/ES/CAT_radar.png" type="node,way,relation">
 				<text key="maxspeed" text="Velocidad" default="" />
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="CAT:radar" />
 				<key key="highway" value="speed_camera" />
@@ -11346,7 +11346,7 @@ baselanguage="es">
 
 				</group>
 			</group>
-			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/ES/CAT_radar.png">
 
 				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
 				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
@@ -11358,7 +11358,7 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
 				</item>
 
-				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="traffic_signs/ES/CAT_radar.png" type="node,way,relation">
 				<text key="maxspeed" text="Velocidad" default="" />
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="CAT:radar" />
 				<key key="highway" value="speed_camera" />
@@ -12710,7 +12710,7 @@ baselanguage="es">
 
 				</group>
 			</group>
-			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/ES/CAT_radar.png">
 
 				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
 				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
@@ -12722,7 +12722,7 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
 				</item>
 
-				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="traffic_signs/ES/CAT_radar.png" type="node,way,relation">
 				<text key="maxspeed" text="Velocidad" default="" />
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="CAT:radar" />
 				<key key="highway" value="speed_camera" />
@@ -14076,7 +14076,7 @@ baselanguage="es">
 
 				</group>
 			</group>
-			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/ES/CAT_radar.png">
 
 				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
 				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
@@ -14088,7 +14088,7 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
 				</item>
 
-				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="traffic_signs/ES/CAT_radar.png" type="node,way,relation">
 				<text key="maxspeed" text="Velocidad" default="" />
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="CAT:radar" />
 				<key key="highway" value="speed_camera" />
@@ -15628,7 +15628,7 @@ baselanguage="es">
 
 				</group>
 			</group>
-			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/ES/CAT_radar.png">
 
 				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
 				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
@@ -15641,7 +15641,7 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
 				</item>
 
-				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="traffic_signs/ES/CAT_radar.png" type="node,way,relation">
 				<text key="maxspeed" text="Velocidad" default="" />
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="CAT:radar" />
 				<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="CAT:radar" />
@@ -17190,7 +17190,7 @@ baselanguage="es">
 
 				</group>
 			</group>
-			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/ES/CAT_radar.png">
 
 				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
 				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
@@ -17203,7 +17203,7 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
 				</item>
 
-				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="traffic_signs/ES/CAT_radar.png" type="node,way,relation">
 				<text key="maxspeed" text="Velocidad" default="" />
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="CAT:radar" />
 				<key key="highway" value="speed_camera" />
@@ -18751,7 +18751,7 @@ baselanguage="es">
 
 				</group>
 			</group>
-			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/ES/CAT_radar.png">
 
 				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
 				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
@@ -18764,7 +18764,7 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
 				</item>
 
-				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="traffic_signs/ES/CAT_radar.png" type="node,way,relation">
 				<text key="maxspeed" text="Velocidad" default="" />
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="CAT:radar" />
 				<key key="highway" value="speed_camera" />
@@ -20312,7 +20312,7 @@ baselanguage="es">
 
 				</group>
 			</group>
-			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/ES/CAT_radar.png">
 
 				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
 				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
@@ -20325,7 +20325,7 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
 				</item>
 
-				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="traffic_signs/ES/CAT_radar.png" type="node,way,relation">
 				<text key="maxspeed" text="Velocidad" default="" />
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="CAT:radar" />
 				<key key="highway" value="speed_camera" />
@@ -21873,7 +21873,7 @@ baselanguage="es">
 
 				</group>
 			</group>
-			<group name="Others" ca.name="Altres" es.name="Otros" icon="CAT_radar.png">
+			<group name="Others" ca.name="Altres" es.name="Otros" icon="traffic_signs/ES/CAT_radar.png">
 
 				<item name="Milestone" ca.name="Punt quilomètric" es.name="Punto kilométrico" icon="traffic_signs/ES/ES_s573.png" type="node,way,relation">
 				<text key="distance" text="Milestone number" ca.text="Punt quilomètric" es.text="Punto kilométrico" default="" />
@@ -21886,7 +21886,7 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /> 
 				</item>
 
-				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="CAT_radar.png" type="node,way,relation">
+				<item name="Speed camera" ca.name="Radar" es.name="Radar" icon="traffic_signs/ES/CAT_radar.png" type="node,way,relation">
 				<text key="maxspeed" text="Velocidad" default="" />
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="CAT:radar" />
 				<key key="highway" value="speed_camera" />
