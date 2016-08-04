@@ -496,7 +496,7 @@ baselanguage="es">
 			<key key="highway" value="service" />
 			</item>
 
-			<item name="Destination sign" icon="traffic_signs_traffic_signs_presets/guidepost.png" type="relation" preset_name_label="true">
+			<item name="Destination sign" icon="traffic_signs_presets/guidepost.png" type="relation" preset_name_label="true">
 			<link href="http://wiki.openstreetmap.org/wiki/Relation:destination_sign"
 			de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:destination_sign"
 			es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:destination_sign"
