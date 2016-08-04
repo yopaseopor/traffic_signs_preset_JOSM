@@ -496,7 +496,7 @@ baselanguage="es">
 			<key key="highway" value="service" />
 			</item>
 
-			<item name="Destination sign" icon="traffic_signs_presets/guidepost.png" type="relation" preset_name_label="true">
+			<item name="Destination sign" icon="traffic_signs_traffic_signs_presets/guidepost.png" type="relation" preset_name_label="true">
 			<link href="http://wiki.openstreetmap.org/wiki/Relation:destination_sign"
 			de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:destination_sign"
 			es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:destination_sign"
@@ -3004,7 +3004,7 @@ baselanguage="es">
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
@@ -4538,7 +4538,7 @@ baselanguage="es">
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
@@ -5911,7 +5911,7 @@ baselanguage="es">
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
@@ -7274,7 +7274,7 @@ baselanguage="es">
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
@@ -8637,7 +8637,7 @@ baselanguage="es">
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
@@ -9937,7 +9937,7 @@ baselanguage="es">
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
@@ -11155,7 +11155,7 @@ baselanguage="es">
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
@@ -12518,7 +12518,7 @@ baselanguage="es">
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
@@ -13883,7 +13883,7 @@ baselanguage="es">
 				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:s26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
@@ -15433,7 +15433,7 @@ baselanguage="es">
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
@@ -16980,7 +16980,7 @@ baselanguage="es">
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
@@ -18540,7 +18540,7 @@ baselanguage="es">
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
@@ -20100,7 +20100,7 @@ baselanguage="es">
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
@@ -21660,7 +21660,7 @@ baselanguage="es">
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S26a" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-	<item name="Destination sign motorway" icon="presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
+	<item name="Destination sign motorway" icon="traffic_signs_presets/guidepost.png" type="relation,way,node,closedway" preset_name_label="true">
 							<space />
 							<key key="type" value="destination_sign" />
 							<key key="direction" value="forward" />
