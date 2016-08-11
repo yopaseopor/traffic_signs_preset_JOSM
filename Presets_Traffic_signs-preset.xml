@@ -1911,7 +1911,7 @@ baselanguage="es">
 					<group name="Priority" ca.name="Prioritat" es.name="Prioridad" icon="traffic_signs/ES/ES_r3.png">
 
 						<item name="Main road" ca.name="Carretera principal" es.name="Carretera principal" icon="traffic_signs/ES/ES_r3.png" type="node,way,relation">
-						<key key="traffic_sign,traffic_sign:forward,traffic_sign:backward" value="ES:r3" />
+						<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:r3" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
 						</item>
 
@@ -4818,7 +4818,7 @@ baselanguage="es">
 					<group name="Priority" ca.name="Prioritat" es.name="Prioridad" icon="traffic_signs/ES/ES_r3.png">
 
 						<item name="Main road" ca.name="Carretera principal" es.name="Carretera principal" icon="traffic_signs/ES/ES_r3.png" type="node,way,relation">
-						<key key="traffic_sign,traffic_sign:forward,traffic_sign:backward" value="ES:r3" />
+						<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:r3" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
 						</item>
 
@@ -6181,7 +6181,7 @@ baselanguage="es">
 					<group name="Priority" ca.name="Prioritat" es.name="Prioridad" icon="traffic_signs/ES/ES_r3.png">
 
 						<item name="Main road" ca.name="Carretera principal" es.name="Carretera principal" icon="traffic_signs/ES/ES_r3.png" type="node,way,relation">
-						<key key="traffic_sign,traffic_sign:forward,traffic_sign:backward" value="ES:r3" />
+						<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:r3" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
 						</item>
 
@@ -7544,7 +7544,7 @@ baselanguage="es">
 					<group name="Priority" ca.name="Prioritat" es.name="Prioridad" icon="traffic_signs/ES/ES_r3.png">
 
 						<item name="Main road" ca.name="Carretera principal" es.name="Carretera principal" icon="traffic_signs/ES/ES_r3.png" type="node,way,relation">
-						<key key="traffic_sign,traffic_sign:forward,traffic_sign:backward" value="ES:r3" />
+						<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:r3" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
 						</item>
 
@@ -10059,7 +10059,7 @@ baselanguage="es">
 					<group name="Priority" ca.name="Prioritat" es.name="Prioridad" icon="traffic_signs/ES/ES_r3.png">
 
 						<item name="Main road" ca.name="Carretera principal" es.name="Carretera principal" icon="traffic_signs/ES/ES_r3.png" type="node,way,relation">
-						<key key="traffic_sign,traffic_sign:forward,traffic_sign:backward" value="ES:r3" />
+						<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:r3" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
 						</item>
 
@@ -11425,7 +11425,7 @@ baselanguage="es">
 					<group name="Priority" ca.name="Prioritat" es.name="Prioridad" icon="traffic_signs/ES/ES_r3.png">
 
 						<item name="Main road" ca.name="Carretera principal" es.name="Carretera principal" icon="traffic_signs/ES/ES_r3.png" type="node,way,relation">
-						<key key="traffic_sign,traffic_sign:forward,traffic_sign:backward" value="ES:r3" />
+						<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:r3" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
 						</item>
 
@@ -12790,7 +12790,7 @@ baselanguage="es">
 					<group name="Priority" ca.name="Prioritat" es.name="Prioridad" icon="traffic_signs/ES/ES_r3.png">
 
 						<item name="Main road" ca.name="Carretera principal" es.name="Carretera principal" icon="traffic_signs/ES/ES_r3.png" type="node,way,relation">
-						<key key="traffic_sign,traffic_sign:forward,traffic_sign:backward" value="ES:r3" />
+						<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:r3" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
 						</item>
 
@@ -15713,7 +15713,7 @@ baselanguage="es">
 					<group name="Priority" ca.name="Prioritat" es.name="Prioridad" icon="traffic_signs/ES/ES_r3.png">
 
 						<item name="Main road" ca.name="Carretera principal" es.name="Carretera principal" icon="traffic_signs/ES/ES_r3.png" type="node,way,relation">
-						<key key="traffic_sign,traffic_sign:forward,traffic_sign:backward" value="ES:R3" />
+						<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:r3" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
 						</item>
 
@@ -17273,7 +17273,7 @@ baselanguage="es">
 					<group name="Priority" ca.name="Prioritat" es.name="Prioridad" icon="traffic_signs/ES/ES_r3.png">
 
 						<item name="Main road" ca.name="Carretera principal" es.name="Carretera principal" icon="traffic_signs/ES/ES_r3.png" type="node,way,relation">
-						<key key="traffic_sign,traffic_sign:forward,traffic_sign:backward" value="ES:R3" />
+						<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:r3" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
 						</item>
 
@@ -18833,7 +18833,7 @@ baselanguage="es">
 					<group name="Priority" ca.name="Prioritat" es.name="Prioridad" icon="traffic_signs/ES/ES_r3.png">
 
 						<item name="Main road" ca.name="Carretera principal" es.name="Carretera principal" icon="traffic_signs/ES/ES_r3.png" type="node,way,relation">
-						<key key="traffic_sign,traffic_sign:forward,traffic_sign:backward" value="ES:R3" />
+						<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:r3" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
 						</item>
 
@@ -20393,7 +20393,8 @@ baselanguage="es">
 					<group name="Priority" ca.name="Prioritat" es.name="Prioridad" icon="traffic_signs/ES/ES_r3.png">
 
 						<item name="Main road" ca.name="Carretera principal" es.name="Carretera principal" icon="traffic_signs/ES/ES_r3.png" type="node,way,relation">
-						<key key="traffic_sign,traffic_sign:forward,traffic_sign:backward" value="ES:R3" />
+						<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:r3" />
+						
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right"  />
 						</item>
 
