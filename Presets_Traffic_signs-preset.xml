@@ -1230,9 +1230,9 @@ baselanguage="es">
 					<item name="Pedal cycles and sidewalk segregated" ca.name="Carril bici i vorera segregats" es.name="Carril bici y acera segregados" icon="traffic_signs/BE/BE_D9.png" type="node,way,relation">
 					<key key="access" value="no" />
 					<key key="moped" value="no" />
-					<key key="cicleway:foot" value="designated" />
-					<key key="cicleway:segregated" value="yes" />
-					<key key="mofa" value="designated" />
+					<key key="foot" value="designated" />
+					<key key="segregated" value="yes" />
+					<key key="bicycle" value="designated" />
 					<key key="horse" value="no" />
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="BE:D9" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="BE:D9" />
@@ -1241,9 +1241,9 @@ baselanguage="es">
 					<item name="Pedal cycles and sidewalk no segregated" ca.name="Carril bici i vorera no segregats" es.name="Carril bici y acera no segregados" icon="traffic_signs/BE/BE_D10.png" type="node,way,relation">
 					<key key="access" value="no" />
 					<key key="moped" value="no" />
-					<key key="cicleway:foot" value="designated" />
-					<key key="cicleway:segregated" value="no" />
-					<key key="mofa" value="designated" />
+					<key key="foot" value="designated" />
+					<key key="segregated" value="no" />
+					<key key="bicycle" value="designated" />
 					<key key="horse" value="no" />
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="BE:D10" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="BE:D10" />
