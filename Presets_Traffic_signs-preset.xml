@@ -205,7 +205,7 @@ baselanguage="es">
 			<label text="If you want BOTH you can choose right or left and then change the key." ca.text="Si vols BOTH (AMBDÓS) tria esquerra o dreta i llavors canvia la clau." es.text="Si quieres BOTH (ambos) escoge izquierda o derecha y cambia la clave."/>
 			<label text="RIGHT" ca.text="DRETA" es.text="DERECHA"/>
 			<combo text="space type" ca.text="Tipus de plaça (també serveix per guals permanents - no aturar-se)" es.text="Tipo de plaza (también sirve para vado permanente - no parar)" key="parking:lane:right" values="parallel,diagonal,perpendicular,marked,no_parking,no_stopping,fire_lane" ca.display_values="paral·lel,diagonal,perpendicular,marcat,no aparcar,no aturar-se,Sortida d'emergència" es.display_values="paralelo,diagonal,perpendicular,marcado,no aparcar,no pararse,Salida de emergencia" />
-			<combo text="Condition" ca.text="Condició" es.text="Condición" key="parking:condition:right" values="free,disc,ticket,customers,residents,private" es.display_values="normal,disco horario,parquímetro (ORA) azul,taquilla,residentes (verde),privado" ca.display_values="normal,disc horari,parquímetre (blava),taquilla,residents (verda),privat" />
+			<combo text="Condition" ca.text="Condició" es.text="Condición" key="parking:condition:right" values="free,disc,ticket,customers,residents,private" es.display_values="gratuito,disco horario,parquímetro (ORA) azul,taquilla,residentes (verde),privado" ca.display_values="gratuït,disc horari,parquímetre (blava),taquilla,residents (verda),privat" />
 			<combo text="Maximum time stay" ca.text="Durada màx." es.text="Tiempo máx." key="parking:condition:right:maxstay" values="15 min,30 min,1 h,2 h,3 h" />
 			<text text="Time interval" ca.text="Horari d'aparcament" es.text="Horario de aparcamiento" key="parking:condition:right:time_interval" />
 			<text text="Capacity (each side)" ca.text="Capacitat" es.text="Capacidad" key="parking:condition:right:capacity" />
@@ -213,7 +213,7 @@ baselanguage="es">
 			<text text="Customers of" ca.text="Clients de" de.text="Kunden von" es.text="Clientes de" key="parking:condition:right:customers" />
 			<label text="LEFT" ca.text="ESQUERRA" es.text="IZQUIERDA"/>
 			<combo text="space type" ca.text="Tipus de plaça (també serveix per guals permanents - no aturar-se)" es.text="Tipo de plaza (también sirve para vado permanente - no parar)" key="parking:lane:left" values="parallel,diagonal,perpendicular,marked,no_parking,no_stopping,fire_lane" ca.display_values="paral·lel,diagonal,perpendicular,marcat,no aparcar,no aturar-se,Sortida d'emergència" es.display_values="paralelo,diagonal,perpendicular,marcado,no aparcar,no pararse,Salida de emergencia" />
-			<combo text="Condition" ca.text="Condició" es.text="Condición" key="parking:condition:left" values="free,disc,ticket,customers,residents,private" es.display_values="normal,disco horario,parquímetro (ORA) azul,taquilla,residentes (verde),privado" ca.display_values="normal,disc horari,parquímetre (blava),taquilla,residents (verda),privat" />
+			<combo text="Condition" ca.text="Condició" es.text="Condición" key="parking:condition:left" values="free,disc,ticket,customers,residents,private" es.display_values="gratuito,disco horario,parquímetro (ORA) azul,taquilla,residentes (verde),privado" ca.display_values="gratuït,disc horari,parquímetre (blava),taquilla,residents (verda),privat" />
 			<combo text="Maximum time stay" ca.text="Durada màx." es.text="Tiempo máx." key="parking:condition:left:maxstay" values="15 min,30 min,1 h,2 h,3 h" />
 			<text text="Time interval" ca.text="Horari d'aparcament" es.text="Horario de aparcamiento" key="parking:condition:left:time_interval" />
 			<text text="Capacity (each side)" ca.text="Capacitat" es.text="Capacidad" key="parking:condition:left:capacity" />
@@ -322,7 +322,7 @@ baselanguage="es">
 			<label text="If you want BOTH you can choose right or left and then change the key." ca.text="Si vols BOTH (AMBDÓS) tria esquerra o dreta i llavors canvia la clau." es.text="Si quieres BOTH (ambos) escoge izquierda o derecha y cambia la clave."/>
 			<label text="RIGHT" ca.text="DRETA" es.text="DERECHA"/>
 			<combo text="space type" ca.text="Tipus de plaça (també serveix per guals permanents - no aturar-se)" es.text="Tipo de plaza (también sirve para vado permanente - no parar)" key="parking:lane:right" values="parallel,diagonal,perpendicular,marked,no_parking,no_stopping,fire_lane" ca.display_values="paral·lel,diagonal,perpendicular,marcat,no aparcar,no aturar-se,Sortida d'emergència" es.display_values="paralelo,diagonal,perpendicular,marcado,no aparcar,no pararse,Salida de emergencia" />
-			<combo text="Condition" ca.text="Condició" es.text="Condición" key="parking:condition:right" values="free,disc,ticket,customers,residents,private" es.display_values="normal,disco horario,parquímetro (ORA) azul,taquilla,residentes (verde),privado" ca.display_values="normal,disc horari,parquímetre (blava),taquilla,residents (verda),privat" />
+			<combo text="Condition" ca.text="Condició" es.text="Condición" key="parking:condition:right" values="free,disc,ticket,customers,residents,private" es.display_values="gratuito,disco horario,parquímetro (ORA) azul,taquilla,residentes (verde),privado" ca.display_values="gratuït,disc horari,parquímetre (blava),taquilla,residents (verda),privat" />
 			<combo text="Maximum time stay" ca.text="Durada màx." es.text="Tiempo máx." key="parking:condition:right:maxstay" values="15 min,30 min,1 h,2 h,3 h" />
 			<text text="Time interval" ca.text="Horari d'aparcament" es.text="Horario de aparcamiento" key="parking:condition:right:time_interval" />
 			<text text="Capacity (each side)" ca.text="Capacitat" es.text="Capacidad" key="parking:condition:right:capacity" />
@@ -330,7 +330,7 @@ baselanguage="es">
 			<text text="Customers of" ca.text="Clients de" de.text="Kunden von" es.text="Clientes de" key="parking:condition:right:customers" />
 			<label text="LEFT" ca.text="ESQUERRA" es.text="IZQUIERDA"/>
 			<combo text="space type" ca.text="Tipus de plaça (també serveix per guals permanents - no aturar-se)" es.text="Tipo de plaza (también sirve para vado permanente - no parar)" key="parking:lane:left" values="parallel,diagonal,perpendicular,marked,no_parking,no_stopping,fire_lane" ca.display_values="paral·lel,diagonal,perpendicular,marcat,no aparcar,no aturar-se,Sortida d'emergència" es.display_values="paralelo,diagonal,perpendicular,marcado,no aparcar,no pararse,Salida de emergencia" />
-			<combo text="Condition" ca.text="Condició" es.text="Condición" key="parking:condition:left" values="free,disc,ticket,customers,residents,private" es.display_values="normal,disco horario,parquímetro (ORA) azul,taquilla,residentes (verde),privado" ca.display_values="normal,disc horari,parquímetre (blava),taquilla,residents (verda),privat" />
+			<combo text="Condition" ca.text="Condició" es.text="Condición" key="parking:condition:left" values="free,disc,ticket,customers,residents,private" es.display_values="gratuito,disco horario,parquímetro (ORA) azul,taquilla,residentes (verde),privado" ca.display_values="gratuït,disc horari,parquímetre (blava),taquilla,residents (verda),privat" />
 			<combo text="Maximum time stay" ca.text="Durada màx." es.text="Tiempo máx." key="parking:condition:left:maxstay" values="15 min,30 min,1 h,2 h,3 h" />
 			<text text="Time interval" ca.text="Horari d'aparcament" es.text="Horario de aparcamiento" key="parking:condition:left:time_interval" />
 			<text text="Capacity (each side)" ca.text="Capacitat" es.text="Capacidad" key="parking:condition:left:capacity" />
@@ -3707,7 +3707,7 @@ baselanguage="es">
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:R116" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="No pedestrians" ca.name="Prohibit vianants" es.name="Prohibido peatones" icon="traffic_signs/ES/FI_324.png" type="node,way,relation">
+					<item name="No pedestrians" ca.name="Prohibit vianants" es.name="Prohibido peatones" icon="traffic_signs/FI/FI_324.png" type="node,way,relation">
 					<key key="foot" value="no" />
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:324" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:324" />
