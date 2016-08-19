@@ -17519,7 +17519,7 @@ baselanguage="es">
 
 					<item name="Junction beacon" ca.name="Balisa de sortida" es.name="Baliza de salida" icon="traffic_signs/ES/ES_road_beacon_big.png" type="node">
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:Road:beacon:big" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:Road:beacon:big" />>
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:Road:beacon:big" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
 
 				<group name="Beacon to right" ca.name="Balisa corba a dreta" es.name="Baliza curva a derecha" icon="traffic_signs/ES/ES_panel_dir_right_3.png">
