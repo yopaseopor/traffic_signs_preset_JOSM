@@ -8251,8 +8251,8 @@ baselanguage="es">
 <label text="Example: ES_r3 will be ES:R3 but ES_p1a will be ES:P1a" ca.text="Exemple: ES_r3 serà ES:R3 però ES_p1a serà ES:P1a" es.text="Ejemplo: ES_r3 será ES:R3 pero ES_p1a será ES:P1a"/>
 <space />
 <label text="Also you can choose similar traffic sign for other country and then change the codes" ca.text="També pots triar també el senyal semblant d'un altre país per configurar-lo i després canviar-li el codi" es.text="También puedes escoger la señal parecida de otro país para configurarla y después cambiarle el código"/>
-<text key="traffic_sign:forward" text="Traffic sign code forward" ca.text="Codi del senyal en el sentit de la via" es.text="Código de la señal en el sentido de la vía " default="UK:" />
-<text key="traffic_sign:backward" text="Traffic sign code backward" ca.text="Codi del senyal en el sentit contrari de la via" es.text="Código de la señal en el sentido contrario de la vía " default="UK:" />
+<text key="traffic_sign:forward" text="Traffic sign code forward" ca.text="Codi del senyal en el sentit de la via" es.text="Código de la señal en el sentido de la vía " default="GB:" />
+<text key="traffic_sign:backward" text="Traffic sign code backward" ca.text="Codi del senyal en el sentit contrari de la via" es.text="Código de la señal en el sentido contrario de la vía " default="GB:" />
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
