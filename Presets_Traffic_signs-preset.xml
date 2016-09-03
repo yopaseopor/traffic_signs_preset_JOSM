@@ -233,8 +233,12 @@ baselanguage="es">
 			<combo key="footway" text="Types" ca.text="Tipus" es.text="Tipos" values="sidewalk,crossing" ca.display_values="vorera,pas de vianants" es.display_values="acera,cruce de peatones" />
 			<optional>
 			<combo key="kerb" text="Kerb types" ca.text="Tipus de vorada" es.text="Tipo de bordillo" values="lowered,raised,flush,rolled,yes,no" ca.display_values="rampa normal,aixecat,nivellat,rodó,sí,no" es.display_values="rampa normal,levantado,nivelado,redondo,sí,no"/>
-			<combo key="incline" text="Incline" ca.text="Inclinació" es.text="Inclinación" values="no,up,down" ca.display_values="no,ascendent,descendent"  es.display_values="no,ascendent,descendent" />
+			<text key="incline" text="Incline (%)" ca.text="Inclinació (%)" es.text="Inclinación (%)" />
+			<text key="incline:across" text="Incline across (%)" ca.text="Inclinació de l'ample (%)" es.text="Inclinación del ancho(%)" />
 			<combo key="smoothness" text="Kerb's smoothness"  ca.text="Estat de la vorera" es.text="Estado de la acera" values="excellent,good,intermediate,bad,very_bad" ca.display_values="excel·lent,bo,normal,dolent,molt dolent" es.display_values="excelente,bueno,normal,malo,muy malo" />
+			<combo key="wheelchair" text="Wheelchair" ca.text="Accesibilitat en cadira de rodes" es.text="Accesibilidad en silla de ruedas" values="yes,limited,no,designated" ca.display_values="sí,limitada,no,designada" es.display_values="sí,limitada,no,designada"/>
+			<text key="wheelchair:description" text="Description" ca.text="Descripció" es.text="Descripción" />
+			<check key="obstacle:wheelchair" text="Obstacle for wheelchairs" ca.text="Obstacle per a cadira de rodes" es.text="Obstáculo para silla de ruedas" default="off" value_on="yes" />
 			<combo key="surface" text="Surface" ca.text="Superfície" es.text="Superficie" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" ca.display_values="pavimentada,no pavimentada,asfalt,ciment,metall,fusta,rajoles,llambordes,grava,pedretes,compactada,paviment i herba,gespa,sorra,terra" es.display_values="pavimentada,no pavimentada,asfalto,cemento,metal,madera,baldosas,adoquines,grava,piedrecitas,compacta,pavimento y hierba,césped,arena,tierra" />
 			<check key="tactile_paving" text="Tactile paving" ca.text="Paviment tàctil" es.text="Pavimento táctil" default="off" value_off="" />
 			<text key="width" text="Width of the sidewalk" ca.text="Amplada de la vorera en metres" es.text="Anchura de la acera en metros"/>
@@ -387,6 +391,46 @@ baselanguage="es">
 			<combo key="lit" text="Lit" fr.text="Éclairé" es.text="Iluminación" ca.text="Il·luminació" values="yes,no,interval" />
 			<text key="width" text="Width (meters)" ca.text="Amplada (metres)" es.text="Ancho (metros)"/>
 			</optional>
+			</item>
+			
+			<item name="Accesibility and other disabilities" ca.name="Accesibilitat i d'altres discapacitats" es.name="Accesibilidad y otras discapacidades" icon="traffic_signs_presets/4handicaps.png" type="node,relation,way,closedway">
+			<label text="Walking impairment/wheelchair drivers/stroller" ca.text="Impediments per caminar/Cadira de rodes/Carret" es.text="Impedimentos para caminar/Silla de ruedas/Carrito"/>
+			<space />
+			<combo key="kerb" text="Kerb types" ca.text="Tipus de vorada" es.text="Tipo de bordillo" values="lowered,raised,flush,rolled,yes,no" ca.display_values="rampa normal,aixecat,nivellat,rodó,sí,no" es.display_values="rampa normal,levantado,nivelado,redondo,sí,no"/>
+			<text key="incline" text="Incline (%)" ca.text="Inclinació (%)" es.text="Inclinación (%)" />
+			<text key="incline:across" text="Incline across (%)" ca.text="Inclinació de l'ample (%)" es.text="Inclinación del ancho(%)" />
+			<combo key="smoothness" text="Kerb's smoothness"  ca.text="Estat de la vorera" es.text="Estado de la acera" values="excellent,good,intermediate,bad,very_bad" ca.display_values="excel·lent,bo,normal,dolent,molt dolent" es.display_values="excelente,bueno,normal,malo,muy malo" />
+			<combo key="wheelchair" text="Wheelchair" ca.text="Accesibilitat en cadira de rodes" es.text="Accesibilidad en silla de ruedas" values="yes,limited,no,designated" ca.display_values="sí,limitada,no,designada" es.display_values="sí,limitada,no,designada"/>
+			<text key="wheelchair:description" text="Description" ca.text="Descripció" es.text="Descripción" />
+			<check key="obstacle:wheelchair" text="Obstacle for wheelchairs" ca.text="Obstacle per a cadira de rodes" es.text="Obstáculo para silla de ruedas" default="off" value_on="yes" />
+			<combo key="surface" text="Surface" ca.text="Superfície" es.text="Superficie" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" ca.display_values="pavimentada,no pavimentada,asfalt,ciment,metall,fusta,rajoles,llambordes,grava,pedretes,compactada,paviment i herba,gespa,sorra,terra" es.display_values="pavimentada,no pavimentada,asfalto,cemento,metal,madera,baldosas,adoquines,grava,piedrecitas,compacta,pavimento y hierba,césped,arena,tierra" />
+			<text key="width" text="Width of the sidewalk" ca.text="Amplada de la vorera en metres" es.text="Anchura de la acera en metros"/>
+			<check key="handrail:right" text="Handrail (right)" ca.text="Barana (dreta)" es.text="Barandilla (derecha)" default="off" value_off="" value_on="yes"/>
+			<check key="handrail:center" text="Handrail (center)" ca.text="Barana (central)" es.text="Barandilla (central)" default="off" value_off="" value_on="yes"/>
+			<check key="handrail:left" text="Handrail (left)" ca.text="Barana (esquerra)" es.text="Barandilla (izquierda)" default="off" value_off="" value_on="yes"/>
+			<check key="ramp" text="Ramp" ca.text="Rampa" es.text="Rampa" default="off" value_off="" value_on="yes"/>
+			<check key="ramp:wheelchair" text="Ramp for wheelchairs" ca.text="Rampa per a cadira de rodes" es.text="Rampa para silla de ruedas" default="off" value_off="" value_on="yes"/>
+			<check key="ramp:stroller" text="Ramp for stroller" ca.text="Rampa per a carret" es.text="Rampa para carrito" default="off" value_off="" value_on="yes"/>
+			<text key="step_count" value="" text="Number of steps" ca.text="Nombre d'esglaons" es.text="Número de peldaños"/>
+			<space />
+			<label text="Visual impairment/blindness" ca.text="Impediments visuals/ceguesa" es.text="Impedimentos para ver / Ceguera"/>
+			<space />
+			<text key="phonetics" text="Phonetics (add the code language with :)" ca.text="Pronunciació fonètica (afegir amb dos punts al final l'idioma" es.text="Pronunciación fonética (añadir con dos puntos al final el idioma)"/>
+			<space />
+			<label text="Tactile map" ca.text="Mapa tàctil" es.text="Mapa táctil"/>
+			<check key="tourism" text="To active a tactile map check these three items" ca.text="Per activar un mapa tàctil activa aquests tres ítems" es.text="Para activar un mapa táctil activa estos tres ítems" default="off" value_on="information"/>
+			<check key="information" text="Tactile map" ca.text="Mapa tàctil" es.text="Mapa táctil" default="off" value_off="" value_on="tactile_map"/>
+			<check key="information" text="Audio Tactile map" ca.text="Mapa tàctil i auditiu" es.text="Mapa táctil y auditivo" default="off" value_off="" value_on="audio_tactile_map"/>
+			<space />
+			<check key="information" text="Braille?" ca.text="Braille" es.text="Braille" default="off" value_off="" value_on="braille"/>
+			<check key="information" text="tactile letters" ca.text="Lletres tàctils" es.text="Letras táctiles" default="off" value_off="" value_on="tactile_letters"/>
+			<space />
+			<combo key="tactile_paving" text="Tactile paving" ca.text="Paviment tàctil" es.text="Pavimento táctil" values="yes,contrasted,no,primitive,incorrect" ca.display_values="sí,contrastat,no,primitiu,incorrecte" es.display_values="sí,contrastado,no,primitivo,incorrecto"/>
+			<text key="blind:description" text="Description" ca.text="Descripció" es.text="Descripción" />
+			<check key="traffic_signals:sound" text="Sound signals" ca.text="Senyals sonors" es.text="Señales acústicas"/>
+			<check key="traffic_signals:vibration" text="Vibration signals" ca.text="Senyals vibratoris" es.text="Señales vibratorias"/>
+			
+			<space />
 			</item>
 
 			<item name="Construction" ca.name="En construcció" es.name="En construcción" icon="traffic_signs_presets/construction.png" type="way,closedway">
@@ -698,6 +742,25 @@ baselanguage="es">
 			<item name="Noname" ca.name="Sense nom" es.name="Sin nombre" icon="traffic_signs_presets/ES_r101.png" type="way">
 			<key key="noname" value="yes" />
 			</item>
+			
+			<item name="Traffic sign (manual)" ca.name="Senyal de trànsit (manual)" es.name="Señal de tráfico (manual)" icon="traffic_signs/ES/ES_r2.png" type="node,way,relation">
+
+			<label text="Your country will be ready soon on this preset but now you can add the traffic signs with the codes you will see in the link we provided." ca.text="La predefinició de menú pel país triat no està encara enllestida però pots escriure el codi del senyal que vols afegir copiant-lo de l'enllaç que hi ha aquí sota." es.text="La predefinición de menú para el país escogido no está preparada aún pero puedes escribir el código de la señal que elijas en el enlace inferior."/>
+			<space />
+			<label text="The scheme is: two-letter COUNTRY_code.png . Code for OSM will be two-letter COUNTRY:Code " ca.text="L'esquema és : CODIDEPAÍS(2LLETRES)_codi de senyal.png . El codi a OSM serà CODIDEPAIS(2LLETRES):Codidesenyal" es.text="El esquema es: CODIGODEPAIS(2LETRAS)_código de señal.png. El código en OSM será CODIGODEPAIS(2LETRAS):Codigodeseñal"/>
+			<space />
+			<label text="Example: ES_r3 will be ES:R3 but ES_p1a will be ES:P1a" ca.text="Exemple: ES_r3 serà ES:R3 però ES_p1a serà ES:P1a" es.text="Ejemplo: ES_r3 será ES:R3 pero ES_p1a será ES:P1a"/>
+			<space />
+			<label text="Also you can choose similar traffic sign for other country and then change the codes" ca.text="També pots triar també el senyal semblant d'un altre país per configurar-lo i després canviar-li el codi" es.text="También puedes escoger la señal parecida de otro país para configurarla y después cambiarle el código"/>
+			<text key="traffic_sign:forward" text="Traffic sign code forward" ca.text="Codi del senyal en el sentit de la via" es.text="Código de la señal en el sentido de la vía " default="" />
+			<text key="traffic_sign:backward" text="Traffic sign code backward" ca.text="Codi del senyal en el sentit contrari de la via" es.text="Código de la señal en el sentido contrario de la vía " default="" />
+			<label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
+			<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
+
+			<link href="http://bit.ly/trafficsignscode"/>
+
+			<space />
+						</item>
 
 		</group>
 	</group>
@@ -1936,7 +1999,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -2894,258 +2957,341 @@ baselanguage="es">
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>  
 
 					<item name="Symbol railway station" ca.name="Símbol estació de tren" es.name="Símbolo estación de tren" icon="traffic_signs/FI/FI_678.png" type="node,way,relation">
-					<key key="destination:symbol" value="motorway" />
+					<key key="destination:symbol" value="railway_station" />
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:678" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:678" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Symbol bus station" ca.name="Símbol estació d'autobusos" es.name="Símbolo estación de autobuses" icon="traffic_signs/FI/FI_679.png" type="node,way,relation">
-					<key key="destination:symbol" value="motorway" />
+					<key key="destination:symbol" value="bus_station" />
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:679" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:679" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Symbol HGV" ca.name="Símbol camions" es.name="Símbolo camiones" icon="traffic_signs/FI/FI_681.png" type="node,way,relation">
-					<key key="destination:symbol" value="motorway" />
+					<key key="destination:symbol" value="hgv" />
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:681" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:681" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Symbol pedestrian" ca.name="Símbol vianants" es.name="Símbolo peatones" icon="traffic_signs/FI/FI_682.png" type="node,way,relation">
-					<key key="destination:symbol" value="motorway" />
+					<key key="destination:symbol" value="pedestrian" />
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:682" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:682" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Symbol disabled" ca.name="Símbol minusvàlids" es.name="Símbolo minusválidos" icon="traffic_signs/FI/FI_683.png" type="node,way,relation">
-					<key key="destination:symbol" value="motorway" />
+					<key key="destination:symbol" value="disabled" />
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:683" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:683" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 					<item name="Symbol hazmat" ca.name="Símbol mercaderies perilloses" es.name="Símbolo mercancías peligrosas" icon="traffic_signs/FI/FI_684.png" type="node,way,relation">
-					<key key="destination:symbol" value="motorway" />
+					<key key="destination:symbol" value="hazmat" />
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:684" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:684" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>  
 
 					<item name="Emergency exit" ca.name="Sortida d'emergència" es.name="Salida de emergencia" icon="traffic_signs/FI/FI_690.png" type="node,way,relation">
-					<key key="destination:symbol" value="motorway" />
+					<key key="destination:symbol" value="emergency" />
 					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:690" />
 					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:690" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-				
-					<item name="Flow pedal cycle lane" ca.name="Carril dret x bicicletes (via de doble sentit)" es.name="Carril derecho x las bicicletas (vía doble sentido)" icon="traffic_signs/ES/ES_s64a.png" type="node,way,relation">
-					<key key="cycleway:right" value="lane" />
-					<key key="lanes:forward" value="2" />
-					<key key="lanes:backward" value="1" />
-					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S64a" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S64a" />
+
+					<item name="Close to Emergency exit" ca.name="Sortida d'emergència propera" es.name="Salida de emergencia cercana" icon="traffic_signs/FI/FI_691.png" type="node,way,relation">
+					<key key="destination:symbol" value="emergency" />
+					<text key="distance" text="Distance to the emergency exit" ca.text="Distància a la sortida d'emergència" es.text="Distancia a la salida de emergencia"/>
+					<text key="turn:destination" text="Direction to the emergency exit" ca.text="Direcció cap a la sortida d'emergència" es.text="Dirección hacia la salida de emergencia"/>
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:691" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:691" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-							
+								
 													</group>
 													
-									<group name="No through road" ca.name="Carrer tallat" es.name="Calle cortada" icon="traffic_signs/ES/ES_s15a.png">
+									<group name="No through road" ca.name="Carrer tallat" es.name="Calle cortada" icon="traffic_signs/FI/FI_651.png">
 
-					<item name="No through road" ca.name="Carrer tallat" es.name="Calle cortada" icon="traffic_signs/ES/ES_s15a.png" type="node,way,relation">
+					<item name="No through road" ca.name="Carrer tallat" es.name="Calle cortada" icon="traffic_signs/FI/FI_651.png" type="node,way,relation">
 					<key key="destination:symbol" value="noexit" match="keyvalue!" />
-					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S15a" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S15a" />
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:651" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:651" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="No through road (left)" ca.name="Carrer tallat (esquerra)" es.name="Calle cortada (izquierda)" icon="traffic_signs/ES/ES_s15b.png" type="node,way,relation">
-					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S15b" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S15b" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
-					<item name="No through road (direction)" ca.name="Carrer tallat (direcció)" es.name="Calle cortada (dirección)" icon="traffic_signs/ES/ES_s15c.png" type="node,way,relation">
-					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S15c" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S15c" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
-					<item name="No through road (ahead)" ca.name="Carrer tallat (endavant)" es.name="Calle cortada (adelante)" icon="traffic_signs/ES/ES_s15d.png" type="node,way,relation">
-					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S15d" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S15d" />
+					<item name="No through road (side)" ca.name="Carrer tallat (costat)" es.name="Calle cortada (costat)" icon="traffic_signs/FI/FI_652.png" type="node,way,relation">
+					<text key="turn:destination" text="Direction to the Noexit" ca.text="Direcció cap al carrer tallat" es.text="Dirección hacia la calle cortada"/>
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:652" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:652" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 				</group>
 							
-									<item name="Parking" ca.name="Aparcament" es.name="Aparcamiento" icon="traffic_signs/ES/ES_s17.png" type="node,way,relation">
-				<key key="destination:symbol" value="parking" match="keyvalue!" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
-							
-									<group name="Public Transport" ca.name="Transport públic" es.name="Transporte público" icon="traffic_signs/ES/ES_s19.png">
+									<group name="Parking" ca.name="Aparcament" es.name="Aparcamiento" icon="traffic_signs/FI/FI_521.png">
+
+					<item name="Parking" ca.name="Aparcament" es.name="Aparcamiento" icon="traffic_signs/FI/FI_521.png" type="node,way,relation">
+					<key key="destination:symbol" value="parking" match="keyvalue!" />
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:521" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:521" />
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
 					
-					<item name="Bus stop" ca.name="Parada bus" es.name="Parada bus" type="node,relation,way">
-					<key key="destination:symbol" value="bus_stop" match="keyvalue!" />
-					<key key="bus" value="yes" />
-					<check key="public_transport" text="The stop is the traffic_sign" ca.text="La parada és només el senyal" es.text="La parada es sólo la señal" value_on="stop_position" default="off" value_off="" />
-					<text key="name" text="Name" ca.text="Nom parada" es.text="Nombre parada" default="" />
-					<text key="ref" text="Reference" ca.text="Referència parada" es.text="Referencia parada" default="" />
-					<text key="network" text="Network" ca.text="Xarxa de la parada" es.text="Red de la parada" default="" />
-					<text key="operator" text="Operator" ca.text="Operador" es.text="Operador" default="" />
-					<optional>
-					<check key="bench" text="Bench" ca.text="Banc" es.text="Banco" value_on="yes" default="off" value_off="" />
-					<check key="shelter" text="Shelter" ca.text="Coberta" es.text="Cubierta" value_on="yes" default="off" value_off="" />
-					<check key="tactile_paving" text="Tactile paving" ca.text="Paviment tàctil" es.text="Pavimento táctil" value_on="yes" default="off" value_off="" />
-					</optional>
+					<item name="Parking (perpendicular)" ca.name="Aparcament (bateria)" es.name="Aparcamiento (batería)" icon="traffic_signs/FI/FI_521a.png" type="node,way,relation">
+					<key key="destination:symbol" value="parking" match="keyvalue!" />
+					<check key="parking:lane:right" text="Perpendicular parking to the right" ca.text="Aparcament en bateria a la dreta" es.text="Aparcamiento en bateria a la derecha" default="off" value_off="" value_on="perpendicular" />
+					<check key="parking:lane:left" text="Perpendicular parking to the left" ca.text="Aparcament en bateria a l'esquerra" es.text="Aparcamiento en bateria a la izquierda" default="off" value_off="" value_on="perpendicular" />
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:521a" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:521a" />
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
 					
-					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+					<item name="Parking (perpendicular both sides)" ca.name="Aparcament (bateria ambdós costats)" es.name="Aparcamiento (batería ambos lados)" icon="traffic_signs/FI/FI_521b.png" type="node,way,relation">
+					<key key="destination:symbol" value="parking" match="keyvalue!" />
+					<key key="parking:lane:right" value="perpendicular" match="keyvalue!" />
+					<key key="parking:lane:left" value="perpendicular" match="keyvalue!" />
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:521b" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:521b" />
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Parking (diagonal)" ca.name="Aparcament (diagonal)" es.name="Aparcamiento (diagonal)" icon="traffic_signs/FI/FI_521c.png" type="node,way,relation">
+					<key key="destination:symbol" value="parking" match="keyvalue!" />
+					<check key="parking:lane:right" text="Perpendicular parking to the right" ca.text="Aparcament en bateria a la dreta" es.text="Aparcamiento en bateria a la derecha" default="off" value_off="" value_on="perpendicular" />
+					<check key="parking:lane:left" text="Perpendicular parking to the left" ca.text="Aparcament en bateria a l'esquerra" es.text="Aparcamiento en bateria a la izquierda" default="off" value_off="" value_on="perpendicular" />
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:521c" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:521c" />
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Parking (Park and Ride for bus)" ca.name="Aparcament (P+R Bus)" es.name="Aparcamiento (P+R Bus)" icon="traffic_signs/FI/FI_520b.png" type="node,way,relation">
+					<key key="destination:symbol" value="parking" match="keyvalue!" />
+					<key key="park_ride" value="yes" />
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:520b" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:520b" />
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					<item name="Parking (Park and Ride for train)" ca.name="Aparcament (P+R estació tren)" es.name="Aparcamiento (estación tren)" icon="traffic_signs/FI/FI_520a.png" type="node,way,relation">
+					<key key="destination:symbol" value="parking" match="keyvalue!" />
+					<key key="park_ride" value="yes" />
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:520a" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:520a" />
+					<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+					
+					</group>
 							
-					<item name="Tram stop" ca.name="Parada tramvia" es.name="Parada tranvía" icon="traffic_signs/ES/ES_s20.png" type="node,way,relation">
-					<key key="destination:symbol" value="tram_stop" match="keyvalue!" />
-					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-				
-					<item name="Taxi" ca.name="Parada taxi" es.name="Parada taxi" icon="traffic_signs/ES/ES_s18.png" type="node,way,relation">
-					<key key="destination:symbol" value="taxi" match="keyvalue!" />
-					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:" />
+					<item name="Doctors" ca.name="Salut" es.name="Salud" icon="traffic_signs/FI/FI_715.png" type="node,way,relation">
+					<combo key="destination:symbol" text="Type" ca.text="Tipus" es.text="Tipo" values="hospital,doctors,clinic" ca.display_values="Hospital,C.A.P." es.display_values="Hospital,Centro de salud, Clínica" default="hospital" />
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:715" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:715" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-				</group>
-													<item name="Doctors" ca.name="Salut" es.name="Salud" icon="traffic_signs/ES/ES_s23.png" type="node,way,relation">
-				<combo key="destination:symbol" text="Type" ca.text="Tipus" es.text="Tipo" values="hospital,doctors,clinic" ca.display_values="Hospital,C.A.P." es.display_values="Hospital,Centro de salud, Clínica" default="hospital" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
-				<item name="ITV" ca.name="ITV" es.name="ITV" icon="traffic_signs/ES/ES_s102.png" type="node,way,relation">
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S102" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S102" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
-				<item name="Workshop" ca.name="Taller mecànic" es.name="Taller mecánico" icon="traffic_signs/ES/ES_s103.png" type="node,way,relation">
+				<item name="Workshop" ca.name="Taller mecànic" es.name="Taller mecánico" icon="traffic_signs/FI/FI_721.png" type="node,way,relation">
 				<key key="destination:symbol" value="hardware" match="keyvalue!" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S103" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S103" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:721" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:721" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-				<item name="Telephone" ca.name="Telèfon" es.name="Teléfono" icon="traffic_signs/ES/ES_s104.png" type="node,way,relation">
+				<item name="Telephone" ca.name="Telèfon" es.name="Teléfono" icon="traffic_signs/FI/FI_792.png" type="node,way,relation">
 				<key key="destination:symbol" value="telephone" match="keyvalue!" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S104" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S104" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:792" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:792" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>					  
 
-				<item name="Fuel" ca.name="Benzinera" es.name="Gasolinera" icon="traffic_signs/ES/ES_s105.png" type="node,way,relation">
+				<item name="Fuel" ca.name="Benzinera" es.name="Gasolinera" icon="traffic_signs/FI/FI_722.png" type="node,way,relation">
 				<key key="destination:symbol" value="fuel" match="keyvalue!" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S105" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S105" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:722" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:722" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-				<item name="Fuel and Workshop" ca.name="Benzinera i taller mecànic" es.name="Gasolinera y Taller mecánico" icon="traffic_signs/ES/ES_s106.png" type="node,way,relation">
-				<key key="destination:symbol" value="fuel" match="keyvalue!" />
-				<key key="destination:symbol" value="hardware" match="keyvalue!" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S106" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S106" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+				<item name="Picnic place" ca.name="Zona de pícnic" es.name="Zona de pícnic" icon="traffic_signs/FI/FI_741.png" type="node,way,relation">
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:741" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:741" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
 
-				<item name="Spring" ca.name="Font" es.name="Fuente" icon="traffic_signs/ES/ES_s108.png" type="node,way,relation">
-				<key key="destination:symbol" value="spring" match="keyvalue!" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S108" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S108" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+				<item name="Hiking zone" ca.name="Zona d'excursionisme" es.name="Zona de excursionismo" icon="traffic_signs/FI/FI_742.png" type="node,way,relation">
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:742" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:742" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 		
 
-				<item name="Viewpoint" ca.name="Lloc paisatgístic" es.name="Lugar paisajístico" icon="traffic_signs/ES/ES_s109.png" type="node,way,relation">
-				<key key="destination:symbol" value="viewpoint" match="keyvalue!" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S109" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S109" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
-				<item name="Picnic place" ca.name="Zona de pícnic" es.name="Zona de pícnic" icon="traffic_signs/ES/ES_s114.png" type="node,way,relation">
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S114" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S114" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
-				<item name="Hiking zone" ca.name="Zona d'excursionisme" es.name="Zona de excursionismo" icon="traffic_signs/ES/ES_s115.png" type="node,way,relation">
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S115" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S115" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
-				<item name="Restaurant" ca.name="Restaurant" es.name="Restaurante" icon="traffic_signs/ES/ES_s111.png" type="node,way,relation">
+				<item name="Restaurant" ca.name="Restaurant" es.name="Restaurante" icon="traffic_signs/FI/FI_724.png" type="node,way,relation">
 				<key key="destination:symbol" value="restaurant" match="keyvalue!" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S111" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S111" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:724" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:724" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-				<item name="Café" ca.name="Cafeteria" es.name="Cafetería" icon="traffic_signs/ES/ES_s112.png" type="node,way,relation">
+				<item name="Café" ca.name="Cafeteria" es.name="Cafetería" icon="traffic_signs/FI/FI_725.png" type="node,way,relation">
 				<key key="destination:symbol" value="cafe" match="keyvalue!" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S112" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S112" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:725" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:725" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-				<item name="Information office" ca.name="Oficina de turisme" es.name="Oficina de turismo" icon="traffic_signs/ES/ES_s118.png" type="node,way,relation">
+				<item name="Information" ca.name="Informació" es.name="Información" icon="traffic_signs/FI/FI_711.png" type="node,way,relation">
 				<key key="destination:symbol" value="information" match="keyvalue!" />
 				<key key="information" value="destination:symbol" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S118" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S118" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:711" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:711" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-				<item name="Fishing reserve" ca.name="Zona de pesca controlada" es.name="Coto de pesca" icon="traffic_signs/ES/ES_s119.png" type="node,way,relation">
-				<key key="destination:symbol" value="fishing" match="keyvalue!" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S119" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S119" />
+				<item name="Information office" ca.name="Oficina de turisme" es.name="Oficina de turismo" icon="traffic_signs/FI/FI_712.png" type="node,way,relation">
+				<key key="destination:symbol" value="information_office" match="keyvalue!" />
+				<key key="information" value="destination:symbol" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:712" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:712" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-				<item name="Natural reserve" ca.name="Parc natural" es.name="Parque natural" icon="traffic_signs/ES/ES_s120.png" type="node,way,relation">
-				<key key="destination:symbol" value="natural_reserve" match="keyvalue!" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S120" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S120" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
-				<item name="Monument" ca.name="Monument" es.name="Monumento" icon="traffic_signs/ES/ES_s121.png" type="node,way,relation">
-				<key key="destination:symbol" value="monument" match="keyvalue!" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S121" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S121" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-
-				<item name="Resting Area" ca.name="Àrea de descans" es.name="Área de descanso" icon="traffic_signs/ES/ES_s123.png" type="node,way,relation">
-				<key key="destination:symbol" value="rest_area" match="keyvalue!" />
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S123" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S123" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-									<group name="Accommodation" ca.name="Allotjament i acampada" es.name="Alojamiento-Camping" icon="traffic_signs/ES/ES_s107.png">
+<item name="WC" ca.name="Lavabo" es.name="Lavabo" icon="traffic_signs/FI/FI_726.png" type="node,way,relation">
+				<key key="destination:symbol" value="wc" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:726" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:726" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+ 
+					<group name="Accommodation" ca.name="Allotjament i acampada" es.name="Alojamiento-Camping" icon="traffic_signs/FI/FI_723.png">
 							
-							<item name="Camp site" ca.name="Zona d'acampada" es.name="Zona de acampada" icon="traffic_signs/ES/ES_s107.png" type="node,way,relation">
+						<item name="Camp site" ca.name="Zona d'acampada" es.name="Zona de acampada" icon="traffic_signs/FI/FI_733.png" type="node,way,relation">
 					<key key="destination:symbol" value="camp_site" match="keyvalue!" />
 					<key key="tents" value="yes" />
-					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S107" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S107" />
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:733" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:733" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 							
-					<item name="Caravan" ca.name="Lloc per caravanes" es.name="Lugar para caravanas" icon="traffic_signs/ES/ES_s113.png" type="node,way,relation">
+					<item name="Caravan" ca.name="Lloc per caravanes" es.name="Lugar para caravanas" icon="traffic_signs/FI/FI_734.png" type="node,way,relation">
 					<key key="destination:symbol" value="caravan_site" match="keyvalue!" />
-					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S113" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S113" />
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:734" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:734" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 							
-					<item name="Camp and Caravan site" ca.name="Zona d'acampada també per a caravanes" es.name="Campamento y terreno para remolques-vivienda" icon="traffic_signs/ES/ES_s116.png" type="node,way,relation">
-					<key key="destination:symbol" value="caravan_site" match="keyvalue!" />
-					<key key="tents" value="yes" />
-					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S116" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S116" />
-<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
-		
-					<item name="Hotel" ca.name="Hotel" es.name="Hotel" icon="traffic_signs/ES/ES_s110.png" type="node,way,relation">
-					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S110" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S110" />
+					<item name="Hotel" ca.name="Hotel" es.name="Hotel" icon="traffic_signs/FI/FI_723.png" type="node,way,relation">
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:723" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:723" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
-					<item name="Youth hostel" ca.name="Alberg de joventut" es.name="Albergue de juventud" icon="traffic_signs/ES/ES_s117.png" type="node,way,relation">
+					<item name="Youth hostel" ca.name="Alberg de joventut" es.name="Albergue de juventud" icon="traffic_signs/FI/FI_731.png" type="node,way,relation">
 					<key key="destination:symbol" value="hostel" match="keyvalue!" />
-					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S117" />
-					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S117" />
+					<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:731" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:731" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Cottage accomodation" ca.name="Cabana" es.name="Cabaña" icon="traffic_signs/FI/FI_774a.png" type="node,way,relation">
+				<key key="destination:symbol" value="cottage" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:774a" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:774a" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Bed and Breakfast" ca.name="Bed and Breakfast" es.name="Bed and Breakfast" icon="traffic_signs/FI/FI_774b.png" type="node,way,relation">
+				<key key="destination:symbol" value="bed_breakfast" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:774b" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:774b" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
 
 				</group>
 
-				<item name="Other info" ca.name="Altres informacions" es.name="Otras informaciones" icon="traffic_signs/ES/ES_s122.png" type="node,way,relation">
-				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="ES:S122" />
-				<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="ES:S122" />
+				<item name="Fishing reserve" ca.name="Zona de pesca controlada" es.name="Coto de pesca" icon="traffic_signs/FI/FI_773b.png" type="node,way,relation">
+				<key key="destination:symbol" value="fishing" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:773b" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:773b" />
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Natural reserve" ca.name="Parc natural" es.name="Parque natural" icon="traffic_signs/FI/FI_772c.png" type="node,way,relation">
+				<key key="destination:symbol" value="natural_reserve" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:772c" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:772c" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Viewpoint" ca.name="Lloc paisatgístic" es.name="Lugar paisajístico" icon="traffic_signs/FI/FI_772d.png" type="node,way,relation">
+				<key key="destination:symbol" value="viewpoint" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:772d" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:772d" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Monument" ca.name="Monument" es.name="Monumento" icon="traffic_signs/FI/FI_772a.png" type="node,way,relation">
+				<key key="destination:symbol" value="monument" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:772a" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:772a" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item>
+
+				<item name="World Heritage" ca.name="Patrimoni mundial" es.name="Patrimonio mundial" icon="traffic_signs/FI/FI_772b.png" type="node,way,relation">
+				<key key="destination:symbol" value="heritage" match="keyvalue!" />
+				<key key="heritage:operator" value="whc" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:772b" />
+				<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:772b" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Heritage" ca.name="Patrimoni" es.name="Patrimonio" icon="traffic_signs/FI/FI_772f.png" type="node,way,relation">
+				<key key="destination:symbol" value="heritage" match="keyvalue!" />
+				<text key="heritage:operator" text="Organization" ca.text="Organització" es.text="Organización"/>
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:772f" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:772f" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Zoo" ca.name="Zoo" es.name="Zoo" icon="traffic_signs/FI/FI_772e.png" type="node,way,relation">
+				<key key="destination:symbol" value="zoo" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:772e" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:772e" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Swimming place" ca.name="Lloc per nedar" es.name="Sitio para nadar" icon="traffic_signs/FI/FI_773a.png" type="node,way,relation">
+				<key key="destination:symbol" value="swimming" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:773a" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:773a" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Ski place" ca.name="Pistes d'esquí" es.name="Pistas de esquí" icon="traffic_signs/FI/FI_773c.png" type="node,way,relation">
+				<key key="destination:symbol" value="ski" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:773c" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:773c" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Golf place" ca.name="Camp de golf" es.name="Campo de golf" icon="traffic_signs/FI/FI_773d.png" type="node,way,relation">
+				<key key="destination:symbol" value="golf" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:773d" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:773d" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Theme park" ca.name="Parc temàtic" es.name="Parque temático" icon="traffic_signs/FI/FI_773e.png" type="node,way,relation">
+				<key key="destination:symbol" value="theme_park" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:773e" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:773e" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Direct sale" ca.name="Venda directa" es.name="Venta directa" icon="traffic_signs/FI/FI_774c.png" type="node,way,relation">
+				<key key="destination:symbol" value="direct_sale" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:774c" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:774c" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Handicrafts" ca.name="Artesà" es.name="Artesano" icon="traffic_signs/FI/FI_774d.png" type="node,way,relation">
+				<key key="destination:symbol" value="handicraft" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:774d" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:774d" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Farm park" ca.name="Granja escola" es.name="Granja escuela" icon="traffic_signs/FI/FI_774e.png" type="node,way,relation">
+				<key key="destination:symbol" value="theme_park" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:774e" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:774e" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Horseback riding" ca.name="Muntar a cavall" es.name="Montar a caballo" icon="traffic_signs/FI/FI_774f.png" type="node,way,relation">
+				<key key="destination:symbol" value="theme_park" match="keyvalue!" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:774f" />
+					<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:774f" />
+<combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" /></item> 
+
+				<item name="Natural/Cultural item" ca.name="Element natural/cultural" es.name="Elemento natural/cultural" icon="traffic_signs/FI/FI_771a.png" type="relation,way,node,closedway" preset_name_label="true">
+				<space />
+				<key key="type" value="destination_sign" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:771a" />
+				<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:771a" />
+				<key key="colour:back" value="brown" />
+				<key key="colour:text" value="white" />
+				<text key="name" text="Text" ca.text="Text" es.text="Texto" />
+				<space />
+				</item>
+				
+				<item name="Natural/Cultural item with pic" ca.name="Element natural/cultural amb pictograma" es.name="Elemento natural/cultural con pictograma" icon="traffic_signs/FI/FI_771b.png" type="relation,way,node,closedway" preset_name_label="true">
+				<space />
+				<key key="type" value="destination_sign" />
+				<check key="traffic_sign:forward" text="Forward" ca.text="En el sentit de la marxa" es.text="En el sentido de la marcha" default="off" value_off="" value_on="FI:771b" />
+				<check key="traffic_sign:backward" text="Backward" ca.text="En sentit contrari" es.text="En sentido contrario" default="off" value_off="" value_on="FI:771b" />
+				<key key="colour:back" value="brown" />
+				<key key="colour:text" value="white" />
+				<text key="name" text="Text" ca.text="Text" es.text="Texto" />
+				<text key="destination:symbol" text="Pictogram" ca.text="Pictograma" es.text="Pictograma" />
+				<space />
+				</item>
 
 			</group>
 
@@ -3461,7 +3607,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -3483,7 +3629,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -3506,7 +3652,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -4682,7 +4828,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -4704,7 +4850,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -4726,7 +4872,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8142,7 +8288,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8164,7 +8310,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8186,7 +8332,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8208,7 +8354,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8230,7 +8376,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8252,7 +8398,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8274,7 +8420,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8296,7 +8442,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8318,7 +8464,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8340,7 +8486,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8362,7 +8508,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8384,7 +8530,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8406,7 +8552,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8428,7 +8574,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 			<space />
 						</item>
@@ -8450,7 +8596,7 @@ baselanguage="es">
 <label text="Once you have chosen the direction empty the opposite traffic sign code." ca.text="Un cop hagis triat el sentit del senyal elimina el contrari." es.text="Una vez hayas escogido el sentido de la señal elimina el contrario."/>
 <combo key="side" text="Side of the way" ca.text="Costat de la via" es.text="Lado de la vía" values="right,left,both,up,down" ca.display_values="dret,esquerre,ambdós,superior,inferior" es.display_values="derecho,izquierdo,ambos,superior,inferior" default="right" />
 
-<link href="https://www.flickr.com/photos/8394306@N02/albums"/>
+<link href="http://bit.ly/trafficsignscode"/>
 
 		<space />
 		</item>
